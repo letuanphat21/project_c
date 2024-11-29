@@ -1,0 +1,14 @@
+C:\Users\DELL\source\repos\Web_project\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\Web_project\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\Test.exe.config
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\Test.exe
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\Test.pdb
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\MySql.Data.dll
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\System.Memory.dll
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\System.Buffers.dll
+C:\Users\DELL\source\repos\Web_project\Test\bin\Debug\MySql.Data.xml
+C:\Users\DELL\source\repos\Web_project\Test\obj\Debug\Test.csproj.Up2Date
+C:\Users\DELL\source\repos\Web_project\Test\obj\Debug\Test.exe
+C:\Users\DELL\source\repos\Web_project\Test\obj\Debug\Test.pdb
