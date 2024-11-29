@@ -1,0 +1,103 @@
+﻿@{
+    // Lấy giá trị của Session "id"
+    var userSession = Context.Session.GetString("user");
+
+    // Nếu Session có dữ liệu, chuyển JSON về đối tượng
+    dynamic user = userSession != null ? Newtonsoft.Json.JsonConvert.DeserializeObject(userSession) : null;
+}
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Changinfor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          rel="stylesheet" id="bootstrap-css">
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+          rel="stylesheet">
+    <link href="~/css/home.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    @Html.Partial("Header")
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center">Update Information</h2>
+        <div class="d-flex justify-content-between mb-3">
+            <div class="alert alert-danger flex-fill me-2" id="errorMessage"
+                 style="display: @(ViewBag.Fail != null && ViewBag.Fail != "" ? "block" : "none");">
+                <p>@ViewBag.Fail</p>
+            </div>
+            <div class="alert alert-success flex-fill ms-2" id="successMessage"
+                 style="display: @(ViewBag.Success != null && ViewBag.Success != "" ? "block" : "none");">
+                <p>@ViewBag.Success</p>
+            </div>
+        </div>
+        <form asp-controller="Home" asp-action="Changeinfor" method="post" class="mt-4">
+            <!-- Fullname -->
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" value="@user.Fullname" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <!-- Gender -->
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male"
+                        @(user.IsGender == true ? "checked" : "") required>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female"
+                        @(user.IsGender == false ? "checked" : "")>
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Birthday -->
+            <div class="mb-3">
+                <label for="birthday" class="form-label">Birthday</label>
+                <input type="datetime-local" class="form-control"
+                       value="@(user.BirthDay != null ? user.BirthDay.ToString("yyyy-MM-ddTHH:mm") : "")"
+                       id="birthday" name="birthday" required>
+            </div>
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" value="@user.Email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <!-- Phone Number -->
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" value="@user.PhoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+            </div>
+            <!-- Address -->
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" name="address" value="@user.Address" placeholder="Enter your address" required>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary w-100">Update Information</button>
+        </form>
+    </div>
+
+
+    @Html.Partial("Footer")
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
