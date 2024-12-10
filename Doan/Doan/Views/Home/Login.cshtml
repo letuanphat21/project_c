@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/css/login.css" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <body>
+        <section class="container">
+            <div class="login-container">
+                <div class="circle circle-one"></div>
+                <div class="form-container">
+                    <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                    <h1 class="opacity">LOGIN</h1>
+
+
+                    @if (!string.IsNullOrEmpty(ViewBag.Fail))
+                    {
+                        <div class="alert alert-danger flex-fill me-2" id="errorMessage">
+                            <p>@ViewBag.Fail</p>
+                        </div>
+                    }
+
+                    <form asp-controller="Home" asp-action="Login" method="post">
+                        <input type="text" placeholder="USERNAME" name="username" />
+                        <input type="password" placeholder="PASSWORD" name="password" />
+                        <button class="opacity">SUBMIT</button>
+                    </form>
+                    <div class="register-forget opacity">
+                        <a asp-controller="Home" asp-action="Signup">REGISTER</a>
+                        <a href="">FORGOT PASSWORD</a>
+                    </div>
+                </div>
+                <div class="circle circle-two"></div>
+            </div>
+            <div class="theme-btn-container"></div>
+        </section>
+    </body>
+    <!-- partial -->
+    <script src="~/js/login.js"></script>
+
+</body>
+</html>
