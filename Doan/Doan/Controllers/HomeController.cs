@@ -629,17 +629,114 @@ namespace Doan.Controllers
 
             return View("ProductDetail");
 
+        }
+
+
+        public IActionResult FormCheckOut()
+        {
+            var sessionUser = HttpContext.Session.GetString("user");
+            User user = string.IsNullOrEmpty(sessionUser)
+                ? new User() // Nếu giỏ hàng trống, tạo mới
+                : JsonConvert.DeserializeObject<User>(sessionUser);
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult FormCheckOut(string fullname, string email, string phonenumber, string address, string note)
+        {
+            var sessionCart = HttpContext.Session.GetString("cart");
+            Cart cart = string.IsNullOrEmpty(sessionCart)
+                ? new Cart()
+                : JsonConvert.DeserializeObject<Cart>(sessionCart);
+
+
+            if (cart.checkCartNoItems())
+            {
+                return View("Index");
+            }
 
 
 
+            var sessionUser = HttpContext.Session.GetString("user");
+            User user = string.IsNullOrEmpty(sessionUser)
+                ? new User() // Nếu giỏ hàng trống, tạo mới
+                : JsonConvert.DeserializeObject<User>(sessionUser);
 
 
+            Order order = new Order(user.Id, fullname, email, phonenumber, address, note, 0, null);
+            HttpContext.Session.SetString("order", JsonConvert.SerializeObject(order));
 
+            return View("PaymentMethod");
 
+        }
+
+        public IActionResult PaymentMethod()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult PaymentMethod(string method)
+        {
+            string method_last = "";
+            if (method.Equals("1"))
+            {
+                method_last = "VNPayQR";
+            }
+            else if (method.Equals("2"))
+            {
+                method_last = "Thẻ nội địa";
+            }
+            else if (method.Equals("3"))
+            {
+                method_last = "Thẻ quốc tế";
+            }
+            else if (method.Equals("4"))
+            {
+                method_last = "Ví VNPay";
+            }
+            else if (method.Equals("5"))
+            {
+                method_last = "Tiền mặt";
+            }
+
+            var sessionCart = HttpContext.Session.GetString("cart");
+            Cart cart = string.IsNullOrEmpty(sessionCart)
+                ? new Cart()
+                : JsonConvert.DeserializeObject<Cart>(sessionCart);
+
+            // Check if the cart is empty
+            if (cart.checkCartNoItems())
+            {
+                return View("Index");
+            }
+
+            var sessionOrder = HttpContext.Session.GetString("order");
+            Order order = string.IsNullOrEmpty(sessionOrder)
+                ? new Order() // Nếu giỏ hàng trống, tạo mới
+                : JsonConvert.DeserializeObject<Order>(sessionOrder);
+
+            // List of discounts to show on the page
+            List<Discount> list = _context.discounts.ToList();
+            ViewBag.discountList = list;
+
+            // Set the payment method to the order
+            order.PaymentMethod = method_last;
+
+            // Update the session with the updated order
+            HttpContext.Session.SetString("order", JsonConvert.SerializeObject(order));
+
+            // You can return the appropriate view as needed
+            return View("Check"); // Or redirect as needed
         }
 
 
 
+        public IActionResult Check()
+        {
+            return View();
+        }
 
 
 

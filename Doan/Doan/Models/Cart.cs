@@ -61,5 +61,13 @@
             }
             return t;
         }
+        public bool checkCartNoItems()
+        {
+            if (Items.Count == 0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
