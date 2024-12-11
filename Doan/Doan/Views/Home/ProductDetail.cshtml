@@ -1,0 +1,155 @@
+﻿
+@{
+     Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductDetail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          rel="stylesheet" id="bootstrap-css">
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+          rel="stylesheet">
+    <link href="~/css/home.css" rel="stylesheet" type="text/css" />
+    <style>
+        .thumbnail-container {
+            width: 100px;
+        }
+
+        .thumbnail-image {
+            cursor: pointer;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .main-carousel {
+            flex-grow: 1;
+        }
+
+        .carousel-inner img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="menuContainer">
+        @Html.Partial("Header")
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="container mt-5">
+        <!-- Phần Chi Tiết Sản Phẩm -->
+        <div class="row">
+            <!-- Phần Ảnh -->
+            <div class="col-md-6 d-flex">
+                <!-- Ảnh Thu Nhỏ -->
+                <div class="me-3 d-flex flex-column thumbnail-container">
+                    <img src="@ViewBag.image.Image1" class="img-thumbnail mb-2 thumbnail-image" alt="Thumbnail 1" data-bs-slide-to="0">
+                    <img src="@ViewBag.image.Image2" class="img-thumbnail thumbnail-image" alt="Thumbnail 2" data-bs-slide-to="1">
+                </div>
+
+                <!-- Ảnh Chính -->
+                <div id="productImageCarousel" class="carousel slide flex-grow-1 main-carousel" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="@ViewBag.image.Image1" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="@ViewBag.image.Image2" class="d-block w-100" alt="Image 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productImageCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productImageCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Phần Thông Tin Sản Phẩm -->
+            <div class="col-md-6">
+                <h2 class="product-title">@ViewBag.product.Title</h2>
+                <p class="product-price">Giá: @ViewBag.product.Price $</p>
+                <form asp-controller="Home" asp-action="AddToCart2" method="post">
+                    <div class="product-quantity">
+                        <label for="quantity">Số lượng:</label>
+                        <input type="number" id="quantity" name="quantity" class="form-control w-50" min="1" max="@ViewBag.product.InventoryNumber" value="1">
+                    </div>
+                    <input type="hidden" name="id" value="@ViewBag.product.Id">
+                    <input type="hidden" name="cid" value="@ViewBag.product.Cid">
+                    <div class="mt-3">
+                        <input type="submit" class="btn btn-success w-50" value="Thêm vào giỏ hàng">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="product-description">
+                    <h5>Mô tả sản phẩm</h5>
+                    <p>@ViewBag.product.Description</p>
+                </div>
+                <div class="company-info mt-3">
+                    <h5>Về công ty chúng tôi</h5>
+                    <p>
+                        Chúng tôi là một công ty chuyên cung cấp các sản phẩm bạc cao cấp, từ trang sức bạc tinh xảo như nhẫn, vòng tay, dây chuyền, đến các sản phẩm bạc phong thủy đầy ý nghĩa. Sứ mệnh của chúng tôi là mang lại vẻ đẹp và giá trị bền vững cho khách hàng thông qua những thiết kế độc đáo và chất lượng vượt trội.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm liên quan -->
+        <section>
+            <h2 class="text-center">Sản Phẩm Liên Quan</h2>
+            <div id="content" class="row">
+                @foreach (var product in ViewBag.listp)
+                {
+                    <div class="product col-md-3 mb-4">
+                        <div class="card card-hover">
+                            <a asp-controller="Home" asp-action="ProductDetail" asp-route-cid="@product.Cid" asp-route-id="@product.Id">
+                                <img src="@product.Thumbnail" class="card-img-top" alt="Product Image">
+                            </a>
+                            <div class="card-body text-center">
+                                <a class="text-decoration-none" asp-controller="Home" asp-action="ProductDetail" asp-route-cid="@product.Cid" asp-route-id="@product.Id">
+                                    <h5 class="card-title">@product.Title</h5>
+                                </a >
+                                <p class="card-text">@product.Price$</p>
+                                <form asp-controller="Home" asp-action="AddToCart2" method="post">
+                                    <input type="hidden" name="id" value="@product.Id">
+                                    <input type="hidden" name="cid" value="@product.Cid">
+                                    <input type="hidden" name="quantity" value="1">
+                                    <input type="submit" class="btn btn-success" value="Thêm vào giỏ hàng">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+    </div>
+
+    @Html.Partial("Footer")
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

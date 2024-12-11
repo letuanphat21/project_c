@@ -1,0 +1,253 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ManagerCategory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/magnific-popup@1.2.0/dist/magnific-popup.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="~/css/admin.css" rel="stylesheet" />
+    <link href="~/css/manageruser.css" rel="stylesheet" />
+</head>
+<body>
+    @Html.Partial("Menuleft")
+    <div class="content">
+        <h1 class="text-center">Quản lý thể loại</h1>
+        <button class="btn rounded-2 bg-primary text-white" data-id="" data-bs-toggle="modal" data-bs-target="#addModal">Thêm danh mục</button>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewBag.Categorys != null)
+                {
+                    foreach (var category in ViewBag.Categorys)
+                    {
+                        <tr>
+                            <td>@category.Id</td>
+                            <td>@category.Name</td>
+                            <td>
+                                <button class="btn-edit btn btn-warning btn-sm" data-id="@category.Id" data-name="@category.Name">Edit</button>
+                                <button class="btn-delete btn btn-danger btn-sm" data-id="@category.Id" data-name="@category.Name" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8" class="text-center">No users found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Phân trang -->
+        <div class="pagination">
+            @if (ViewBag.Num != null && ViewBag.Num > 1)
+            {
+                <ul>
+                    @for (int i = 1; i <= ViewBag.Num; i++)
+                    {
+                        <li class="@(ViewBag.Page == i ? "active" : "")">
+                            <a asp-controller="Admin" asp-action="ManagerCategory" asp-route-xpage="@i">@i</a>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+
+        @* poup add *@
+        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="addModalLabel">Thêm danh mục</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addForm">
+                            <div class="mb-3">
+                                <label for="addCategoryId" class="form-label">Mã danh mục</label>
+                                <input type="text" class="form-control" id="addCategoryId" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="addCategoryName" class="form-label">Tên danh mục</label>
+                                <input type="text" class="form-control" id="addCategoryName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="addCategoryImage" class="form-label">Đường dẫn hình ảnh</label>
+                                <input type="text" class="form-control" id="addCategoryImage" required>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" value="save" class="btn btn-primary">Thêm</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* poup edit *@
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="editModalLabel">Chỉnh sửa danh mục</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="editForm">
+                            <!-- Form to edit category -->
+                            <div class="mb-3">
+                                <label for="Id" class="form-label">Mã danh mục</label>
+                                <input type="text" class="form-control" name="Id" id="editCategoryId" required readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Name" class="form-label">Tên danh mục</label>
+                                <input type="text" class="form-control" name="Name" id="editCategoryName" required>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" value="save" class="btn btn-primary">Lưu thay đổi</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* poup delete *@
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center w-100">
+                        <h5 class="modal-title" id="deleteModalLabel">Xóa danh mục</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        Are you sure you want to delete this product?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger" id="confirmDelete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+    @* xử lý poup add *@
+    <script>
+         $('#addForm').on('submit', function(e) {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
+            var id = $('#addCategoryId').val();
+            var name = $('#addCategoryName').val();
+            var thumbnail = $('#addCategoryImage').val();
+            $.ajax({
+                url: '/Admin/AddCategory',
+                method: 'POST',
+                data: {
+                    Id: id,
+                    Name: name,
+                    Thumbnail: thumbnail
+                },
+                success: function(response) {
+                    if (response.success) {
+                        alert('Thêm danh mục thành công!');
+                        window.location.href = '/Admin/ManagerCategory';
+                    } else {
+                        alert('Thêm danh mục thất bại: ' + response.message);
+                    }
+                },
+                error: function() {
+                    alert('Đã xảy ra lỗi khi thêm danh mục.');
+                }
+            });
+        });
+    </script>
+    @* xử lý poup edit *@
+    <script>
+        $(document).on('click', '.btn-edit', function () {
+            const id = $(this).data('id'); 
+            const name = $(this).data('name');
+            // Điền dữ liệu vào các trường trong modal
+            $('#editCategoryId').val(id);
+            $('#editCategoryName').val(name);
+            // Hiển thị modal
+            $('#editModal').modal('show');
+        });
+
+        $('#editForm').on('submit', function (e) {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
+            const id = $('#editCategoryId').val();
+            const name = $('#editCategoryName').val();
+            $.ajax({
+                url: '/Admin/EditCategory',
+                method: 'POST',
+                data: {
+                    Id: id,
+                    Name: name
+                },
+                success: function (response) {
+                    if (response.success) {
+                        alert('Cập nhật thành công');
+                        if (response.redirectUrl) {
+                             window.location.href = '/Admin/ManagerCategory'
+                        }
+                    } else {
+                        alert('Cập nhật thất bại: ' + response.message); 
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('Có lỗi xảy ra! Lỗi: ' + error); 
+                }
+            });
+        });
+
+     </script>
+     @* xử lý poup delete *@
+    <script>
+        $(document).on('click', '.btn-delete', function () {
+            var id = $(this).data('id');
+            var name = $(this).data('name');
+            // Hiển thị tên sản phẩm trong popup
+            $('#deleteModal .modal-body').text('Bạn có muốn xóa danh mục "' + name + ' "?');
+            // Đặt sự kiện xác nhận xóa
+            $('#confirmDelete').off('click').on('click', function () {
+                $.ajax({
+                    url: '/Admin/DeleteCategory', 
+                    type: 'POST', 
+                    data: { id: id },
+                    success: function (response) {
+                        // Kiểm tra phản hồi từ server
+                        if (response.success) {
+                            alert('Danh mục đã được xóa thành công');
+                            window.location.href = '/Admin/ManagerCategory'; 
+                        } else {
+                            alert('Xóa danh mục thất bại: ' + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert('Đã xảy ra lỗi trong quá trình xóa danh mục.');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
