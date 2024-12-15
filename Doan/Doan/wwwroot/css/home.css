@@ -1,3 +1,8 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* Chiều cao tối thiểu của trang */
+}
 .card-hover {
 	transition: transform 0.3s;
 
@@ -21,4 +26,24 @@
 
 .card-text {
   max-width: 100%;             /* Đảm bảo chiều rộng tối đa của mô tả */
+}
+
+
+footer {
+	margin-top: auto;
+	background-color: #f1f1f1;
+	text-align: center;
+	padding: 10px 0;
+	min-height: 100px;
+}
+#menuContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1050; /* Đảm bảo nó hiển thị trên mọi thứ */
+}
+
+#content {
+	margin-top: 60px; /* Khoảng cách dưới header, điều chỉnh nếu cần */
 }

@@ -18,7 +18,7 @@ namespace Doan.Models
 
         public string Address { get; set; }
 
-        public string Note { get; set; }
+        public string? Note { get; set; }
 
 
         public DateTime OrderDate { get; set; }
@@ -53,7 +53,7 @@ namespace Doan.Models
             PaymentMethod = paymentMethod;
         }
 
-        public Order(int userId, string fullName, string email, string phoneNumber, string address, string note, double totalMoney, string paymentMethod)
+        public Order(int userId, string fullName, string email, string phoneNumber, string address, string note, DateTime orderDate, string status, double totalMoney, string paymentMethod)
         {
             UserId = userId;
             FullName = fullName;
@@ -61,11 +61,10 @@ namespace Doan.Models
             PhoneNumber = phoneNumber;
             Address = address;
             Note = note;
+            OrderDate = orderDate;
+            Status = status;
             TotalMoney = totalMoney;
             PaymentMethod = paymentMethod;
         }
-
-
-
     }
 }

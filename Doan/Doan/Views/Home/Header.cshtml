@@ -17,7 +17,7 @@
 
         <!-- Navigation -->
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a asp-controller="Home" asp-action="Index" class="nav-link px-3 link-secondary">Home</a></li>
+            <li><a asp-controller="Home" asp-action="Index" class="nav-link px-3 link-secondary">Trang chủ</a></li>
 
             <!-- Dropdown Menu -->
             <li class="nav-item dropdown">
@@ -70,7 +70,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
                         <li><a class="dropdown-item" asp-controller="home" asp-action="Changeinfor">Thay đổi thông tin</a></li>
                         <li><a class="dropdown-item" asp-controller="home" asp-action="Changepass">Thay đổi mật khẩu</a></li>
-                        <li><a class="dropdown-item" href="#">Xem hóa đơn</a></li>
+                        <li><a class="dropdown-item" asp-controller="home" asp-action="ViewOrder">Xem hóa đơn</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" asp-controller="home" asp-action="Logout">Đăng xuất</a></li>
                     </ul>
