@@ -1,42 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\",
+  "WorkspaceRootPath": "E:\\doanc#entity\\Doan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanc#entity\\doan\\doan\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanc#entity\\doan\\doan\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\wwwroot\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\admin\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\admin\\managercategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managercategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanc#entity\\doan\\doan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,119 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "Doan\\Models\\Cart.cs",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Models\\Cart.cs",
-              "RelativeToolTip": "Doan\\Models\\Cart.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T13:47:37.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Doan\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Doan\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAANECAAAAAAAAAAAAAOICAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T13:46:29.59Z",
+              "Title": "home.js",
+              "DocumentMoniker": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\home.js",
+              "RelativeDocumentMoniker": "Doan\\wwwroot\\js\\home.js",
+              "ToolTip": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\home.js",
+              "RelativeToolTip": "Doan\\wwwroot\\js\\home.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-15T02:13:14.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\doanc#entity\\Doan\\Doan\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\doanc#entity\\Doan\\Doan\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T02:13:08.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Cart.cshtml",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
+              "DocumentMoniker": "E:\\doanc#entity\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
               "RelativeDocumentMoniker": "Doan\\Views\\Home\\Cart.cshtml",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
+              "ToolTip": "E:\\doanc#entity\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
               "RelativeToolTip": "Doan\\Views\\Home\\Cart.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAAJ4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T13:45:13.718Z",
+              "WhenOpened": "2024-12-15T02:08:32.674Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddProduct.cshtml",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\AddProduct.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\AddProduct.cshtml",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\AddProduct.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Admin\\AddProduct.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T07:21:10.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditProduct.cshtml",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\EditProduct.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\EditProduct.cshtml",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\EditProduct.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Admin\\EditProduct.cshtml",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAHoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T01:26:16.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Doan\\Models\\Product.cs",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Models\\Product.cs",
-              "RelativeToolTip": "Doan\\Models\\Product.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T01:16:24.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ManagerProduct.cshtml",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAIAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T15:33:30.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Doan\\Controllers\\AdminController.cs",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Doan\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T06:57:27.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ManagerCategory.cshtml",
-              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerCategory.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerCategory.cshtml",
-              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerCategory.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerCategory.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T02:00:22.166Z"
             }
           ]
         }

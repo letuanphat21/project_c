@@ -41,7 +41,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
           rel="stylesheet">
-    <link href="~/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/about.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -71,18 +71,23 @@
             margin-top: 15px;
         }
 
+        select.form-select option:checked {
+            background-color: #007bff; /* Màu xanh dương */
+            color: white;
+        }
+
     </style>
 </head>
 <body>
-        <div id="menuContainer">
+    <div id="menuContainer">
         @Html.Partial("Header")
     </div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="home">Trang chủ</a></li>
-            <li class="breadcrumb-item"><a href="Cart">Giỏ Hàng</a></li>
-            <li class="breadcrumb-item"><a href="FormCheckOut">Kiêm tra thông tin</a></li>
-            <li class="breadcrumb-item"><a href="PaymentMethod">Phương thưc thanh toán</a></li>
+            <li class="breadcrumb-item"><a asp-controller="home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a asp-controller="home" asp-action="Cart">Giỏ Hàng</a></li>
+            <li class="breadcrumb-item"><a asp-controller="home" asp-action="FormCheckOut">Kiêm tra thông tin</a></li>
+            <li class="breadcrumb-item"><a asp-controller="home" asp-action="PaymentMethod">Phương thưc thanh toán</a></li>
             <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
         </ol>
     </nav>
@@ -91,7 +96,7 @@
         <div class="row">
             <!-- Cột bên trái: Thông tin khách hàng -->
             <div class="col-md-7 checkout-form-container">
-                <form action="confirmcheckout" method="get">
+                <form asp-controller="home" asp-action="ConfirmCheckOut" method="get">
                     <h2 class="text-center mb-4">Thanh toán</h2>
                     <p class="text-center text-muted">Vui lòng kiểm tra thông tin khách hàng và đơn hàng trước khi đặt hàng.</p>
                     <div class="mb-3">
@@ -118,80 +123,89 @@
                         <label for="paymentMethod" class="form-label">Hình thức thanh toán</label>
                         <input type="text" class="form-control" id="paymentMethod" name="paymentMethod" value="@order.PaymentMethod" readonly placeholder="Nhập hình thức thanh toán" required>
                     </div>
-                    <input type="hidden" name="disID" value="@Model.DisId">
+                    <input type="hidden" name="disID" value="@(ViewBag.DisId != null ? ViewBag.DisId : 0)">
                     <button type="submit" class="btn btn-primary w-100 mt-3">Đặt hàng</button>
                 </form>
             </div>
 
-            <!-- Cột bên phải: Thông tin giỏ hàng -->
-            <div class="col-md-5">
-                <div class="payment-summary" style="margin-top: 134px">
-                    <h5>Giỏ hàng</h5>
-                    <!-- Hiển thị danh sách sản phẩm -->
-                    @foreach (var item in @cart.Items)
-                    {
-                        <div class="product-item">
-                            <span>@item.product.Title</span>
-                            <span>(@item.Quantity x @item.product.Price $)</span>
-                            <span style="float: right;">@item.product.Price * item.Quantity $</span>
-                        </div>
-                    }
-                    <div class="total" id="total">
-                        @if (Model.TotalMoneyUseDis == 0 || Model.TotalMoneyUseDis == null)
+           <!-- Cột bên phải: Thông tin giỏ hàng -->
+<div class="col-md-5">
+    <div class="payment-summary" style="margin-top: 134px">
+        <h5>Giỏ hàng</h5>
+        <!-- Hiển thị danh sách sản phẩm -->
+        @if (cart != null && cart.Items != null)
+        {
+            @foreach (var item in cart.Items)
+            {
+                <div class="product-item">
+                    <span>@item.product.Title</span>
+                    <span>(@item.Quantity x @item.product.Price $)</span>
+                   <span style="float: right;">@(@item.product.Price * @item.Quantity) $</span>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Giỏ hàng rỗng.</p>
+        }
+
+        <div class="total" id="total">
+                        @if (ViewBag.TotalMoneyUseDis != null && ViewBag.TotalMoneyUseDis != 0)
+            {
+                <span>Tổng cộng: <span style="text-decoration: line-through; color: gray;">@cart.getTotalMoney():$</span></span>
+                            <span style="margin-left: 10px; color: red; font-weight: bold;">@ViewBag.TotalMoneyUseDis:$</span>
+            }
+            else
+            {
+                <span>Tổng cộng: <span>@cart.getTotalMoney():$</span></span>
+            }
+        </div>
+
+        <!-- Discount -->
+        <div class="mb-3 mt-4">
+            <label for="discountCode" class="form-label">Chọn mã giảm giá</label>
+            <form asp-controller="home" asp-action="ApplyDiscount" method="get" onsubmit="return selectdiscount(event, this);">
+                <div class="dropdown">
+                    <select class="form-select" id="discountCode" name="discountCode" required>
+                        <!-- Default option when no discount code is selected -->
+                                    @if (ViewBag.DisId != null && ViewBag.DisId ==0)
                         {
-                            <span>Tổng cộng: <span>@cart.getTotalMoney():C</span></span>
+                            <option value="0" selected>Không sử dụng mã giảm giá</option>
                         }
                         else
                         {
-                            <span>Tổng cộng: <span style="text-decoration: line-through; color: gray;">@cart.getTotalMoney():C</span></span>
-                            <span style="margin-left: 10px; color: red; font-weight: bold;">@Model.TotalMoneyUseDis:C</span>
+                            <option value="0">Không sử dụng mã giảm giá</option>
                         }
-                    </div>
-            <!-- Discount -->
-             <div class="mb-3">
-              <label for="discountCode" class="form-label">Chọn mã giảm giá</label>
 
-                        <form action="applydiscount" method="get" onsubmit="return selectdiscount(event, this);">
-                            <div class="dropdown">
-                                <select class="form-select" id="discountCode" name="discountCode" required>
-                                    <!-- Default option when no discount code is selected -->
-                                    @if (ViewBag.SelectedDiscountCode == 0)
-                                    {
-                                        <option value="0" selected>Không sử dụng mã giảm giá</option>
-                                    }
-                                    else
-                                    {
-                                        <option value="0">Không sử dụng mã giảm giá</option>
-                                    }
-
-                                    <!-- Check if DiscountList is null -->
-                                    @if (ViewBag.discountList != null)
-                                    {
-                                        <!-- Loop through discount list -->
-                                        @foreach (var dis in ViewBag.discountList)
-                                        {
-                                            @if (ViewBag.SelectedDiscountCode == dis.Id)
-                                            {
-                                                <option value="@dis.Id" selected>@dis.Name - Giảm @dis.Discount_Value %</option>
-                                            }
-                                            else
-                                            {
-                                                <option value="@dis.Id">@dis.Name - Giảm @dis.Discount_Value %</option>
-                                            }
-                                        }
-                                    }
-                                    else
-                                    {
-                                        <!-- If DiscountList is null, show a message or no options -->
-                                        <option value="0">Không có mã giảm giá nào</option>
-                                    }
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary mt-3">Áp dụng mã giảm giá</button>
-                        </form>
-                 </div>
-<!-- End Discount -->
+                        <!-- Check if DiscountList is null or empty -->
+                        @if (ViewBag.discountList != null )
+                        {
+                            <!-- Loop through discount list -->
+                            @foreach (var dis in ViewBag.discountList)
+                            {
+                                            @if (ViewBag.DisId != null && ViewBag.DisId == dis.Id)
+                                {
+                                    <option value="@dis.Id" selected>@dis.Name - Giảm @dis.Discount_Value %</option>
+                                }
+                                else
+                                {
+                                    <option value="@dis.Id">@dis.Name - Giảm @dis.Discount_Value %</option>
+                                }
+                            }
+                        }
+                        else
+                        {
+                            <!-- If DiscountList is null or empty, show a message or no options -->
+                            <option value="0">Không có mã giảm giá nào</option>
+                        }
+                    </select>
                 </div>
+                <button type="submit" class="btn btn-primary mt-3">Áp dụng mã giảm giá</button>
+            </form>
+        </div>
+        <!-- End Discount -->
+    </div>
+</div>
             </div>
         </div>
     </div>
