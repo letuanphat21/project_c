@@ -1,0 +1,33 @@
+﻿.balloon {
+    width: 40px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    animation: float 5s linear infinite;
+    box-shadow: inset -2px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .balloon::before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 4px;
+        height: 20px;
+        background-color: #555;
+        transform: translateX(-50%);
+    }
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) translateX(calc(-50px + 100px * var(--random-x)));
+        opacity: 0.5;
+    }
+}

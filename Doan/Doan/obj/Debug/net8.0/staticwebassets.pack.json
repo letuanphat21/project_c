@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
+      "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\birthday.css",
+      "PackagePath": "staticwebassets\\css\\birthday.css"
+    },
+    {
       "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\snow.css",
+      "PackagePath": "staticwebassets\\css\\snow.css"
     },
     {
       "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\favicon.ico",
@@ -53,8 +61,20 @@
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
+      "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\paginate.js",
+      "PackagePath": "staticwebassets\\js\\paginate.js"
+    },
+    {
+      "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
+      "PackagePath": "staticwebassets\\js\\paginate.min.js"
+    },
+    {
       "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\snow.js",
+      "PackagePath": "staticwebassets\\js\\snow.js"
     },
     {
       "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\LICENSE",
