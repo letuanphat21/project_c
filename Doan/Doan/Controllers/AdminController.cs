@@ -2,7 +2,9 @@
 using Doan.Models;
 using Doan.Utils;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System.Security.Cryptography;
 
 namespace Doan.Controllers
 {
@@ -200,6 +202,137 @@ namespace Doan.Controllers
             ViewBag.Num = num;
             return View();
         }
+
+        public IActionResult ManagerOrder(string xpage)
+        {
+
+            var userSession = HttpContext.Session.GetString("user");
+            if (string.IsNullOrEmpty(userSession))
+            {
+                // Chuyển hướng đến trang Login nếu Session rỗng hoặc null
+                return RedirectToAction("Login", "Home");
+            }
+            var user = JsonConvert.DeserializeObject<User>(userSession);
+            List<Order> listu = _context.orders.ToList();
+
+            int page, numperpage = 5;
+            int size = listu.Count;
+            int num = (size % numperpage == 0 ? (size / numperpage) : ((size / numperpage) + 1));// số trang
+
+            if (xpage == null)
+            {
+                page = 1;
+            }
+            else
+            {
+                page = int.Parse(xpage);
+            }
+
+
+            int start, end;
+            start = (page - 1) * numperpage;
+            end = Math.Min(page * numperpage, size);
+
+            List<Order> list = MyUtils.getListBypageOrder(listu, start, end);
+
+            ViewBag.Order = list;
+            ViewBag.Page = page;
+            ViewBag.Num = num;
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult CancelOrder([FromBody] int orderId) // Nhận trực tiếp ID
+        {
+
+            if (orderId <= 0)
+            {
+                return BadRequest(new { message = "Mã hóa đơn không hợp lệ" });
+            }
+
+            // Tìm đơn hàng theo ID
+            var order = _context.orders.FirstOrDefault(o => o.Id == orderId);
+            if (order == null)
+            {
+                return NotFound(new { message = "Không tìm thấy đơn hàng" });
+            }
+
+            // Xóa đơn hàng
+            _context.orders.Remove(order);
+            _context.SaveChanges();
+
+            return Ok(new { message = "Đơn hàng đã được xóa thành công" });
+        }
+
+
+        [HttpPost]
+        public IActionResult ConfirmOrder([FromBody] int orderId) // Nhận trực tiếp ID
+        {
+            if (orderId <= 0)
+            {
+                return BadRequest(new { message = "Mã hóa đơn không hợp lệ" });
+            }
+
+            // Tìm đơn hàng theo ID
+            var order = _context.orders.FirstOrDefault(o => o.Id == orderId);
+            if (order == null)
+            {
+                return NotFound(new { message = "Không tìm thấy đơn hàng" });
+            }
+
+            // Xử lý xác nhận đơn hàng
+            order.Status = "Confirmed";
+            _context.SaveChanges();
+
+            return Ok(new { message = "Đơn hàng đã được xác nhận thành công" });
+        }
+
+
+
+        public IActionResult OrderDetail(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return BadRequest("Order ID is required.");
+            }
+            int id1 = int.Parse(id);
+            var order = _context.orders
+            .Where(o => o.Id == id1)
+            .FirstOrDefault();
+
+
+
+
+            var orderDetails = _context.orderDetails
+             .Where(od => od.OrderId == id1)
+             .Select(od => new
+             {
+                 od.Id,
+                 od.Quantity,
+                 od.Price,
+                 ProductTitle = od.Product.Title
+             })
+               .ToList();
+
+
+            ViewBag.order = order;
+            ViewBag.orderDetails = orderDetails;
+            return View();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public IActionResult AddProduct()
         {
