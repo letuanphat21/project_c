@@ -1,4 +1,5 @@
 ﻿using Doan.Data;
+using Doan.Utils;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +24,7 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true; // Cookie bảo mật
     options.Cookie.IsEssential = true; // Cookie cần thiết để hoạt động
 });
+
 
 // Thêm các dịch vụ cần thiết
 builder.Services.AddControllersWithViews();
