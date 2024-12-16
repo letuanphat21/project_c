@@ -286,6 +286,7 @@ namespace Doan.Controllers
                     existingUser.PhoneNumber = user.PhoneNumber;
                     existingUser.Address = user.Address;
                     existingUser.BirthDay = user.BirthDay;
+                    existingUser.updatedAt= DateTime.Now;
                     existingUser.IsGender = user.IsGender;
 
                     // Lưu thay đổi vào cơ sở dữ liệu
@@ -346,6 +347,7 @@ namespace Doan.Controllers
             {
                 // Cập nhật mật khẩu mới cho người dùng
                 existingUser.Password = new_pass;
+                existingUser.updatedAt=DateTime.Now;
 
                 // Lưu thay đổi vào cơ sở dữ liệu
                 _context.SaveChanges();
@@ -994,6 +996,64 @@ namespace Doan.Controllers
             }
 
             return RedirectToAction("ViewOrder");
+        }
+
+
+
+
+
+        public IActionResult Forgotpass()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Forgotpass(string username, string newPass, string renewPass)
+        {
+            ViewBag.Success = "";
+            ViewBag.Fail = "";
+
+            // 1. Kiểm tra đầu vào
+            if (string.IsNullOrEmpty(username))
+            {
+                ViewBag.Fail = "Tên đăng nhập không được để trống.";
+                return View();
+            }
+
+            if (string.IsNullOrEmpty(newPass) || string.IsNullOrEmpty(renewPass))
+            {
+                ViewBag.Fail = "Mật khẩu không được để trống.";
+                return View();
+            }
+
+            if (!newPass.Equals(renewPass))
+            {
+                ViewBag.Fail = "Mật khẩu không trùng khớp với mật khẩu nhập lại.";
+                return View();
+            }
+
+            // 2. Tìm người dùng trong cơ sở dữ liệu
+            User user = _context.users.FirstOrDefault(u => u.User1 == username);
+            if (user == null)
+            {
+                ViewBag.Fail = "Tên đăng nhập không tồn tại.";
+                return View();
+            }
+
+            // 3. Tạo RandomKey mới và mã hóa mật khẩu
+            string randomKey = MyUtils.keyGenerator(); // Hàm sinh key ngẫu nhiên
+            string hashedPassword = MyUtils.ToMd5Hash(newPass, randomKey); // Hàm mã hóa mật khẩu
+
+            // 4. Cập nhật thông tin người dùng
+            user.updatedAt = DateTime.Now;
+            user.Password = hashedPassword;
+            user.RandomKey = randomKey;
+
+            // 5. Lưu thay đổi vào cơ sở dữ liệu
+            _context.SaveChanges();
+
+            // 6. Phản hồi kết quả
+            ViewBag.Success = "Mật khẩu đã được đặt lại thành công!";
+            return View();
         }
 
 

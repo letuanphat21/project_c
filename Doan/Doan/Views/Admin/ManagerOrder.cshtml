@@ -157,36 +157,37 @@
         });
 
     </script>
+
     <script>
         $(document).ready(function () {
-    let confirmOrderId = null;
+            let confirmOrderId = null;
 
-    // Khi nhấn nút "Xác nhận đơn hàng", lấy ID và hiển thị trên modal
-    $('.btn-confirm').on('click', function () {
-        confirmOrderId = $(this).data('id'); // Lấy mã hóa đơn từ nút
-        $('#confirmOrderId').text(confirmOrderId); // Hiển thị ID trên modal
-    });
+            // Khi nhấn nút "Xác nhận đơn hàng", lấy ID và hiển thị trên modal
+            $('.btn-confirm').on('click', function () {
+                confirmOrderId = $(this).data('id'); // Lấy mã hóa đơn từ nút
+                $('#confirmOrderId').text(confirmOrderId); // Hiển thị ID trên modal
+            });
 
-    // Khi nhấn nút "Xác nhận" trong modal
-    $('#confirmOrder').on('click', function () {
-        if (confirmOrderId) {
-            $.ajax({
-                url: '/Admin/ConfirmOrder', // Đường dẫn Controller
-                method: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify(confirmOrderId), // Gửi mã hóa đơn dưới dạng JSON
-                success: function (response) {
-                    alert(response.message); // Hiển thị thông báo từ server
-                    location.reload(); // Reload lại trang
-                },
-                error: function (xhr) {
-                    var errorResponse = JSON.parse(xhr.responseText);
-                    alert(errorResponse.message || 'Có lỗi xảy ra. Vui lòng thử lại!');
+            // Khi nhấn nút "Xác nhận" trong modal
+            $('#confirmOrder').on('click', function () {
+                if (confirmOrderId) {
+                    $.ajax({
+                        url: '/Admin/ConfirmOrder', // Đường dẫn Controller
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(confirmOrderId), // Gửi mã hóa đơn dưới dạng JSON
+                        success: function (response) {
+                            alert(response.message); // Hiển thị thông báo từ server
+                            location.reload(); // Reload lại trang
+                        },
+                        error: function (xhr) {
+                            var errorResponse = JSON.parse(xhr.responseText);
+                            alert(errorResponse.message || 'Có lỗi xảy ra. Vui lòng thử lại!');
+                        }
+                    });
                 }
             });
-        }
-    });
-});
+        });
     </script>
 </body>
 </html>

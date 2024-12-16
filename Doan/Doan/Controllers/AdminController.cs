@@ -13,10 +13,12 @@ namespace Doan.Controllers
 
         private readonly ILogger<AdminController> _logger;
         private readonly ConnectDB _context;  // Khai báo _context
+        
         public AdminController(ILogger<AdminController> logger, ConnectDB context)
         {
             _logger = logger;
             _context = context;  // Khởi tạo _context từ DI container
+            
         }
 
         public IActionResult Index()
@@ -243,9 +245,8 @@ namespace Doan.Controllers
 
 
         [HttpPost]
-        public IActionResult CancelOrder([FromBody] int orderId) // Nhận trực tiếp ID
+        public async Task<IActionResult> CancelOrder([FromBody] int orderId) // Nhận trực tiếp ID
         {
-
             if (orderId <= 0)
             {
                 return BadRequest(new { message = "Mã hóa đơn không hợp lệ" });
@@ -260,14 +261,25 @@ namespace Doan.Controllers
 
             // Xóa đơn hàng
             _context.orders.Remove(order);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync(); // Thao tác lưu thay đổi không đồng bộ
+
+            // Gửi email không đồng bộ
+            _ = Task.Run(async () =>
+            {
+                await Email.SendEmailAsync(order.Email, "Thông báo về đơn hàng", getNoiDungDeleteOrder());
+            });
 
             return Ok(new { message = "Đơn hàng đã được xóa thành công" });
         }
 
+        public string getNoiDungDeleteOrder()
+        {
+            return "<h1>Xin lỗi đơn hàng của bạn đã bị hủy</h1>";
+        }
+
 
         [HttpPost]
-        public IActionResult ConfirmOrder([FromBody] int orderId) // Nhận trực tiếp ID
+        public async Task<IActionResult> ConfirmOrder([FromBody] int orderId)
         {
             if (orderId <= 0)
             {
@@ -285,8 +297,21 @@ namespace Doan.Controllers
             order.Status = "Confirmed";
             _context.SaveChanges();
 
+            // Gửi email không đồng bộ
+            _ = Task.Run(async () =>
+            {
+                await Email.SendEmailAsync(order.Email, "Thông báo về đơn hàng", getNoiDung());
+            });
+
             return Ok(new { message = "Đơn hàng đã được xác nhận thành công" });
         }
+
+        public string getNoiDung()
+        {
+            string noidung = "<h1>Đơn hàng của bạn đã được xác nhận</h1>";
+            return noidung;
+        }
+
 
 
 
