@@ -941,7 +941,7 @@ namespace Doan.Controllers
          od.Id,
           od.Quantity,
            od.Price,
-              ProductTitle = od.Product.Title // Sử dụng navigation property
+              ProductTitle = od.Product.Title 
              })
                .ToList();
 
