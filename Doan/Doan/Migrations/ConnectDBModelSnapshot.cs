@@ -114,7 +114,6 @@ namespace Doan.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Note")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("OrderDate")

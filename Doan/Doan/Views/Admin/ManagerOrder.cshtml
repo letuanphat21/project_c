@@ -1,0 +1,193 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ManagerOrder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link href="~/css/admin.css" rel="stylesheet" />
+</head>
+<body>
+    @Html.Partial("Menuleft")
+    <div class="content">
+        <h1 class="text-center">Quản lý hóa đơn</h1>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Họ và tên</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Ngày đặt hàng</th>
+                    <th>Trạng thái</th>
+                    <th>Tổng tiền</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (ViewBag.Order != null)
+                {
+                    foreach (var order in ViewBag.Order)
+                    {
+                        <tr>
+                            <td>@order.Id</td>
+                            <td>@order.FullName</td>
+                            <td>@order.Email</td>
+                            <td>@order.PhoneNumber</td>
+                            <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
+                            <td>@order.Status</td>
+                            <td>@order.TotalMoney</td>
+                            <td>
+                                <button class="btn-confirm btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#confirmModal" data-id="@order.Id">Xác nhận đơn hàng</button>
+                                 <a asp-controller="Admin" asp-action="OrderDetail" asp-route-id="@order.Id" class="btn btn-info btn-sm">Xem chi tiết</a>
+
+                                <button class="btn-delete btn btn-danger btn-sm" data-id="@order.Id" data-bs-toggle="modal" data-bs-target="#deleteModal">Hủy đơn hàng</button>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8" class="text-center">Không có hóa đơn.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- Phân trang -->
+        <div class="pagination">
+            @if (ViewBag.Num != null && ViewBag.Num > 1)
+            {
+                <ul>
+                    @for (int i = 1; i <= ViewBag.Num; i++)
+                    {
+                        <li class="@(ViewBag.Page == i ? "active" : "")">
+                            <a asp-controller="Admin" asp-action="ManagerOrder" asp-route-xpage="@i">@i</a>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+
+    </div>
+    <!-- Modal Hủy đơn hàng -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Xác nhận hủy đơn hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có chắc chắn muốn hủy đơn hàng này không?</p>
+                    <p>ID Đơn hàng: <span id="deleteOrderId"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-danger" id="confirmDelete">Hủy đơn hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal xác nhận -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Xác nhận đơn hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xác nhận đơn hàng có ID: <span id="confirmOrderId"></span>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" id="confirmOrder" class="btn btn-primary">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let deleteOrderId = null;
+
+            // Khi nhấn nút "Hủy đơn hàng", lấy ID và hiển thị trên modal
+            $('.btn-delete').on('click', function () {
+                deleteOrderId = $(this).data('id'); // Lấy mã hóa đơn từ nút
+                $('#deleteOrderId').text(deleteOrderId); // Hiển thị ID trên modal
+            });
+
+            // Khi nhấn nút "Xác nhận hủy" trong modal
+            $('#confirmDelete').on('click', function () {
+                if (deleteOrderId) {
+                    // Gửi mã hóa đơn qua Controller
+                    $.ajax({
+                        url: '/Admin/CancelOrder', // Đường dẫn Controller
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(deleteOrderId), // Gửi mã hóa đơn dưới dạng JSON
+                        success: function (response) {
+                            // Xử lý thành công
+               alert("hủy đơn hàng thành công");
+                            location.reload(); // Reload lại trang
+                        },
+                        error: function () {
+                            // Xử lý lỗi
+                            alert('Có lỗi xảy ra. Vui lòng thử lại!');
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let confirmOrderId = null;
+
+            // Khi nhấn nút "Xác nhận đơn hàng", lấy ID và hiển thị trên modal
+            $('.btn-confirm').on('click', function () {
+                confirmOrderId = $(this).data('id'); // Lấy mã hóa đơn từ nút
+                $('#confirmOrderId').text(confirmOrderId); // Hiển thị ID trên modal
+            });
+
+            // Khi nhấn nút "Xác nhận" trong modal
+            $('#confirmOrder').on('click', function () {
+                if (confirmOrderId) {
+                    $.ajax({
+                        url: '/Admin/ConfirmOrder', // Đường dẫn Controller
+                        method: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(confirmOrderId), // Gửi mã hóa đơn dưới dạng JSON
+                        success: function (response) {
+                            alert(response.message); // Hiển thị thông báo từ server
+                            location.reload(); // Reload lại trang
+                        },
+                        error: function (xhr) {
+                            var errorResponse = JSON.parse(xhr.responseText);
+                            alert(errorResponse.message || 'Có lỗi xảy ra. Vui lòng thử lại!');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

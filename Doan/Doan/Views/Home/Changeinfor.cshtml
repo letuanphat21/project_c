@@ -5,6 +5,8 @@
     // Nếu Session có dữ liệu, chuyển JSON về đối tượng
     User user = userSession != null ? Newtonsoft.Json.JsonConvert.DeserializeObject<User>(userSession) : null;
 
+    // Lấy ngày sinh của người dùng
+    var birthdayToday = user.BirthDay.ToString("MM-dd") == DateTime.Now.ToString("MM-dd");
 }
 @{
     Layout = null;
@@ -29,11 +31,23 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
           rel="stylesheet">
-    <link href="~/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/about.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/birthday.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-    @Html.Partial("Header")
+    <div id="menuContainer">
+        @Html.Partial("Header")
+    </div>
+    <!-- Widget chúc mừng sinh nhật -->
+    <div id="birthdayWidget" class="alert alert-success text-center" style="display: @(birthdayToday ? "block" : "none"); position: fixed; top: 10%; left: 50%; transform: translate(-50%, -10%); z-index: 1000; width: 50%;">
+        <h2>🎉 Chúc mừng sinh nhật, @user?.Fullname! 🎂</h2>
+        <p>Chúc bạn có một ngày thật ý nghĩa và hạnh phúc!</p>
+    </div>
+    <!-- Hiệu ứng bóng bay -->
+    <div id="balloonContainer" style="display: @(birthdayToday ? "block" : "none"); position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; pointer-events: none;">
+    </div>
+
     <div class="container mt-5 mb-5">
         <h2 class="text-center">Update Information</h2>
         <div class="d-flex justify-content-between mb-3">
@@ -100,5 +114,48 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const balloonContainer = document.getElementById("balloonContainer");
+        const birthdayWidget = document.getElementById("birthdayWidget");
+
+        // Hàm tạo bóng bay
+        function createBalloon() {
+            const balloon = document.createElement("div");
+            balloon.classList.add("balloon");
+
+            // Ngẫu nhiên màu sắc
+            const colors = ["red", "blue", "green", "yellow", "pink", "orange"];
+            balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+            // Ngẫu nhiên vị trí ngang
+            const randomX = Math.random(); // Giá trị từ 0 đến 1
+            balloon.style.left = `${randomX * 100}vw`;
+            balloon.style.setProperty("--random-x", randomX);
+
+            // Thêm vào container
+            balloonContainer.appendChild(balloon);
+
+            // Xóa bóng bay sau khi hiệu ứng hoàn tất
+            balloon.addEventListener("animationend", () => balloon.remove());
+        }
+
+        // Biến lưu trữ bộ đếm
+        let balloonInterval;
+
+        // Hiệu ứng bóng bay và widget sẽ xuất hiện trong 10 giây
+        if (balloonContainer && birthdayWidget) {
+            // Bắt đầu tạo bóng bay mỗi 300ms
+            balloonInterval = setInterval(createBalloon, 300);
+
+            // Tự động ẩn cả hai sau 10 giây
+            setTimeout(() => {
+                clearInterval(balloonInterval); // Dừng tạo bóng bay
+                balloonContainer.style.display = "none"; // Ẩn container bóng bay
+                birthdayWidget.style.display = "none"; // Ẩn widget chúc mừng sinh nhật
+            }, 10000); // 10 giây = 10000ms
+        }
+    });
+</script>
 </body>
 </html>

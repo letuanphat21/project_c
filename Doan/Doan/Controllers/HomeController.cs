@@ -4,8 +4,10 @@ using Doan.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 
@@ -284,6 +286,7 @@ namespace Doan.Controllers
                     existingUser.PhoneNumber = user.PhoneNumber;
                     existingUser.Address = user.Address;
                     existingUser.BirthDay = user.BirthDay;
+                    existingUser.updatedAt= DateTime.Now;
                     existingUser.IsGender = user.IsGender;
 
                     // Lưu thay đổi vào cơ sở dữ liệu
@@ -344,6 +347,7 @@ namespace Doan.Controllers
             {
                 // Cập nhật mật khẩu mới cho người dùng
                 existingUser.Password = new_pass;
+                existingUser.updatedAt=DateTime.Now;
 
                 // Lưu thay đổi vào cơ sở dữ liệu
                 _context.SaveChanges();
@@ -629,14 +633,430 @@ namespace Doan.Controllers
 
             return View("ProductDetail");
 
+        }
+
+       
+
+
+        public IActionResult FormCheckOut()
+        {
+            var sessionUser = HttpContext.Session.GetString("user");
+            User user = string.IsNullOrEmpty(sessionUser)
+                ? new User() 
+                : JsonConvert.DeserializeObject<User>(sessionUser);
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult FormCheckOut(string fullname, string email, string phonenumber, string address, string note)
+        {
+            var cartSession = HttpContext.Session.GetString("cart");
+            Cart cart = JsonConvert.DeserializeObject<Cart>(cartSession);
+
+
+            if (cart.checkCartNoItems())
+            {
+                return View("Index");
+            }
 
 
 
+            var sessionUser = HttpContext.Session.GetString("user");
+            User user = string.IsNullOrEmpty(sessionUser)
+                ? new User()
+                : JsonConvert.DeserializeObject<User>(sessionUser);
 
+
+            Order order = new Order(user.Id, fullname,email,phonenumber,address,note, DateTime.MinValue, "pending",0,null);
+            HttpContext.Session.SetString("order", JsonConvert.SerializeObject(order));
+
+            return View("PaymentMethod");
+
+        }
+
+        public IActionResult PaymentMethod()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult PaymentMethod(string method)
+        {
+            string method_last = "";
+            if (method.Equals("1"))
+            {
+                method_last = "VNPayQR";
+            }
+            else if (method.Equals("2"))
+            {
+                method_last = "Thẻ nội địa";
+            }
+            else if (method.Equals("3"))
+            {
+                method_last = "Thẻ quốc tế";
+            }
+            else if (method.Equals("4"))
+            {
+                method_last = "Ví VNPay";
+            }
+            else if (method.Equals("5"))
+            {
+                method_last = "Tiền mặt";
+            }
+
+            var sessionCart = HttpContext.Session.GetString("cart");
+            var cartSession = HttpContext.Session.GetString("cart");
+            Cart cart = JsonConvert.DeserializeObject<Cart>(cartSession);
+
+            // Check if the cart is empty
+            if (cart.checkCartNoItems())
+            {
+                return View("Index");
+            }
+
+            var orderSession = HttpContext.Session.GetString("order");
+            Order order = JsonConvert.DeserializeObject<Order>(orderSession);
+
+            // List of discounts to show on the page
+            List<Discount> validDiscounts = _context.discounts
+                                        .Where(d => d.End_Date >= DateTime.Now)  // Lọc các discount còn hạn
+                                        .ToList();
+
+            ViewBag.discountList = validDiscounts;
+
+            // Set the payment method to the order
+            order.PaymentMethod = method_last;
+
+            // Update the session with the updated order
+            HttpContext.Session.SetString("order", JsonConvert.SerializeObject(order));
+
+            
+            return View("Check");
+        }
+
+
+
+        public IActionResult Check()
+        {
+            var orderSession = HttpContext.Session.GetString("order");
+            Order order = JsonConvert.DeserializeObject<Order>(orderSession);
+
+            var cartSession = HttpContext.Session.GetString("cart");
+            Cart cart = JsonConvert.DeserializeObject<Cart>(cartSession);
+            return View();
+        }
+
+
+
+        public IActionResult ApplyDiscount(string discountCode)
+        {
+            // Lấy giỏ hàng từ session
+            var cartSession = HttpContext.Session.GetString("cart");
+            Cart cart = JsonConvert.DeserializeObject<Cart>(cartSession);
+
+            var orderSession = HttpContext.Session.GetString("order");
+            Order order = JsonConvert.DeserializeObject<Order>(orderSession);
+
+
+            // Tính tổng tiền và áp dụng giảm giá
+            double totalMoney = 0;
+            Discount discount = null;
+
+            if (!string.IsNullOrEmpty(discountCode))
+            {
+                int discount1 =int.Parse(discountCode);
+                discount = _context.discounts.FirstOrDefault(d => d.Id == discount1);
+                if (discount != null)
+                {
+                    totalMoney = cart.getTotalMoney() * (1 - (discount.Discount_Value / 100.0));
+                }
+            }
+
+            if (discount == null)
+            {
+                totalMoney = cart.getTotalMoney();
+            }
+
+            // Lấy danh sách mã giảm giá hợp lệ
+            List<Discount> validDiscounts = _context.discounts
+                                       .Where(d => d.End_Date >= DateTime.Now)  // Lọc các discount còn hạn
+                                       .ToList();
+
+            // Truyền dữ liệu sang View
+            ViewBag.discountList = validDiscounts;
+            int didId = int.Parse(discountCode);
+            ViewBag.DisId = didId;
+            ViewBag.TotalMoneyUseDis = totalMoney;
+
+            return View("Check");
+        }
+
+
+        public IActionResult ConfirmCheckOut(string disID)
+        {
+            var cartSession = HttpContext.Session.GetString("cart");
+            Cart cart = JsonConvert.DeserializeObject<Cart>(cartSession);
+
+            var orderSession = HttpContext.Session.GetString("order");
+            Order order = JsonConvert.DeserializeObject<Order>(orderSession);
+
+            using (var transaction = _context.Database.BeginTransaction())
+            {
+                try
+                {
+                    // Tính tổng tiền và áp dụng giảm giá
+                    double totalMoney = 0;
+                    Discount discount = null;
+
+                    if (!string.IsNullOrEmpty(disID))
+                    {
+                        int discountId = int.Parse(disID);
+                        discount = _context.discounts.FirstOrDefault(d => d.Id == discountId);
+                       
+
+                        if (discount != null)
+                        {
+                            totalMoney = cart.getTotalMoney() * (1 - (discount.Discount_Value / 100.0));
+                            _context.discounts.Remove(discount);
+                            _context.SaveChanges();
+                        }
+                    }
+                    if (discount == null)
+                    {
+                        totalMoney = cart.getTotalMoney();
+                    }
+                    order.TotalMoney = totalMoney;
+                    order.OrderDate = DateTime.Now;
+
+                    _context.orders.Add(order);
+                    _context.SaveChanges();  // Thêm order vào database
+
+                    // Thêm thông tin order detail
+                    foreach (var item in cart.Items)
+                    {
+                        var orderDetail = new OrderDetail
+                        {
+                            OrderId = order.Id,
+                            ProductId = item.product.Id,
+                            Price = item.Price,
+                            Quantity = item.Quantity,
+                            SubTotal=item.Price*item.Quantity
+
+                        };
+
+                        _context.orderDetails.Add(orderDetail);
+                    }
+
+                    _context.SaveChanges();  // Thêm các order detail
+
+                    // Commit transaction
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    // Rollback transaction if any error occurs
+                    transaction.Rollback();
+                    // Log error or return an appropriate response
+                }
+            }
+
+            HttpContext.Session.Remove("cart");
+            HttpContext.Session.Remove("order");
+            HttpContext.Session.Remove("size");
+            return RedirectToAction("Thank");
+        }
+
+        public IActionResult Thank()
+        {
+            return View(); 
+        }
+        
+
+
+        public IActionResult ViewOrder(string xpage)
+        {
+            var sessionUser = HttpContext.Session.GetString("user");
+            User user = string.IsNullOrEmpty(sessionUser)
+                ? new User()
+                : JsonConvert.DeserializeObject<User>(sessionUser);
+
+            if (user != null && user.Id > 0)
+            {
+               
+                List<Order> orders = _context.orders.Where(o => o.UserId == user.Id).ToList();
+                int page, numperpage = 5;
+                int size = orders.Count;
+                int num = (size % numperpage == 0 ? (size / numperpage) : ((size / numperpage) + 1));// số trang
+
+
+                if (xpage == null)
+                {
+                    page = 1;
+                }
+                else
+                {
+                    page = int.Parse(xpage);
+                }
+
+                int start, end;
+                start = (page - 1) * numperpage;
+                end = Math.Min(page * numperpage, size);
+
+                List<Order> list1 =MyUtils.getListBypageOrder(orders, start, end);
+
+                ViewBag.Listo = list1;
+                ViewBag.num = num;
+                ViewBag.page = page;
+
+                return View();
+
+
+            }else
+            {
+                return View("Login");
+            }
 
 
 
         }
+
+
+        public IActionResult OrderDetail(string oid)
+        {
+            if (string.IsNullOrEmpty(oid))
+            {
+                return BadRequest("Order ID is required.");
+            }
+            int id = int.Parse(oid);
+            var order = _context.orders
+            .Where(o => o.Id == id)
+            .FirstOrDefault();
+
+
+
+
+            var orderDetails = _context.orderDetails
+             .Where(od => od.OrderId == id)
+             .Select(od => new
+           {
+         od.Id,
+          od.Quantity,
+           od.Price,
+              ProductTitle = od.Product.Title 
+             })
+               .ToList();
+
+
+            ViewBag.order = order;
+            ViewBag.orderDetails = orderDetails;
+            return View();
+        }
+
+
+        public IActionResult DeleteOrder(string oid)
+        {
+            int orderId = int.Parse(oid);
+            ViewBag.Fail = "";
+            ViewBag.Success = "";
+
+            using (var transaction = _context.Database.BeginTransaction())
+            {
+                try
+                {
+                    // Xóa orderDetails trước
+                    var orderDetails = _context.orderDetails
+                        .Where(od => od.OrderId == orderId)
+                        .ToList();
+
+                    _context.orderDetails.RemoveRange(orderDetails);
+
+                    var order = _context.orders
+                        .FirstOrDefault(o => o.Id == orderId);
+
+                    if (order == null)
+                    {
+                        return NotFound("Order not found.");
+                    }
+
+                    _context.orders.Remove(order);
+
+                    // Lưu các thay đổi
+                    _context.SaveChanges();
+
+                    transaction.Commit();
+                    ViewBag.Success = "Xóa đơn hàng thành công";
+                }
+                catch (Exception ex)
+                {
+                    // Hủy transaction nếu có lỗi
+                    transaction.Rollback();
+                    ViewBag.Fail = "Xóa đơn hàng thất bại.";
+                }
+            }
+
+            return RedirectToAction("ViewOrder");
+        }
+
+
+
+
+
+        public IActionResult Forgotpass()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Forgotpass(string username, string newPass, string renewPass)
+        {
+            ViewBag.Success = "";
+            ViewBag.Fail = "";
+
+            // 1. Kiểm tra đầu vào
+            if (string.IsNullOrEmpty(username))
+            {
+                ViewBag.Fail = "Tên đăng nhập không được để trống.";
+                return View();
+            }
+
+            if (string.IsNullOrEmpty(newPass) || string.IsNullOrEmpty(renewPass))
+            {
+                ViewBag.Fail = "Mật khẩu không được để trống.";
+                return View();
+            }
+
+            if (!newPass.Equals(renewPass))
+            {
+                ViewBag.Fail = "Mật khẩu không trùng khớp với mật khẩu nhập lại.";
+                return View();
+            }
+
+            // 2. Tìm người dùng trong cơ sở dữ liệu
+            User user = _context.users.FirstOrDefault(u => u.User1 == username);
+            if (user == null)
+            {
+                ViewBag.Fail = "Tên đăng nhập không tồn tại.";
+                return View();
+            }
+
+            // 3. Tạo RandomKey mới và mã hóa mật khẩu
+            string randomKey = MyUtils.keyGenerator(); // Hàm sinh key ngẫu nhiên
+            string hashedPassword = MyUtils.ToMd5Hash(newPass, randomKey); // Hàm mã hóa mật khẩu
+
+            // 4. Cập nhật thông tin người dùng
+            user.updatedAt = DateTime.Now;
+            user.Password = hashedPassword;
+            user.RandomKey = randomKey;
+
+            // 5. Lưu thay đổi vào cơ sở dữ liệu
+            _context.SaveChanges();
+
+            // 6. Phản hồi kết quả
+            ViewBag.Success = "Mật khẩu đã được đặt lại thành công!";
+            return View();
+        }
+
+
 
 
 

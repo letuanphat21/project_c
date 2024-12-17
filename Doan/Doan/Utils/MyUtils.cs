@@ -1,4 +1,6 @@
 ﻿using Doan.Models;
+using MimeKit;
+using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -88,8 +90,12 @@ namespace Doan.Utils
             return order1;
         }
 
-      
+       
 
-        
+
+
+
+
+
     }
 }
