@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZcxjmcFhGVQJLk8y7MFis5Qn1xnhMOfEpMRxaTPueZg=",
+  "Hash": "jQonxGCk2BpIOARknYkBKqeE5ld8F6xcDD9DjHfpbjQ=",
   "Source": "Doan",
   "BasePath": "_content/Doan",
   "Mode": "Default",
@@ -183,6 +183,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/nhannu-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tys95lyxlz",
+      "Integrity": "5fPdltDXis4GFsNdIhP85EMU39lt1UjJNnlx5OBrBGw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\nhannu-1.jpg"
     },
     {
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
@@ -2124,6 +2145,88 @@
       ]
     },
     {
+      "Route": "image/nhannu-1.jpg",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5fPdltDXis4GFsNdIhP85EMU39lt1UjJNnlx5OBrBGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5fPdltDXis4GFsNdIhP85EMU39lt1UjJNnlx5OBrBGw="
+        }
+      ]
+    },
+    {
+      "Route": "image/nhannu-1.tys95lyxlz.jpg",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "121250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5fPdltDXis4GFsNdIhP85EMU39lt1UjJNnlx5OBrBGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tys95lyxlz"
+        },
+        {
+          "Name": "label",
+          "Value": "image/nhannu-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5fPdltDXis4GFsNdIhP85EMU39lt1UjJNnlx5OBrBGw="
+        }
+      ]
+    },
+    {
       "Route": "image/nhanvang.png",
       "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
       "Selectors": [],
@@ -2146,7 +2249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Dec 2024 08:10:27 GMT"
+          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2183,7 +2286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Dec 2024 08:10:27 GMT"
+          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -4,6 +4,7 @@ wwwroot\css\login.css
 wwwroot\css\manageruser.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\image\nhannu-1.jpg
 wwwroot\image\nhanvang.png
 wwwroot\image\phat-ngang.png
 wwwroot\js\login.js

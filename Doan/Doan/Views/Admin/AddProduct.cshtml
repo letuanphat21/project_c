@@ -70,13 +70,14 @@
                 <textarea id="description" name="Description" class="form-control" rows="4" required></textarea>
             </div>
             <div class="col-12">
-                <label for="thumbnail" class="form-label">Hình ảnh sản phẩm:</label>
-                <input type="file" id="thumbnail" name="Thumbnail" accept="image/*" class="form-control" onchange="previewImage(event)" required />
+                <label for="thumbnail" class="form-label">Hình ảnh sản phẩm (2 ảnh):</label>
+                <input type="file" id="thumbnail" name="Thumbnails" accept="image/*" class="form-control" onchange="previewImages(event)" multiple required />
             </div>
             <div class="col-12">
                 <h4>Xem trước hình ảnh:</h4>
-                <img id="imagePreview" src="" alt="Preview Image" style="max-width: 200px; display: none;" />
+                <div id="imagePreviewContainer"></div>
             </div>
+
             <div class="col-12 text-center">
                 <button type="submit"  class="btn btn-primary">Thêm sản phẩm</button>
                 <a href="/Admin/ManagerProduct" class="btn btn-danger ms-2">Hủy</a>
@@ -85,14 +86,22 @@
     </div>
 
     <script>
-        function previewImage(event) {
-            var reader = new FileReader();
-            reader.onload = function() {
-                var output = document.getElementById('imagePreview');
-                output.src = reader.result;  // Gán ảnh đã chọn vào thuộc tính `src` của img
-                output.style.display = 'block';  // Hiển thị ảnh khi đã được tải lên
-            };
-            reader.readAsDataURL(event.target.files[0]); 
+
+        function previewImages(event) {
+            var files = event.target.files;
+            var previewContainer = document.getElementById('imagePreviewContainer');
+ 
+            for (let i = 0; i < Math.min(files.length, 2); i++) { 
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var imgElement = document.createElement('img');
+                    imgElement.src = e.target.result;
+                    imgElement.style.maxWidth = '100px';
+                    imgElement.style.marginRight = '10px';
+                    previewContainer.appendChild(imgElement);
+                };
+                reader.readAsDataURL(files[i]);
+            }
         }
     </script>
     <script> 
