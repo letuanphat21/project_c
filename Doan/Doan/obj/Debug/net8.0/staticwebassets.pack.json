@@ -41,7 +41,15 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+<<<<<<< HEAD
+      "Id": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
+      "PackagePath": "staticwebassets\\image\\nhannu-1.jpg"
+    },
+    {
+      "Id": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
+=======
       "Id": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
+>>>>>>> d8fe1c78b91ee8e8c6c6021563c221c55eac4141
       "PackagePath": "staticwebassets\\image\\nhanvang.png"
     },
     {

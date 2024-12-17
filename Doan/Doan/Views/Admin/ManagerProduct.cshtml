@@ -26,6 +26,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Image</th>
                     <th>ProductName</th>
                     <th>Brand</th>
                     <th>Price</th>
@@ -42,6 +43,9 @@
                     {
                         <tr>
                             <td>@product.Id</td>
+                            <td>
+                                <img src="@product.Thumbnail" alt="Product Image" style="width: 100px; height: auto;" />
+                            </td>
                             <td>@product.Title</td>
                             <td>@product.Brand</td>
                             <td>@product.Price</td>

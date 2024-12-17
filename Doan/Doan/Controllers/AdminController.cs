@@ -364,10 +364,10 @@ namespace Doan.Controllers
             ViewBag.Categories = _context.categorys.ToList();
             return View();
         }
-      
+
         // them sản phẩm
         [HttpPost]
-        public IActionResult AddProduct(int id, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, IFormFile thumbnail, DateTime createAt, DateTime updateAt, int cid, int numOfPur)
+        public IActionResult AddProduct(int id, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, IList<IFormFile> thumbnails, DateTime createAt, DateTime updateAt, int cid, int numOfPur)
         {
             try
             {
@@ -379,25 +379,26 @@ namespace Doan.Controllers
                 }
 
                 // Xử lý tệp hình ảnh
-                string thumbnailPath = null;
-                if (thumbnail != null)
+                List<string> thumbnailPaths = new List<string>();
+                if (thumbnails != null && thumbnails.Count > 0)
                 {
-                    // Thư mục lưu trữ hình ảnh
                     string uploadsFolder = Path.Combine("wwwroot/image");
-
-                    // Đảm bảo thư mục tồn tại
                     if (!Directory.Exists(uploadsFolder))
                     {
                         Directory.CreateDirectory(uploadsFolder);
                     }
-                    string filePath = Path.Combine(uploadsFolder, thumbnail.FileName);
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        thumbnail.CopyTo(fileStream);
-                    }
 
-                    // Lưu đường dẫn hình ảnh
-                    thumbnailPath = $"/image/{thumbnail.FileName}";
+                    // Lưu tối đa 2 tệp hình ảnh
+                    foreach (var thumbnail in thumbnails.Take(2))  // Chỉ lấy tối đa 2 tệp
+                    {
+                        string filePath = Path.Combine(uploadsFolder, thumbnail.FileName);
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            thumbnail.CopyTo(fileStream);
+                        }
+
+                        thumbnailPaths.Add($"/image/{thumbnail.FileName}");
+                    }
                 }
 
                 // Tạo đối tượng sản phẩm mới
@@ -411,13 +412,23 @@ namespace Doan.Controllers
                     Warranty = warranty,
                     InventoryNumber = inventoryNumber,
                     Description = description,
-                    Thumbnail = thumbnailPath,
+                    Thumbnail = thumbnailPaths.ElementAtOrDefault(0),
                     CreateAt = createAt,
                     UpdateAt = updateAt,
                     Cid = cid,
                     NumOfPur = numOfPur,
                 };
                 _context.products.Add(newProduct);
+                _context.SaveChanges();
+
+                var newImage = new Image
+                {
+                    Pid = newProduct.Id, // Gán ID sản phẩm
+                    Image1 = thumbnailPaths.ElementAtOrDefault(0), // Lưu ảnh đầu tiên vào Image1
+                    Image2 = thumbnailPaths.ElementAtOrDefault(1)  // Lưu ảnh thứ hai vào Image2 nếu có
+                };
+
+                _context.images.Add(newImage);
                 _context.SaveChanges();
                 return Redirect("/Admin/ManagerProduct");
             }
@@ -560,12 +571,7 @@ namespace Doan.Controllers
         [HttpGet]
         public IActionResult EditCategory(int id)
         {
-            var userSession = HttpContext.Session.GetString("user");
-            if (string.IsNullOrEmpty(userSession))
-            {
-                return RedirectToAction("Login", "Home");
-            }
-
+        
             var category = _context.categorys.FirstOrDefault(c => c.Id == id);
             if (category == null)
             {
