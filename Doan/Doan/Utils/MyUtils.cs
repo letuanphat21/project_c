@@ -1,5 +1,6 @@
 ﻿using Doan.Models;
 using MimeKit;
+using System;
 using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
@@ -89,8 +90,31 @@ namespace Doan.Utils
             }
             return order1;
         }
+        public static string GenerateOTP(int length)
+        {
+            if (length <= 0)
+            {
+                throw new ArgumentException("Độ dài OTP phải lớn hơn 0.");
+            }
 
-       
+            const string digits = "0123456789";
+            char[] otp = new char[length];
+
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                byte[] randomBytes = new byte[length];
+                rng.GetBytes(randomBytes);
+
+                for (int i = 0; i < length; i++)
+                {
+                    otp[i] = digits[randomBytes[i] % digits.Length];
+                }
+            }
+
+            return new string(otp);
+        }
+
+
 
 
 

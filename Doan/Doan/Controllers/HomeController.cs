@@ -2,6 +2,7 @@
 using Doan.Models;
 using Doan.Utils;
 using Microsoft.AspNetCore.Mvc;
+using NETCore.MailKit.Core;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -61,13 +62,14 @@ namespace Doan.Controllers
             return View();
         }
 
-        public IActionResult Login()
+        public IActionResult Login(string? returnUrl)
         {
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Login(string username, string password)
+        public IActionResult Login(string username, string password, string? returnUrl)
         {
 
             ViewBag.Fail = "";
@@ -92,11 +94,17 @@ namespace Doan.Controllers
 
             if (user.Password != pass)
             {
-                ViewBag.Fail = "Sai mật khẩu hoặc tên đăng nhập";
+                ViewBag.Fail = "Sai mật khẩu hoặc tên đăng nhập hoặc chưa xác nhận email";
                 return View();
             }
             // Lưu thông tin người dùng vào session dưới dạng JSON
             HttpContext.Session.SetString("user", JsonConvert.SerializeObject(user));
+
+            // Nếu có returnUrl thì điều hướng lại trang đó
+            if (!string.IsNullOrEmpty(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
 
             if (user.IsAdmin)
             {
@@ -113,7 +121,7 @@ namespace Doan.Controllers
 
 
 
-            
+
 
 
         }
@@ -202,6 +210,18 @@ namespace Doan.Controllers
                 ViewBag.Fail = "Tên người dùng đã tồn tại.";
                 return View();
             }
+
+            // Check for email uniqueness
+            if (string.IsNullOrEmpty(ViewBag.Fail))
+            {
+                bool isEmailExists = _context.users.Any(u => u.Email == email);
+                if (isEmailExists)
+                {
+                    ViewBag.Fail = "Email đã được sử dụng.";
+                    return View();
+                }
+            }
+
             // Handle validation errors
             if (ViewBag.Fail.Length > 0)
             {
@@ -219,16 +239,126 @@ namespace Doan.Controllers
                 string randomKey = keyGenerate;
                 string pass = MyUtils.ToMd5Hash(password, keyGenerate);
                 bool gioiTinh = gender == "male";
-                User us = new User(username, fullName, pass,gioiTinh,birthDay1,email,phoneNumber,address,DateTime.Now,DateTime.Now,false,randomKey);
-                ViewBag.Success = "Đăng ký thành công.";
+                User us = new User(username, fullName, pass,gioiTinh,birthDay1,email,phoneNumber,address,DateTime.Now,DateTime.Now,false,randomKey,false);
+               
                 _context.users.Add(us);
                 _context.SaveChanges();
+                // Generate OTP
+                string otp = MyUtils.GenerateOTP(6);
+
+                // Save OTP to Session
+                HttpContext.Session.SetString("OTP", otp);
+                HttpContext.Session.SetString("Email", email);
+                HttpContext.Session.SetString("OTPExpiryTime", DateTime.Now.AddMinutes(5).ToString());
+
+                // Send OTP to user's email
+                Email.SendEmailAsync(email,"Mã xác nhận tài khoản của bạn","<h1>Mã xác nhận của bạn là :"+otp+"<h1>");
+
+                // Redirect to ConfirmOTP page
+                return RedirectToAction("ConfirmOTP", "Home");
+
             }
 
             return View();
-
-
         }
+
+        public IActionResult ConfirmOTP()
+        {
+            return View();
+           
+        }
+
+
+        [HttpPost]
+        public IActionResult ConfirmOTP(string otp)
+        {
+            // Lấy thông tin email từ Session
+            string email = HttpContext.Session.GetString("Email");
+
+            // Kiểm tra nếu email không tồn tại trong Session
+            if (string.IsNullOrEmpty(email))
+            {
+                TempData["Fail"] = "Mã OTP đã hết hạn hoặc không hợp lệ.";
+                return RedirectToAction("ConfirmOTP");
+            }
+
+            // Lấy mã OTP lưu trong Session
+            string storedOtp = HttpContext.Session.GetString("OTP");
+            string expiryTimeStr = HttpContext.Session.GetString("OTPExpiryTime");
+            DateTime otpExpiryTime = DateTime.Parse(expiryTimeStr);
+
+            // Kiểm tra thời gian hết hạn của OTP
+            if (DateTime.Now > otpExpiryTime)
+            {
+                TempData["Fail"] = "Mã OTP đã hết hạn. Vui lòng gửi lại mã.";
+                return RedirectToAction("ConfirmOTP");
+            }
+
+            // So sánh mã OTP
+            if (otp == storedOtp)
+            {
+                // Nếu mã OTP hợp lệ, lấy thông tin người dùng từ cơ sở dữ liệu
+                var user = _context.users.FirstOrDefault(u => u.Email == email);
+
+                if (user != null)
+                {
+                    user.IsConfirmEmail = true;  // Cập nhật trạng thái xác thực người dùng
+                    _context.SaveChanges();
+
+                    TempData["Success"] = "Xác thực thành công!";
+
+                    // Hủy session các thông tin OTP
+                    HttpContext.Session.Remove("Email");
+                    HttpContext.Session.Remove("OTP");
+                    HttpContext.Session.Remove("OTPExpiryTime");
+
+                    return RedirectToAction("SuccessConfirmEmail", "Home");  // Chuyển hướng đến trang chính hoặc dashboard
+                }
+            }
+            else
+            {
+                TempData["Fail"] = "Mã OTP không hợp lệ. Vui lòng thử lại.";
+            }
+
+            return RedirectToAction("ConfirmOTP");
+        }
+
+
+
+        public IActionResult SuccessConfirmEmail()
+        {
+            return View();
+        }
+
+
+        [HttpGet]
+        public IActionResult ResendOTP()
+        {
+            // Lấy thông tin email từ Session
+            string email = HttpContext.Session.GetString("Email");
+
+            // Kiểm tra nếu email không tồn tại trong Session
+            if (string.IsNullOrEmpty(email))
+            {
+                TempData["Fail"] = "Email không hợp lệ hoặc hết hạn.";
+                return RedirectToAction("ConfirmOTP");
+            }
+
+            // Tạo mã OTP mới
+            string newOtp = MyUtils.GenerateOTP(6);
+
+            // Cập nhật mã OTP mới vào Session
+            HttpContext.Session.SetString("OTP", newOtp);
+            string otpExpiryTime = DateTime.Now.AddMinutes(5).ToString();
+            HttpContext.Session.SetString("OTPExpiryTime", otpExpiryTime);
+
+            // Gửi mã OTP mới qua email
+            Email.SendEmailAsync(email, "Mã xác nhận tài khoản của bạn", "<h1>Mã xác nhận của bạn là :" + newOtp + "<h1>");
+
+            return RedirectToAction("ConfirmOTP");
+        }
+
+
         public IActionResult Changeinfor()
         {
             return  View();
