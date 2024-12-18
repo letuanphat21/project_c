@@ -30,6 +30,7 @@
                     }
 
                     <form asp-controller="Home" asp-action="Login" method="post">
+                        <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
                         <input type="text" placeholder="USERNAME" name="username" />
                         <input type="password" placeholder="PASSWORD" name="password" />
                         <button class="opacity">SUBMIT</button>

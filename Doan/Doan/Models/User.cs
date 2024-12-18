@@ -30,6 +30,8 @@ namespace Doan.Models
 
         public string RandomKey { get; set; }
 
+        public bool IsConfirmEmail { get; set; }
+
         // Navigation property for related orders
         public ICollection<Order> Orders { get; set; }
 
@@ -54,7 +56,7 @@ namespace Doan.Models
             IsAdmin = isAdmin;
         }
 
-        public User(string user1, string fullname, string password, bool isGender, DateTime birthDay, string email, string phoneNumber, string address, DateTime createdAt, DateTime updatedAt, bool isAdmin, string randomKey)
+        public User(string user1, string fullname, string password, bool isGender, DateTime birthDay, string email, string phoneNumber, string address, DateTime createdAt, DateTime updatedAt, bool isAdmin, string randomKey,bool isConfirmEmail)
         {
             User1 = user1;
             Fullname = fullname;
@@ -68,14 +70,9 @@ namespace Doan.Models
             this.updatedAt = updatedAt;
             IsAdmin = isAdmin;
             RandomKey = randomKey;
+            IsConfirmEmail = isConfirmEmail;
         }
 
-
-
-
-
-
-
-
+       
     }
 }

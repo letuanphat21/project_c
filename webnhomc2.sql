@@ -46,10 +46,9 @@ CREATE TABLE IF NOT EXISTS `discounts` (
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table webnhomc2.discounts: ~4 rows (approximately)
+-- Dumping data for table webnhomc2.discounts: ~5 rows (approximately)
 INSERT INTO `discounts` (`Id`, `Name`, `Discount_Value`, `Start_Date`, `End_Date`) VALUES
 	(1, 'Giảm giá Black Friday', 50, '2024-11-25 00:00:00.000000', '2024-11-30 00:00:00.000000'),
-	(3, 'Giảm giá khách hàng mới', 15, '2024-11-01 00:00:00.000000', '2025-01-01 00:00:00.000000'),
 	(4, 'Ưu đãi VIP - Giảm giá 30%', 30, '2024-11-20 00:00:00.000000', '2024-12-31 00:00:00.000000'),
 	(5, 'Giảm giá Flash Sale', 75.5, '2024-11-23 00:00:00.000000', '2024-11-23 00:00:00.000000');
 
@@ -109,14 +108,9 @@ CREATE TABLE IF NOT EXISTS `orderdetails` (
   KEY `IX_orderDetails_ProductId` (`ProductId`),
   CONSTRAINT `FK_orderDetails_orders_OrderId` FOREIGN KEY (`OrderId`) REFERENCES `orders` (`Id`) ON DELETE CASCADE,
   CONSTRAINT `FK_orderDetails_products_ProductId` FOREIGN KEY (`ProductId`) REFERENCES `products` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table webnhomc2.orderdetails: ~4 rows (approximately)
-INSERT INTO `orderdetails` (`Id`, `OrderId`, `ProductId`, `Price`, `Quantity`, `SubTotal`) VALUES
-	(7, 4, 1, 100, 1, 100),
-	(8, 4, 2, 100, 1, 100),
-	(25, 13, 1, 100, 1, 100),
-	(26, 13, 2, 100, 1, 100);
+-- Dumping data for table webnhomc2.orderdetails: ~0 rows (approximately)
 
 -- Dumping structure for table webnhomc2.orders
 CREATE TABLE IF NOT EXISTS `orders` (
@@ -134,12 +128,9 @@ CREATE TABLE IF NOT EXISTS `orders` (
   PRIMARY KEY (`Id`),
   KEY `IX_orders_UserId` (`UserId`),
   CONSTRAINT `FK_orders_users_UserId` FOREIGN KEY (`UserId`) REFERENCES `users` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table webnhomc2.orders: ~2 rows (approximately)
-INSERT INTO `orders` (`Id`, `UserId`, `FullName`, `Email`, `PhoneNumber`, `Address`, `Note`, `OrderDate`, `Status`, `TotalMoney`, `PaymentMethod`) VALUES
-	(4, 1, 'Lê Tuấn Phát', 'ltphat2401034444@gmail.com', '0935822771', 'Ninh hòa', NULL, '2024-12-15 06:51:11.305327', 'confirmed', 200, 'Tiền mặt'),
-	(13, 1, 'Lê Tuấn Phát', 'ltphat2401034444@gmail.com', '0935822771', 'Ninh hòa', NULL, '2024-12-15 07:50:31.605118', 'pending', 200, 'Ví VNPay');
+-- Dumping data for table webnhomc2.orders: ~0 rows (approximately)
 
 -- Dumping structure for table webnhomc2.products
 CREATE TABLE IF NOT EXISTS `products` (
@@ -208,13 +199,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `updatedAt` datetime(6) NOT NULL,
   `IsAdmin` tinyint(1) NOT NULL,
   `RandomKey` longtext NOT NULL,
+  `IsConfirmEmail` tinyint(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table webnhomc2.users: ~2 rows (approximately)
-INSERT INTO `users` (`Id`, `User1`, `Fullname`, `Password`, `IsGender`, `BirthDay`, `Email`, `PhoneNumber`, `Address`, `createdAt`, `updatedAt`, `IsAdmin`, `RandomKey`) VALUES
-	(1, 'phat12', 'Lê Tuấn Phát', '8990e9314217c96dfb06931178d7f396', 0, '2024-12-12 00:00:00.000000', 'ltphat2401034444@gmail.com', '0935822771', 'Ninh hòa', '2024-12-10 07:49:31.428458', '2024-12-10 07:49:31.428461', 0, '23j@fd2djL'),
-	(2, 'ti12', 'Lê Tuấn Phát', '8990e9314217c96dfb06931178d7f396', 0, '2021-12-12 00:00:00.000000', 'ltphat2401034444@gmail.com', '0935822771', 'Ninh hòa', '2023-12-10 00:00:00.000000', '2021-11-10 00:00:00.000000', 1, '23j@fd2djL');
+-- Dumping data for table webnhomc2.users: ~1 rows (approximately)
+INSERT INTO `users` (`Id`, `User1`, `Fullname`, `Password`, `IsGender`, `BirthDay`, `Email`, `PhoneNumber`, `Address`, `createdAt`, `updatedAt`, `IsAdmin`, `RandomKey`, `IsConfirmEmail`) VALUES
+	(7, 'ti12', 'le tuyet quyen', '82ed29ed3b1743dfe22c89e0c97c6ae9', 1, '2024-12-14 00:00:00.000000', '21129858@st.hcmuaf.edu.vn', '0935822771', 'Ninh hòa', '2024-12-18 19:00:07.148543', '2024-12-18 19:00:07.148546', 1, 'sai&K31JK5', 1),
+	(12, 'phat12', 'Lê Tuấn Phát', '37a2d12285380b5d3754a0f306db22cc', 1, '2024-12-06 00:00:00.000000', 'ltphat240103@gmail.com', '0935822771', 'Ninh hòa', '2024-12-18 19:21:07.759957', '2024-12-18 19:21:07.759960', 0, 'fsMsLkAAfd', 1);
 
 -- Dumping structure for table webnhomc2.__efmigrationshistory
 CREATE TABLE IF NOT EXISTS `__efmigrationshistory` (
@@ -227,7 +219,8 @@ CREATE TABLE IF NOT EXISTS `__efmigrationshistory` (
 INSERT INTO `__efmigrationshistory` (`MigrationId`, `ProductVersion`) VALUES
 	('20241209163013_InitialCreate', '8.0.2'),
 	('20241210003617_AddRandomKeyToUser', '8.0.2'),
-	('20241214154102_themcothenullchoNote', '8.0.2');
+	('20241214154102_themcothenullchoNote', '8.0.2'),
+	('20241218112713_themthuoctinhchouser', '8.0.2');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
