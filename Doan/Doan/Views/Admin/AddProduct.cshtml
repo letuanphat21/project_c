@@ -77,7 +77,6 @@
                 <h4>Xem trước hình ảnh:</h4>
                 <div id="imagePreviewContainer"></div>
             </div>
-
             <div class="col-12 text-center">
                 <button type="submit"  class="btn btn-primary">Thêm sản phẩm</button>
                 <a href="/Admin/ManagerProduct" class="btn btn-danger ms-2">Hủy</a>
@@ -86,12 +85,11 @@
     </div>
 
     <script>
-
         function previewImages(event) {
             var files = event.target.files;
             var previewContainer = document.getElementById('imagePreviewContainer');
- 
-            for (let i = 0; i < Math.min(files.length, 2); i++) { 
+
+            for (let i = 0; i < Math.min(files.length, 2); i++) {
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     var imgElement = document.createElement('img');

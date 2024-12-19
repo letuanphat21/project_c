@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "jQonxGCk2BpIOARknYkBKqeE5ld8F6xcDD9DjHfpbjQ=",
-=======
-  "Hash": "MAPRair/TRQpm0yHTO25rKnBVJ13s/MljsrKUi0xMBo=",
->>>>>>> d8fe1c78b91ee8e8c6c6021563c221c55eac4141
+  "Hash": "OGJVQmwAt1tGLDh1ZBhonKdKHiPZydLrUMZ8uklzn8Q=",
   "Source": "Doan",
   "BasePath": "_content/Doan",
   "Mode": "Default",
@@ -14,19 +10,19 @@
     {
       "Name": "Doan\\wwwroot",
       "Source": "Doan",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css",
       "SourceId": "Doan",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "Doan.styles.css",
+      "RelativePath": "Doan#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -35,17 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "covs3zb07i",
+      "Integrity": "pHFV+4DotjyCVLSwKfkQMX/CX2ROQkg9ZxWKuDR3H0w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\doanc#entity\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css"
+      "OriginalItemSpec": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css",
       "SourceId": "Doan",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "Doan.bundle.scp.css",
+      "RelativePath": "Doan#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -54,183 +52,202 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "covs3zb07i",
+      "Integrity": "pHFV+4DotjyCVLSwKfkQMX/CX2ROQkg9ZxWKuDR3H0w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\doanc#entity\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\about.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\about.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/about.css",
+      "RelativePath": "css/about#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "899k318e3g",
+      "Integrity": "3PJ4L67o9cQj33IYp6kPXndRElq5pGyJXdgLbV+jiAo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\about.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\admin.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\admin.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/admin.css",
+      "RelativePath": "css/admin#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "w0pdp11170",
+      "Integrity": "8Gz5e6EDYdcnGcH6roqSe3whSP0Ti64BY4vSHL06XIs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\birthday.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\birthday.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/birthday.css",
+      "RelativePath": "css/birthday#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "v6d7lthbjq",
+      "Integrity": "h9dLzjB3f2tD30P4ROI/V9Uvvp5CWYAcnmcQkdggcPM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\birthday.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\home.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\home.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/home.css",
+      "RelativePath": "css/home#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "iwsq60vesi",
+      "Integrity": "0kpbtxQA2559RaB3umJjGb315RMoEn4AnFFb6IjlxS8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\login.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\login.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/login.css",
+      "RelativePath": "css/login#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "1zp0brbwow",
+      "Integrity": "g5WwDwChPY38DuGAxU+8bGpfsm20yRYVNb0saoa2hRY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\manageruser.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\manageruser.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/manageruser.css",
+      "RelativePath": "css/manageruser#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qu6lkpbjq2",
+      "Integrity": "8h0AHa8af5wrJu4YTDJp75lZumYrvNqNAObSbd8ubeU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\manageruser.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\site.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "c2tiyv64ts",
+      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\css\\snow.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\snow.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "css/snow.css",
+      "RelativePath": "css/snow#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "q7tqbxy7p4",
+      "Integrity": "mvqmqRuc7U7iikJE2ToNox7Sr0x3xhl4HuEszeQTXrE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\snow.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\favicon.ico",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
       "SourceId": "Doan",
       "SourceType": "Discovered",
@@ -253,1264 +270,1474 @@
     },
     {
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
-=======
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
->>>>>>> d8fe1c78b91ee8e8c6c6021563c221c55eac4141
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "image/nhanvang.png",
+      "RelativePath": "image/nhanvang#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "y4fxuyauuz",
+      "Integrity": "4pAeEXGwuYBN690l7BPctwsDWRMNnboxjUk4Qlk1nY8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\nhanvang.png"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "image/phat-ngang.png",
+      "RelativePath": "image/phat-ngang#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "0g8m0fku2a",
+      "Integrity": "QDCC57PX1vo6NgdMeN9Rrx6Xbi2xUmX5CfV8aamTCFw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\phat-ngang.png"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\header.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\header.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "js/header.js",
+      "RelativePath": "js/header#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "htq1edpx4d",
+      "Integrity": "BTBp5wGzB4cIO6fecBg0QaLpL7fDb10r/ZfoYdyx/kU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\header.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\home.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\home.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "js/home.js",
+      "RelativePath": "js/home#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "hjm28cqw1j",
+      "Integrity": "Y8n03nEJ+c+JW6PYzFT2oQBsjS2kXAPjnStFOfg6vOw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\home.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\login.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\login.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "js/login.js",
+      "RelativePath": "js/login#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bnoysmjkhg",
+      "Integrity": "R5X84jYUiFo5CWgjLWxk6at591glg7C7Oyt1xRNBoE4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\paginate.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "js/paginate.js",
+      "RelativePath": "js/paginate#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "2dpnu0tpsb",
+      "Integrity": "Js7SSv851Yoap87VjFN0OI2U6AoZ9eo4se0E/rJqUJ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\paginate.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "js/paginate.min.js",
+      "RelativePath": "js/paginate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zq1fm6zl6o",
+      "Integrity": "m9RuZkYyKNsTXQ3yvfC8HoLCSwnrX+GoxKmA+UESVlA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\paginate.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\site.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "js/site.js",
+      "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "xtxxf3hu2r",
+      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\js\\snow.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\snow.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "js/snow.js",
+      "RelativePath": "js/snow#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qi1uu9v574",
+      "Integrity": "zspIsftv1QnSox2bv3+weYcLQPE69SZss9TLjps4DJc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\snow.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ozu22stjof",
+      "Integrity": "ZMvmWDSU4zY1Z29EQGm5Mubfz/YxF4hiReGqx84o4tA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "73kdqttayv",
+      "Integrity": "DRvWr0gangj5/5Q3DRn6ttzpcWDzl3OpHoAwAzNDR5Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "gjcw7pocpk",
+      "Integrity": "hA1uBYAPgKq7OVoXF7sqU9NtylyP0K7AJn0a4zQcTbg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4gxs3k148c",
+      "Integrity": "VFvmi/ZSwQFmjS6Pry9B8zXeZ/GA168TXLyykDhNMZE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6l4ir0ityv",
+      "Integrity": "ukKL5IDSyNoXFyp0wkgXeBpBITyM7JsCE6Dp96H1vI8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "fctod5rc9n",
+      "Integrity": "j7uqK5VoTT4rUHMr911QEU5Sa94lR3uh9E28XBMlzrM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "nakmwdwsxp",
+      "Integrity": "P4Ski6RrsG4nxKfPqaVoyRMoesl9UzArmfT+4fLqKHY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "st1cbwfwo5",
+      "Integrity": "QO8cMbVkLiktUX1cHeXSUSe5nXMXUgyL9cjwnMyxPqc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5p029spbuu",
+      "Integrity": "96ayIUEnpKr7n5BIsFK5vJ3qXMXFgvRl9/CBcHs6/Ts=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5vj65cig9w",
+      "Integrity": "72C/qDCGu+OwWeVA03bf9Ke0T8oIozCub0lfJkhzhvE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "e6q6xbwqzk",
+      "Integrity": "+ugQREUkP4Wnp1VX2L2lvw0Q2mgKYvYAZr1c2or+ysM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "2q4vfeazbq",
+      "Integrity": "qvA39OMlEs53jaewqVFmE8DQQrio47bZtlTs+Wu6U8g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "dy6jgresuo",
+      "Integrity": "9eX2dpELXvYs+6il2MHwf5OOPVOZjxVK1b1GWgL0B0k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "o371a8zbv2",
+      "Integrity": "NDSZjIiMPRIoO7/w7+jHef8retP4riQa8PMj4BVRGok=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "mk8rdyw69w",
+      "Integrity": "Jtl65EICD4ds6dQZbx1ongvMXj8D127HCg5XRBXXYGw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "jeal3x0ldm",
+      "Integrity": "FZG0KxbNqITUi4QY7QvPFRS/TccntMfFWfSTdHN/pws=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "z7kmom2977",
+      "Integrity": "359CMPAICGkV+zve4A4HJMha3bwqTFTjl+QC1KJK5DQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "okkk44j0xs",
+      "Integrity": "2BbRsE/+czX1ufmDPGpnEieC9u6I3m5BKNDSX1ob3lg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "97yrjpyf9r",
+      "Integrity": "G0PQCDL7ETO6rITRlBIHDKvvSuJFn5p6h+WmbPX5xr4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "cwzlr5n8x4",
+      "Integrity": "/EdWHN6t5XYPplC88vixGfrBvfEii19kAssb+0YBVU8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "y53cy5s2zj",
+      "Integrity": "BnHmEJpgor1n0UuwNdXG2VhHdV1r9MibuqBVHsgp9a8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "wmug9u23qg",
+      "Integrity": "GMDk5pA5dFkOimkBAWeEjYZ+7lgHPS0jYln6p/WJVYs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "z9shlbduue",
+      "Integrity": "mcVOHRq7FsWaycSfboGsTpzuQZ3cIOR/GDHYxL6q2Yg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "j75batdsum",
+      "Integrity": "4WIqPof/vrXYO/jeJ4fDOQKUYWIwe64V3d+9/qNju20=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "2yn17lgxub",
+      "Integrity": "ekoF4YNq4OUU4BoZ6FG2LTKD68LJvW49arNgykHOZfM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "vy0bq9ydhf",
+      "Integrity": "p1dop4slefZhL4zG2pa6+2HUrOY1UUArGJXmet8Md9c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ophe14yye5",
+      "Integrity": "1N1aPW6sTYexHfJCcDS4iElpPdWahP2Fr+Um56w0PjI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ab1c3rmv7g",
+      "Integrity": "puDgKwvlFAord9R8G8of9P2CVYIJUFSoIbjDLEsKEH0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ik6i2hrs65",
+      "Integrity": "wseUsl7uipUzPYc/DBMMTMFA7hBTcxpw29RKOxLzXSc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "56d2bn4wt9",
+      "Integrity": "02ka4ymoE5yEecLUncLG3/SouTQMnTJOktX+96Pt/88=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "f6zq8v6eb3",
+      "Integrity": "l/hyCcHXdGwW6cO0xfobuAMZk3Nh8dsRdWwdaeSn9qo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "kbynt5jhd9",
+      "Integrity": "gO4uhxfGuK0ONjRlHuwfghGfEXT5azm1oHWnTEFGTfk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "89qbw8ngem",
+      "Integrity": "rAnWnVnzChxAAi8NS+Ilr1mE7Sj+do+X/DqyilNsznM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "c2nslu3uf3",
+      "Integrity": "xIBBxDPvWhk8/JdaFEZoejadfaKFUfZFwRS1D4Jkuro=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "n5w6o92d9r",
+      "Integrity": "SySIctW5IQsq8JoYGrNJU4ZilHaieJru5P0+8vTcfDA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "2lgwfvgpvi",
+      "Integrity": "CllC/sbLvyLE9cQljmFRlITfqdZRnBv2ysX5LJtl/dg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "jqwzsa9uv6",
+      "Integrity": "hVv0IJy8sIv1uIlVQOHnZFNAGprmLfDV+x0anYPmxYU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "wsezl0heh6",
+      "Integrity": "sPqzWcSS9aRa2gpWTVNQzemajn8hrFjgXPj3j9QItQo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "1piudyfv7h",
+      "Integrity": "JV8zLOxqX3ENLwiQX8lCiDY3TvQzbeibDAsdYtalZ4w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6ukhryfubh",
+      "Integrity": "Qkl5mZUZ64aYBaORRMP9jfD1kz8J6FwiV2M86JDJkdQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4908xmbfjr",
+      "Integrity": "uAMYHAQlaHq1buKLwrk7FF4qxvcLWntS2/DpdKucfmU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "u33ctipx7g",
+      "Integrity": "ui/FQI+y0IUsY8Pbi80b8s3GeEL+PsvdaLTONobpn88=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/bootstrap/LICENSE",
+      "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "81b7ukuj9c",
+      "Integrity": "ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery/dist/jquery.js",
+      "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "7s2n0ol71w",
+      "Integrity": "KSI/3xxCrCexCupdzQJRP1B6Iqg+2NA+X2u38cQdqq8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery/dist/jquery.min.js",
+      "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ehgnz7f14e",
+      "Integrity": "zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery/dist/jquery.min.map",
+      "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5pze98is44",
+      "Integrity": "OZVI+w57FGwS9boYCZpH1ZSpcP7pYhLu4KtIUvPlZ4I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery/LICENSE.txt",
+      "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "mlv21k5csn",
+      "Integrity": "hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
+      "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ay5nd8zt9x",
+      "Integrity": "4jrcLBsi0Ugm8iLKdqDsAyaCDjkscYZdoGuNH/zqs4E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
+      "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "9oaff4kq20",
+      "Integrity": "N11IyJpHTgDcSCb3AfX4VrBnpGQeem1NoNzzgcXVyCc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
+      "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6d0lkjaslc",
+      "Integrity": "5qqb5VxQ2t2a6Zx/neW5uppLLvaGn4nn0NdYp6g8Lyg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
+      "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "l1zq2mitth",
+      "Integrity": "6e0N+WJiVKBeTitK1GKSwPi3rbdPpLtuqaiitZjeD2w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation/LICENSE.md",
+      "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "x0q3zqp4vz",
+      "Integrity": "geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "03hjc8e09r",
+      "Integrity": "xJbBMLGhYbXlPrrrddrSVmduyF6KEtbxEsYxw7hYZV4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "48y08845bh",
+      "Integrity": "RFWFWIIPsjB4DucR4jqwxTWw13ZmtI+s6tVR2LJmZXk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanc#entity\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "356vix0kms",
+      "Integrity": "16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     }
-<<<<<<< HEAD
   ],
   "Endpoints": [
+    {
+      "Route": "css/about.899k318e3g.css",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\about.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "274"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3PJ4L67o9cQj33IYp6kPXndRElq5pGyJXdgLbV+jiAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "899k318e3g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/about.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3PJ4L67o9cQj33IYp6kPXndRElq5pGyJXdgLbV+jiAo="
+        }
+      ]
+    },
+    {
+      "Route": "css/about.css",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\about.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "274"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3PJ4L67o9cQj33IYp6kPXndRElq5pGyJXdgLbV+jiAo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3PJ4L67o9cQj33IYp6kPXndRElq5pGyJXdgLbV+jiAo="
+        }
+      ]
+    },
     {
       "Route": "css/admin.css",
       "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\admin.css",
@@ -1534,7 +1761,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1571,7 +1798,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1594,8 +1821,8 @@
       ]
     },
     {
-      "Route": "css/home.5vgl2f1iu3.css",
-      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\home.css",
+      "Route": "css/birthday.css",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\birthday.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1604,7 +1831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "578"
+          "Value": "743"
         },
         {
           "Name": "Content-Type",
@@ -1612,11 +1839,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X0m0ieBUHj6JgIPws5AMLHN5s/QXyg+CXB0NLqwOxQ0=\""
+          "Value": "\"h9dLzjB3f2tD30P4ROI/V9Uvvp5CWYAcnmcQkdggcPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h9dLzjB3f2tD30P4ROI/V9Uvvp5CWYAcnmcQkdggcPM="
+        }
+      ]
+    },
+    {
+      "Route": "css/birthday.v6d7lthbjq.css",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\birthday.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "743"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h9dLzjB3f2tD30P4ROI/V9Uvvp5CWYAcnmcQkdggcPM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1626,15 +1890,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5vgl2f1iu3"
+          "Value": "v6d7lthbjq"
         },
         {
           "Name": "label",
-          "Value": "css/home.css"
+          "Value": "css/birthday.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-X0m0ieBUHj6JgIPws5AMLHN5s/QXyg+CXB0NLqwOxQ0="
+          "Value": "sha256-h9dLzjB3f2tD30P4ROI/V9Uvvp5CWYAcnmcQkdggcPM="
         }
       ]
     },
@@ -1649,7 +1913,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "578"
+          "Value": "1076"
         },
         {
           "Name": "Content-Type",
@@ -1657,11 +1921,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X0m0ieBUHj6JgIPws5AMLHN5s/QXyg+CXB0NLqwOxQ0=\""
+          "Value": "\"0kpbtxQA2559RaB3umJjGb315RMoEn4AnFFb6IjlxS8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1671,7 +1935,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X0m0ieBUHj6JgIPws5AMLHN5s/QXyg+CXB0NLqwOxQ0="
+          "Value": "sha256-0kpbtxQA2559RaB3umJjGb315RMoEn4AnFFb6IjlxS8="
+        }
+      ]
+    },
+    {
+      "Route": "css/home.iwsq60vesi.css",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0kpbtxQA2559RaB3umJjGb315RMoEn4AnFFb6IjlxS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iwsq60vesi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0kpbtxQA2559RaB3umJjGb315RMoEn4AnFFb6IjlxS8="
         }
       ]
     },
@@ -1698,7 +2007,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1743,7 +2052,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1780,7 +2089,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1817,7 +2126,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1862,7 +2171,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1907,7 +2216,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1918,6 +2227,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+        }
+      ]
+    },
+    {
+      "Route": "css/snow.css",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\snow.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "285"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mvqmqRuc7U7iikJE2ToNox7Sr0x3xhl4HuEszeQTXrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvqmqRuc7U7iikJE2ToNox7Sr0x3xhl4HuEszeQTXrE="
+        }
+      ]
+    },
+    {
+      "Route": "css/snow.q7tqbxy7p4.css",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\snow.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "285"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mvqmqRuc7U7iikJE2ToNox7Sr0x3xhl4HuEszeQTXrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q7tqbxy7p4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/snow.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvqmqRuc7U7iikJE2ToNox7Sr0x3xhl4HuEszeQTXrE="
         }
       ]
     },
@@ -1944,7 +2335,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1981,7 +2372,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2026,7 +2417,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2071,7 +2462,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2108,7 +2499,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2153,7 +2544,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2190,7 +2581,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
+          "Value": "Tue, 17 Dec 2024 09:41:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2227,7 +2618,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
+          "Value": "Tue, 17 Dec 2024 09:41:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2272,7 +2663,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
+          "Value": "Tue, 17 Dec 2024 09:41:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2309,7 +2700,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 07:11:43 GMT"
+          "Value": "Tue, 17 Dec 2024 09:41:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2354,7 +2745,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2399,7 +2790,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2410,6 +2801,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-QDCC57PX1vo6NgdMeN9Rrx6Xbi2xUmX5CfV8aamTCFw="
+        }
+      ]
+    },
+    {
+      "Route": "js/header.htq1edpx4d.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\header.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BTBp5wGzB4cIO6fecBg0QaLpL7fDb10r/ZfoYdyx/kU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "htq1edpx4d"
+        },
+        {
+          "Name": "label",
+          "Value": "js/header.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BTBp5wGzB4cIO6fecBg0QaLpL7fDb10r/ZfoYdyx/kU="
+        }
+      ]
+    },
+    {
+      "Route": "js/header.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\header.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BTBp5wGzB4cIO6fecBg0QaLpL7fDb10r/ZfoYdyx/kU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BTBp5wGzB4cIO6fecBg0QaLpL7fDb10r/ZfoYdyx/kU="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.hjm28cqw1j.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y8n03nEJ+c+JW6PYzFT2oQBsjS2kXAPjnStFOfg6vOw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hjm28cqw1j"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y8n03nEJ+c+JW6PYzFT2oQBsjS2kXAPjnStFOfg6vOw="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y8n03nEJ+c+JW6PYzFT2oQBsjS2kXAPjnStFOfg6vOw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y8n03nEJ+c+JW6PYzFT2oQBsjS2kXAPjnStFOfg6vOw="
         }
       ]
     },
@@ -2436,7 +2991,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2481,7 +3036,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2492,6 +3047,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-R5X84jYUiFo5CWgjLWxk6at591glg7C7Oyt1xRNBoE4="
+        }
+      ]
+    },
+    {
+      "Route": "js/paginate.2dpnu0tpsb.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Js7SSv851Yoap87VjFN0OI2U6AoZ9eo4se0E/rJqUJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2dpnu0tpsb"
+        },
+        {
+          "Name": "label",
+          "Value": "js/paginate.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Js7SSv851Yoap87VjFN0OI2U6AoZ9eo4se0E/rJqUJ8="
+        }
+      ]
+    },
+    {
+      "Route": "js/paginate.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Js7SSv851Yoap87VjFN0OI2U6AoZ9eo4se0E/rJqUJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Js7SSv851Yoap87VjFN0OI2U6AoZ9eo4se0E/rJqUJ8="
+        }
+      ]
+    },
+    {
+      "Route": "js/paginate.min.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4663"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m9RuZkYyKNsTXQ3yvfC8HoLCSwnrX+GoxKmA+UESVlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m9RuZkYyKNsTXQ3yvfC8HoLCSwnrX+GoxKmA+UESVlA="
+        }
+      ]
+    },
+    {
+      "Route": "js/paginate.min.zq1fm6zl6o.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4663"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m9RuZkYyKNsTXQ3yvfC8HoLCSwnrX+GoxKmA+UESVlA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zq1fm6zl6o"
+        },
+        {
+          "Name": "label",
+          "Value": "js/paginate.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m9RuZkYyKNsTXQ3yvfC8HoLCSwnrX+GoxKmA+UESVlA="
         }
       ]
     },
@@ -2518,7 +3237,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2555,7 +3274,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2574,6 +3293,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/snow.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\snow.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "931"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zspIsftv1QnSox2bv3+weYcLQPE69SZss9TLjps4DJc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zspIsftv1QnSox2bv3+weYcLQPE69SZss9TLjps4DJc="
+        }
+      ]
+    },
+    {
+      "Route": "js/snow.qi1uu9v574.js",
+      "AssetFile": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\snow.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "931"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zspIsftv1QnSox2bv3+weYcLQPE69SZss9TLjps4DJc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qi1uu9v574"
+        },
+        {
+          "Name": "label",
+          "Value": "js/snow.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zspIsftv1QnSox2bv3+weYcLQPE69SZss9TLjps4DJc="
         }
       ]
     },
@@ -2600,7 +3401,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2637,7 +3438,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2682,7 +3483,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2719,7 +3520,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2764,7 +3565,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2801,7 +3602,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2846,7 +3647,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2883,7 +3684,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2928,7 +3729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2965,7 +3766,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3010,7 +3811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3047,7 +3848,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3092,7 +3893,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3137,7 +3938,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3174,7 +3975,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3219,7 +4020,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3256,7 +4057,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3293,7 +4094,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3330,7 +4131,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3375,7 +4176,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3420,7 +4221,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3457,7 +4258,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3502,7 +4303,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3539,7 +4340,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3584,7 +4385,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3621,7 +4422,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3666,7 +4467,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3703,7 +4504,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3748,7 +4549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3785,7 +4586,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3822,7 +4623,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3867,7 +4668,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3912,7 +4713,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3949,7 +4750,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3994,7 +4795,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4031,7 +4832,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4068,7 +4869,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4105,7 +4906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4150,7 +4951,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4195,7 +4996,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4240,7 +5041,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4285,7 +5086,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4322,7 +5123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4367,7 +5168,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4404,7 +5205,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4441,7 +5242,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4478,7 +5279,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4523,7 +5324,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4568,7 +5369,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4605,7 +5406,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4650,7 +5451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4687,7 +5488,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4732,7 +5533,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4769,7 +5570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4806,7 +5607,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4851,7 +5652,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4888,7 +5689,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4933,7 +5734,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4970,7 +5771,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5007,7 +5808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5052,7 +5853,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5089,7 +5890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5134,7 +5935,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5179,7 +5980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5224,7 +6025,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5269,7 +6070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5314,7 +6115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5351,7 +6152,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5396,7 +6197,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5433,7 +6234,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5478,7 +6279,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5515,7 +6316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5560,7 +6361,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5597,7 +6398,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5634,7 +6435,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5679,7 +6480,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5716,7 +6517,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5761,7 +6562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5798,7 +6599,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5835,7 +6636,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5880,7 +6681,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5925,7 +6726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5962,7 +6763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6007,7 +6808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6044,7 +6845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6089,7 +6890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6126,7 +6927,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6163,7 +6964,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6208,7 +7009,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6245,7 +7046,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6290,7 +7091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6335,7 +7136,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6372,7 +7173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6417,7 +7218,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6462,7 +7263,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6499,7 +7300,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6536,7 +7337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6581,7 +7382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6618,7 +7419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6663,7 +7464,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6700,7 +7501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6745,7 +7546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6782,7 +7583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6827,7 +7628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6864,7 +7665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6901,7 +7702,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6946,7 +7747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6983,7 +7784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7028,7 +7829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7073,7 +7874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7110,7 +7911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7155,7 +7956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7192,7 +7993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7237,7 +8038,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Dec 2024 06:49:24 GMT"
+          "Value": "Tue, 17 Dec 2024 08:24:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7251,7 +8052,5 @@
         }
       ]
     }
-=======
->>>>>>> d8fe1c78b91ee8e8c6c6021563c221c55eac4141
   ]
 }

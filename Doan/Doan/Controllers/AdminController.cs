@@ -571,7 +571,12 @@ namespace Doan.Controllers
         [HttpGet]
         public IActionResult EditCategory(int id)
         {
-        
+            var userSession = HttpContext.Session.GetString("user");
+            if (string.IsNullOrEmpty(userSession))
+            {
+                return RedirectToAction("Login", "Home");
+            }
+
             var category = _context.categorys.FirstOrDefault(c => c.Id == id);
             if (category == null)
             {

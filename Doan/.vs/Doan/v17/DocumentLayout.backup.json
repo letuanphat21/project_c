@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\lap_trinh_net\\project_ck\\project_c\\doan\\doan\\views\\admin\\managercategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managercategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\lap_trinh_net\\project_ck\\project_c\\doan\\doan\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\lap_trinh_net\\project_ck\\project_c\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\lap_trinh_net\\project_ck\\project_c\\doan\\doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\lap_trinh_net\\project_ck\\project_c\\doan\\doan\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagerCategory.cshtml",
+              "DocumentMoniker": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerCategory.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerCategory.cshtml",
+              "ToolTip": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerCategory.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerCategory.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T21:49:59.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Doan\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Doan\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-17T21:49:09.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerProduct.cshtml",
+              "DocumentMoniker": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "ToolTip": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAC8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T09:39:28.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddProduct.cshtml",
+              "DocumentMoniker": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Views\\Admin\\AddProduct.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\AddProduct.cshtml",
+              "ToolTip": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Views\\Admin\\AddProduct.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\AddProduct.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T09:35:50.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Doan\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Doan\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALYBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T09:35:13.378Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
