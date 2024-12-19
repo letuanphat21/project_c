@@ -59,18 +59,18 @@
             <div class="col-md-6 d-flex">
                 <!-- Ảnh Thu Nhỏ -->
                 <div class="me-3 d-flex flex-column thumbnail-container">
-                    <img src="@ViewBag.image.Image1" class="img-thumbnail mb-2 thumbnail-image" alt="Thumbnail 1" data-bs-slide-to="0">
-                    <img src="@ViewBag.image.Image2" class="img-thumbnail thumbnail-image" alt="Thumbnail 2" data-bs-slide-to="1">
+                        <img src="~/image/thumbnail/@ViewBag.image.Image1" class="img-thumbnail mb-2 thumbnail-image" alt="Thumbnail 1" data-bs-slide-to="0">
+                        <img src="~/image/details/@ViewBag.image.Image2" class="img-thumbnail thumbnail-image" alt="Thumbnail 2" data-bs-slide-to="1">
                 </div>
 
                 <!-- Ảnh Chính -->
                 <div id="productImageCarousel" class="carousel slide flex-grow-1 main-carousel" data-bs-ride="carousel" data-bs-interval="2000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="@ViewBag.image.Image1" class="d-block w-100" alt="Image 1">
+                                <img src="~/image/thumbnail/@ViewBag.image.Image1" class="d-block w-100" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="@ViewBag.image.Image2" class="d-block w-100" alt="Image 2">
+                                <img src="~/image/details/@ViewBag.image.Image2" class="d-block w-100" alt="Image 2">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#productImageCarousel" data-bs-slide="prev">
@@ -126,7 +126,7 @@
                     <div class="product col-md-3 mb-4">
                         <div class="card card-hover">
                             <a asp-controller="Home" asp-action="ProductDetail" asp-route-cid="@product.Cid" asp-route-id="@product.Id">
-                                <img src="@product.Thumbnail" class="card-img-top" alt="Product Image">
+                                    <img src="~/image/thumbnail/@product.Thumbnail" class="card-img-top" alt="Product Image">
                             </a>
                             <div class="card-body text-center">
                                 <a class="text-decoration-none" asp-controller="Home" asp-action="ProductDetail" asp-route-cid="@product.Cid" asp-route-id="@product.Id">

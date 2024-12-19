@@ -41,6 +41,138 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-bongtai.png",
+      "PackagePath": "staticwebassets\\image\\categorys\\button-bongtai.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-daychuyen.png",
+      "PackagePath": "staticwebassets\\image\\categorys\\button-daychuyen.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-lac.png",
+      "PackagePath": "staticwebassets\\image\\categorys\\button-lac.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-nhan.png",
+      "PackagePath": "staticwebassets\\image\\categorys\\button-nhan.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\th.jpg",
+      "PackagePath": "staticwebassets\\image\\categorys\\th.jpg"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham1-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham1-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham10-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham10-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham11-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham11-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham12-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham12-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham13-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham13-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham14-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham14-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham15-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham15-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham17-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham17-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham18-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham18-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham19-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham19-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham2-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham2-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham20-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham20-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham21-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham21-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham22-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham22-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham23-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham23-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham24-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham24-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham25-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham25-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham26-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham26-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham27-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham27-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham28-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham28-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham29-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham29-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham3-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham3-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham4-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham4-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham5-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham5-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham6-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham6-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham7-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham7-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham8-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham8-2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham9-2.png",
+      "PackagePath": "staticwebassets\\image\\details\\sanpham9-2.png"
+    },
+    {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
       "PackagePath": "staticwebassets\\image\\nhannu-1.jpg"
     },
@@ -51,6 +183,122 @@
     {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
       "PackagePath": "staticwebassets\\image\\phat-ngang.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham1.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham1.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham10.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham10.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham11.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham11.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham12.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham12.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham13.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham13.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham14.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham14.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham15.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham15.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham16.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham16.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham17.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham17.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham18.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham18.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham19.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham19.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham2.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham2.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham20.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham20.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham21.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham21.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham22.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham22.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham23.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham23.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham24.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham24.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham25.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham25.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham26.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham26.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham27.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham27.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham28.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham28.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham29.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham29.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham3.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham3.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham4.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham4.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham5.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham5.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham6.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham6.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham7.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham7.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham8.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham8.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham9.png",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham9.png"
     },
     {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\header.js",
