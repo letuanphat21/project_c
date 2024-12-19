@@ -72,7 +72,7 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="@item.product.Thumbnail" class="img-fluid rounded-start" alt="Product Image">
+                                    <img src="~/image/thumbnail/@item.product.Thumbnail" class="img-fluid rounded-start" alt="Product Image">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -139,7 +139,7 @@
                             }
                             else
                             {
-                                <a asp-controller="Home" asp-action="Login" class="btn btn-primary w-100 mb-3" role="button">Thanh toán</a>
+                                <a asp-controller="Home" asp-action="Login" asp-route-returnUrl="@Context.Request.Path" class="btn btn-primary w-100 mb-3" role="button">Thanh toán</a>
                             }
                         }
                     </div>

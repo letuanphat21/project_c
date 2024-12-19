@@ -88,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Lap_Trinh_Net/Project_CK/project_c/Doan/Doan/Views/Home/ConfirmOTP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maXJtT1RQLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Lap_Trinh_Net/Project_CK/project_c/Doan/Doan/Views/Home/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -130,6 +134,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Lap_Trinh_Net/Project_CK/project_c/Doan/Doan/Views/Home/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lap_Trinh_Net/Project_CK/project_c/Doan/Doan/Views/Home/SuccessConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzQ29uZmlybUVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Lap_Trinh_Net/Project_CK/project_c/Doan/Doan/Views/Home/Thank.cshtml]

@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "OGJVQmwAt1tGLDh1ZBhonKdKHiPZydLrUMZ8uklzn8Q=",
+=======
+  "Hash": "OQ3An31mBsqlmquLeMKOz1i/BHjYbRYTLjE+LreezV8=",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
   "Source": "Doan",
   "BasePath": "_content/Doan",
   "Mode": "Default",
@@ -10,17 +14,28 @@
     {
       "Name": "Doan\\wwwroot",
       "Source": "Doan",
+<<<<<<< HEAD
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css",
       "SourceId": "Doan",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css",
+      "SourceId": "Doan",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "Doan#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,6 +50,7 @@
       "Integrity": "pHFV+4DotjyCVLSwKfkQMX/CX2ROQkg9ZxWKuDR3H0w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css"
     },
     {
@@ -42,6 +58,15 @@
       "SourceId": "Doan",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "E:\\doanentity2\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Doan.styles.css"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css",
+      "SourceId": "Doan",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "Doan#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,6 +81,7 @@
       "Integrity": "pHFV+4DotjyCVLSwKfkQMX/CX2ROQkg9ZxWKuDR3H0w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css"
     },
     {
@@ -63,6 +89,15 @@
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "OriginalItemSpec": "E:\\doanentity2\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\about.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/about#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +115,17 @@
       "OriginalItemSpec": "wwwroot\\css\\about.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\admin.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\admin.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/admin#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +143,17 @@
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\birthday.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\birthday.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/birthday#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +171,17 @@
       "OriginalItemSpec": "wwwroot\\css\\birthday.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\home.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\home.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/home#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +199,17 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\login.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\login.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/login#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +227,17 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\manageruser.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\manageruser.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/manageruser#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +255,17 @@
       "OriginalItemSpec": "wwwroot\\css\\manageruser.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\site.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\site.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +283,17 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\css\\snow.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\snow.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "css/snow#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +311,17 @@
       "OriginalItemSpec": "wwwroot\\css\\snow.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\favicon.ico",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\favicon.ico",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -248,31 +339,667 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-bongtai.png",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "SourceId": "Doan",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
       "BasePath": "_content/Doan",
-      "RelativePath": "image/nhannu-1#[.{fingerprint}]?.jpg",
+      "RelativePath": "image/categorys/button-bongtai.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tys95lyxlz",
-      "Integrity": "5fPdltDXis4GFsNdIhP85EMU39lt1UjJNnlx5OBrBGw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\categorys\\button-bongtai.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-daychuyen.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/categorys/button-daychuyen.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\categorys\\button-daychuyen.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-lac.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/categorys/button-lac.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\categorys\\button-lac.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-nhan.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/categorys/button-nhan.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\categorys\\button-nhan.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\th.jpg",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/categorys/th.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\categorys\\th.jpg"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham10-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham10-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham10-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham11-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham11-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham11-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham1-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham1-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham1-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham12-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham12-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham12-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham13-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham13-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham13-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham14-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham14-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham14-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham15-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham15-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham15-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham17-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham17-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham17-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham18-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham18-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham18-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham19-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham19-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham19-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham20-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham20-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham20-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham21-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham21-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham21-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham2-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham2-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham2-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham22-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham22-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham22-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham23-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham23-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham23-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham24-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham24-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham24-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham25-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham25-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham25-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham26-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham26-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham26-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham27-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham27-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham27-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham28-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham28-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham28-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham29-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham29-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham29-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham3-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham3-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham3-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham4-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham4-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham4-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham5-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham5-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham5-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham6-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham6-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham6-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham7-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham7-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham7-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham8-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham8-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham8-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham9-2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/details/sanpham9-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\details\\sanpham9-2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/nhannu-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\nhannu-1.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "image/nhanvang#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +1017,17 @@
       "OriginalItemSpec": "wwwroot\\image\\nhanvang.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "image/phat-ngang#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -311,10 +1045,568 @@
       "OriginalItemSpec": "wwwroot\\image\\phat-ngang.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\header.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham1.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham1.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham10.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham10.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham10.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham11.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham11.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham11.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham12.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham12.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham12.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham13.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham13.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham13.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham14.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham14.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham14.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham15.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham15.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham15.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham16.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham16.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham16.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham17.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham17.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham17.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham18.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham18.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham18.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham19.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham19.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham19.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham2.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham2.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham20.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham20.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham20.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham21.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham21.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham21.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham22.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham22.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham22.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham23.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham23.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham23.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham24.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham24.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham24.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham25.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham25.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham25.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham26.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham26.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham26.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham27.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham27.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham27.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham28.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham28.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham28.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham29.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham29.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham29.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham3.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham3.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham4.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham4.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham5.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham5.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham6.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham6.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham7.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham7.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham8.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham8.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham8.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham9.png",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+      "BasePath": "_content/Doan",
+      "RelativePath": "image/thumbnail/sanpham9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\sanpham9.png"
+    },
+    {
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\header.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "js/header#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -332,10 +1624,17 @@
       "OriginalItemSpec": "wwwroot\\js\\header.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\home.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\home.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "js/home#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -353,10 +1652,17 @@
       "OriginalItemSpec": "wwwroot\\js\\home.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\login.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\login.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "js/login#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -374,10 +1680,17 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\paginate.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "js/paginate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -395,10 +1708,17 @@
       "OriginalItemSpec": "wwwroot\\js\\paginate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "js/paginate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -416,10 +1736,17 @@
       "OriginalItemSpec": "wwwroot\\js\\paginate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\site.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\site.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -437,10 +1764,17 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\js\\snow.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\snow.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "js/snow#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -458,10 +1792,17 @@
       "OriginalItemSpec": "wwwroot\\js\\snow.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +1820,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -500,10 +1848,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -521,10 +1876,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -542,10 +1904,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -563,10 +1932,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -584,10 +1960,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -605,10 +1988,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +2016,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -647,10 +2044,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -668,10 +2072,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -689,10 +2100,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +2128,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -731,10 +2156,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -752,10 +2184,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -773,10 +2212,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -794,10 +2240,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -815,10 +2268,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -836,10 +2296,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -857,10 +2324,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +2352,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -899,10 +2380,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -920,10 +2408,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -941,10 +2436,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -962,10 +2464,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -983,10 +2492,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1004,10 +2520,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1025,10 +2548,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +2576,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1067,10 +2604,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1088,10 +2632,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1109,10 +2660,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1130,10 +2688,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1151,10 +2716,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1172,10 +2744,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1193,10 +2772,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1214,10 +2800,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1235,10 +2828,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1256,10 +2856,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1277,10 +2884,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1298,10 +2912,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1319,10 +2940,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1340,10 +2968,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1361,10 +2996,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1382,10 +3024,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1403,10 +3052,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1424,10 +3080,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1445,10 +3108,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1466,10 +3136,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1487,10 +3164,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1508,10 +3192,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1529,10 +3220,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1550,10 +3248,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1571,10 +3276,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1592,10 +3304,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1613,10 +3332,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1634,10 +3360,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Doan",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Lap_Trinh_Net\\Project_CK\\project_c\\Doan\\Doan\\wwwroot\\",
+=======
+      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "Doan",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
       "BasePath": "_content/Doan",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1654,6 +3387,7 @@
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     }
+<<<<<<< HEAD
   ],
   "Endpoints": [
     {
@@ -8052,5 +9786,7 @@
         }
       ]
     }
+=======
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
   ]
 }

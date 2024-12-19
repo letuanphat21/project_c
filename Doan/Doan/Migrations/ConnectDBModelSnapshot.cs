@@ -257,6 +257,9 @@ namespace Doan.Migrations
                     b.Property<bool>("IsAdmin")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool>("IsConfirmEmail")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<bool>("IsGender")
                         .HasColumnType("tinyint(1)");
 

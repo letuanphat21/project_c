@@ -21,6 +21,20 @@
     {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\lap_trinh_net\\project_ck\\project_c\\doan\\doan\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\addproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+  "WorkspaceRootPath": "E:\\doanentity2\\Doan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> d81ab7cf04d455c77b873debbf5dc83a92fd8e0d
     }
   ],
   "DocumentGroupContainers": [
@@ -48,6 +62,11 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-17T21:49:59.639Z",
               "EditorCaption": ""
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
               "$type": "Document",
@@ -84,6 +103,14 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-17T09:35:50.422Z"
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Cart.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Cart.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T00:19:45.127Z"
             },
             {
               "$type": "Document",
@@ -96,6 +123,27 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALYBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T09:35:13.378Z"
+              "Title": "ProductDetail.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\ProductDetail.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\ProductDetail.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\ProductDetail.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\ProductDetail.cshtml",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEUAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T00:17:48.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T00:14:47.069Z",
+              "EditorCaption": ""
             }
           ]
         }
