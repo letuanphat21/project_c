@@ -173,16 +173,20 @@
       "PackagePath": "staticwebassets\\image\\details\\sanpham9-2.png"
     },
     {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\than.jpg",
+      "PackagePath": "staticwebassets\\image\\details\\than.jpg"
+    },
+    {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
       "PackagePath": "staticwebassets\\image\\nhannu-1.jpg"
     },
     {
-      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
-      "PackagePath": "staticwebassets\\image\\nhanvang.png"
-    },
-    {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
       "PackagePath": "staticwebassets\\image\\phat-ngang.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\máy tính.jpg",
+      "PackagePath": "staticwebassets\\image\\thumbnail\\máy tính.jpg"
     },
     {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham1.png",
@@ -299,6 +303,22 @@
     {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham9.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham9.png"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\details\\than.jpg",
+      "PackagePath": "staticwebassets\\images\\details\\than.jpg"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\details\\than_1.jpg",
+      "PackagePath": "staticwebassets\\images\\details\\than_1.jpg"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\thumbnail\\máy tính.jpg",
+      "PackagePath": "staticwebassets\\images\\thumbnail\\máy tính.jpg"
+    },
+    {
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\thumbnail\\máy tính_1.jpg",
+      "PackagePath": "staticwebassets\\images\\thumbnail\\máy tính_1.jpg"
     },
     {
       "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\header.js",
