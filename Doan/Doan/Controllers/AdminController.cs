@@ -1,6 +1,7 @@
 ﻿using Doan.Data;
 using Doan.Models;
 using Doan.Utils;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -10,15 +11,15 @@ namespace Doan.Controllers
 {
     public class AdminController : Controller
     {
-
+        private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ILogger<AdminController> _logger;
         private readonly ConnectDB _context;  // Khai báo _context
         
-        public AdminController(ILogger<AdminController> logger, ConnectDB context)
+        public AdminController(ILogger<AdminController> logger, ConnectDB context, IWebHostEnvironment webHostEnvironment)
         {
             _logger = logger;
             _context = context;  // Khởi tạo _context từ DI container
-            
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -124,6 +125,10 @@ namespace Doan.Controllers
             ViewBag.Products = list;
             ViewBag.Page = page;
             ViewBag.Num = num;
+            var successMessage = TempData["Success"] as string;  // Truy cập thông báo từ TempData
+            ViewBag.Success = successMessage;  // Gán lại cho ViewBag nếu cần
+            var fail = TempData["Fail"] as string;
+            ViewBag.Fail = fail;
             return View();
         }
 
@@ -346,299 +351,449 @@ namespace Doan.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult DeleteCategory(int id)
+        {
+            // Tìm danh mục theo id
+            var category = _context.categorys.FirstOrDefault(c => c.Id == id);
+
+            if (category != null)
+            {
+                // Xóa danh mục
+                _context.categorys.Remove(category);
+                _context.SaveChanges();
+
+                // Xóa hình ảnh thumbnail của danh mục trong thư mục
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/categorys");
+                var filePath = Path.Combine(uploadPath, category.Thumbnail);
+
+                if (!string.IsNullOrEmpty(category.Thumbnail) && System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+            }
+
+            // Chuyển hướng về trang quản lý danh mục
+            return RedirectToAction("ManagerCategory");
+        }
+
+        public IActionResult AddCategory(IFormFile Thumbnail, string Name)
+        {
+            if (Thumbnail != null && Thumbnail.Length > 0)
+            {
+                // Đường dẫn thư mục lưu file
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/categorys");
+
+                // Đảm bảo thư mục tồn tại
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
+
+                // Tạo tên file không trùng
+                var fileName = Path.GetFileNameWithoutExtension(Thumbnail.FileName);
+                var fileExtension = Path.GetExtension(Thumbnail.FileName);
+                var newFileName = fileName + fileExtension;
+                var filePath = Path.Combine(uploadPath, newFileName);
+
+                // Kiểm tra nếu tên file đã tồn tại và đổi tên ngay lập tức
+                int counter = 1;
+                while (System.IO.File.Exists(filePath))
+                {
+                    newFileName = $"{fileName}_{counter}{fileExtension}";
+                    filePath = Path.Combine(uploadPath, newFileName);
+                    counter++;
+                }
+
+                // Lưu file vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    Thumbnail.CopyTo(stream);
+                }
+
+                // Thêm danh mục mới vào database
+                var newCategory = new Category
+                {
+                    Name = Name,
+                    Thumbnail = newFileName // Lưu tên file mới vào cơ sở dữ liệu
+                };
+
+                _context.categorys.Add(newCategory);
+                _context.SaveChanges();
+            }
+
+            // Chuyển hướng về trang quản lý danh mục
+            return RedirectToAction("ManagerCategory");
+        }
+
+        public IActionResult EditCategory(string id)
+        {
+            int idc= int.Parse(id);
+            var category = _context.categorys.Find(idc);  // Lấy danh mục theo id
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.Category = category;
+            return View();
+        }
+        [HttpPost]
+        public IActionResult EditCategory(int id, string name, IFormFile Thumbnail)
+        {
+            var category = _context.categorys.Find(id);  // Lấy danh mục theo id
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            // Lưu tên danh mục
+            category.Name = name;
+
+            if (Thumbnail != null && Thumbnail.Length > 0)
+            {
+                // Đường dẫn thư mục lưu file
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/categorys");
+
+                // Đảm bảo thư mục tồn tại
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
+
+                // Xóa hình ảnh cũ
+                if (!string.IsNullOrEmpty(category.Thumbnail))
+                {
+                    var oldFilePath = Path.Combine(uploadPath, category.Thumbnail);
+                    if (System.IO.File.Exists(oldFilePath))
+                    {
+                        System.IO.File.Delete(oldFilePath);
+                    }
+                }
+
+                // Tạo tên file không trùng
+                var fileName = Path.GetFileNameWithoutExtension(Thumbnail.FileName);
+                var fileExtension = Path.GetExtension(Thumbnail.FileName);
+                var newFileName = fileName + fileExtension;
+                var filePath = Path.Combine(uploadPath, newFileName);
+
+                int counter = 1;
+                while (System.IO.File.Exists(filePath))
+                {
+                    newFileName = $"{fileName}_{counter}{fileExtension}";
+                    filePath = Path.Combine(uploadPath, newFileName);
+                    counter++;
+                }
+
+                // Lưu file vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    Thumbnail.CopyTo(stream);
+                }
+
+                // Cập nhật tên mới vào danh mục
+                category.Thumbnail = newFileName;
+            }
+
+            _context.SaveChanges();
+            ViewBag.Category = category;
+            return RedirectToAction("ManagerCategory");
+        }
 
 
+        [HttpPost]
+        public IActionResult DeleteProduct(int id)
+        {
+            // Xóa hình ảnh liên quan đến sản phẩm
+            var image = _context.images.FirstOrDefault(i => i.Pid == id);
 
+            if (image != null)
+            {
+                var uploadPath1 = Path.Combine(_webHostEnvironment.WebRootPath, "image/details");
+                var imagePath1 = Path.Combine(uploadPath1, image.Image2);
 
+                if (System.IO.File.Exists(imagePath1))
+                {
+                    System.IO.File.Delete(imagePath1);
+                }
 
+                _context.images.Remove(image);
+                _context.SaveChanges();
+            }
+            // Xóa sản phẩm
+            var product = _context.products.Find(id);
+            if (product != null)
+            {
+                _context.products.Remove(product);
+                _context.SaveChanges();
 
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/thumbnail");
+                var imagePath = Path.Combine(uploadPath, product.Thumbnail);
 
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+            }
 
-
-
+            return RedirectToAction("ManagerProduct");
+        }
 
 
 
         public IActionResult AddProduct()
         {
-            ViewBag.Categories = _context.categorys.ToList();
+            List<Category> listCategory = _context.categorys.ToList();
+            ViewBag.Category = listCategory;
             return View();
         }
-
-        // them sản phẩm
         [HttpPost]
-        public IActionResult AddProduct(int id, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, IList<IFormFile> thumbnails, DateTime createAt, DateTime updateAt, int cid, int numOfPur)
+        public IActionResult AddProduct(IFormFile Thumbnail,IFormFile? image2, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, string Category)
         {
-            try
+            ViewBag.Fail = "";
+            ViewBag.Success = "";
+            if (Thumbnail != null && Thumbnail.Length > 0)
             {
-                // Kiểm tra nếu sản phẩm đã tồn tại
-                var existingProduct = _context.products.FirstOrDefault(p => p.Id == id);
-                if (existingProduct != null)
+                // Đường dẫn thư mục lưu file
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/thumbnail");
+
+                // Đảm bảo thư mục tồn tại
+                if (!Directory.Exists(uploadPath))
                 {
-                    return Json(new { success = false, message = "Mã sản phẩm đã tồn tại!" });
+                    Directory.CreateDirectory(uploadPath);
                 }
 
-                // Xử lý tệp hình ảnh
-                List<string> thumbnailPaths = new List<string>();
-                if (thumbnails != null && thumbnails.Count > 0)
+                // Tạo tên file không trùng
+                var fileName = Path.GetFileNameWithoutExtension(Thumbnail.FileName);
+                var fileExtension = Path.GetExtension(Thumbnail.FileName);
+                var newFileName = fileName + fileExtension;
+                var filePath = Path.Combine(uploadPath, newFileName);
+
+                // Kiểm tra nếu tên file đã tồn tại và đổi tên ngay lập tức
+                int counter = 1;
+                while (System.IO.File.Exists(filePath))
                 {
-                    string uploadsFolder = Path.Combine("wwwroot/image");
-                    if (!Directory.Exists(uploadsFolder))
-                    {
-                        Directory.CreateDirectory(uploadsFolder);
-                    }
-
-                    // Lưu tối đa 2 tệp hình ảnh
-                    foreach (var thumbnail in thumbnails.Take(2))  // Chỉ lấy tối đa 2 tệp
-                    {
-                        string filePath = Path.Combine(uploadsFolder, thumbnail.FileName);
-                        using (var fileStream = new FileStream(filePath, FileMode.Create))
-                        {
-                            thumbnail.CopyTo(fileStream);
-                        }
-
-                        thumbnailPaths.Add($"/image/{thumbnail.FileName}");
-                    }
+                    newFileName = $"{fileName}_{counter}{fileExtension}";
+                    filePath = Path.Combine(uploadPath, newFileName);
+                    counter++;
                 }
 
-                // Tạo đối tượng sản phẩm mới
-                var newProduct = new Product
+                // Lưu file vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    Id = id,
+                    Thumbnail.CopyTo(stream);
+                }
+
+                string image2Path = null;
+                if (image2 != null && image2.Length > 0)
+                {
+                    // Đường dẫn thư mục lưu file details
+                    var detailsPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/details");
+
+                    // Đảm bảo thư mục tồn tại
+                    if (!Directory.Exists(detailsPath))
+                    {
+                        Directory.CreateDirectory(detailsPath);
+                    }
+
+                    // Tạo tên file không trùng
+                    var image2FileName = Path.GetFileNameWithoutExtension(image2.FileName);
+                    var image2FileExtension = Path.GetExtension(image2.FileName);
+                    var newImage2FileName = image2FileName + image2FileExtension;
+                    var image2FilePath = Path.Combine(detailsPath, newImage2FileName);
+
+                    // Kiểm tra nếu tên file đã tồn tại và đổi tên ngay lập tức
+                    int image2Counter = 1;
+                    while (System.IO.File.Exists(image2FilePath))
+                    {
+                        newImage2FileName = $"{image2FileName}_{image2Counter}{image2FileExtension}";
+                        image2FilePath = Path.Combine(detailsPath, newImage2FileName);
+                        image2Counter++;
+                    }
+
+                    // Lưu file vào thư mục
+                    using (var image2Stream = new FileStream(image2FilePath, FileMode.Create))
+                    {
+                        image2.CopyTo(image2Stream);
+                    }
+
+                    image2Path = newImage2FileName; // Lưu tên file vào biến
+                }
+                // Tạo sản phẩm mới với đường dẫn hình ảnh
+                int cid = int.Parse(Category);
+                var product = new Product
+                {
                     Title = title,
                     Brand = brand,
                     Price = price,
                     Discount = discount,
                     Warranty = warranty,
-                    InventoryNumber = inventoryNumber,
                     Description = description,
-                    Thumbnail = thumbnailPaths.ElementAtOrDefault(0),
-                    CreateAt = createAt,
-                    UpdateAt = updateAt,
+                    InventoryNumber = inventoryNumber,
+                    Thumbnail = newFileName, // Lưu tên file mới vào cơ sở dữ liệu
+                    CreateAt = DateTime.Now,
+                    UpdateAt = DateTime.Now,
                     Cid = cid,
-                    NumOfPur = numOfPur,
+                    NumOfPur = 0
+
                 };
-                _context.products.Add(newProduct);
+
+
+                // Gọi dịch vụ hoặc phương thức để thêm sản phẩm vào cơ sở dữ liệu
+                _context.products.Add(product);
                 _context.SaveChanges();
+
 
                 var newImage = new Image
                 {
-                    Pid = newProduct.Id, // Gán ID sản phẩm
-                    Image1 = thumbnailPaths.ElementAtOrDefault(0), // Lưu ảnh đầu tiên vào Image1
-                    Image2 = thumbnailPaths.ElementAtOrDefault(1)  // Lưu ảnh thứ hai vào Image2 nếu có
+                    Pid =product.Id,
+                    Image1=newFileName,
+                    Image2=image2Path
                 };
-
                 _context.images.Add(newImage);
                 _context.SaveChanges();
-                return Redirect("/Admin/ManagerProduct");
-            }
-            catch (Exception ex)
-            {
-                return View();
-            }
-        }
 
-        // Sửa sản phẩm(GET)
-        [HttpGet]
-        public IActionResult EditProduct(int id)
-        {
-            var product = _context.products.FirstOrDefault(p => p.Id == id);
-            if (product == null)
-            {
-                TempData["Error"] = "Sản phẩm không tồn tại.";
+                // Chuyển hướng hoặc hiển thị thông báo thành công
+                ViewBag.Success = "Thêm sản phẩm thành công";
+                TempData["Success"] = ViewBag.Success;
                 return RedirectToAction("ManagerProduct");
             }
-            var category = _context.categorys.Select(c => new { c.Id, c.Name }).ToList();
-            ViewBag.Categories = category;
-
-
-            return View(product);
+            else
+            {
+                ViewBag.Fail = "thêm sản phẩm thất bại";
+                TempData["Fail"]= ViewBag.Fail;
+                return RedirectToAction("ManagerProduct");
+            }
         }
 
-        [HttpPost]
-        public IActionResult EditProduct(int id, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, IFormFile thumbnail, DateTime createAt, DateTime updateAt, int cid, int numOfPur)
+
+        public IActionResult EditProduct(string id)
         {
-            try
+            int pid = int.Parse(id);
+            var image = _context.images.FirstOrDefault(i => i.Pid == pid);
+            var product = _context.products.FirstOrDefault(p => p.Id == pid);
+            var categories = _context.categorys.ToList(); // Lấy danh sách thể loại
+
+            ViewBag.Product = product;
+            ViewBag.Image = image;
+            ViewBag.Category = categories; // Thêm danh sách thể loại vào ViewBag
+
+            return View();
+        }
+        [HttpPost]
+        public IActionResult EditProduct(int pid, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, int category, IFormFile thumbnail, IFormFile image2)
+        {
+            var product = _context.products.Find(pid);  // Lấy sản phẩm theo id
+            var image = _context.images.FirstOrDefault(i => i.Pid == pid);
+
+            if (product == null)
             {
-                // Kiểm tra nếu các tham số bắt buộc hợp lệ
-                if (string.IsNullOrEmpty(title))
+                return NotFound();
+            }
+
+            // Lưu thông tin sản phẩm
+            product.Title = title;
+            product.Brand = brand;
+            product.Price = price;
+            product.Discount = discount;
+            product.Warranty = warranty;
+            product.InventoryNumber = inventoryNumber;
+            product.Description = description;
+            product.Cid = category;  // Lưu chọn thể loại vào Cid
+
+            // Xử lý hình ảnh thumbnail
+            if (thumbnail != null && thumbnail.Length > 0)
+            {
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/thumbnail");
+
+                if (!Directory.Exists(uploadPath))
                 {
-                    return Json(new { success = false, message = "Tên sản phẩm không được để trống!" });
+                    Directory.CreateDirectory(uploadPath);
                 }
 
-                // Tìm sản phẩm theo ID
-                var product = _context.products.FirstOrDefault(p => p.Id == id);
-                if (product == null)
+                // Xóa hình ảnh cũ
+                if (!string.IsNullOrEmpty(product.Thumbnail))
                 {
-                    return Json(new { success = false, message = "Sản phẩm không tồn tại!" });
-                }
-
-                // Cập nhật các thông tin của sản phẩm
-                product.Title = title;
-                product.Brand = brand;
-                product.Price = price;
-                product.Discount = discount;
-                product.Warranty = warranty;
-                product.InventoryNumber = inventoryNumber;
-                product.Description = description;
-                product.UpdateAt = updateAt;
-                product.Cid = cid;
-                product.NumOfPur = numOfPur;
-
-                // Cập nhật hình ảnh nếu có
-                if (thumbnail != null)
-                {
-                    string uploadsFolder = Path.Combine("wwwroot", "image");
-                    if (!Directory.Exists(uploadsFolder))
+                    var oldFilePath = Path.Combine(uploadPath, product.Thumbnail);
+                    if (System.IO.File.Exists(oldFilePath))
                     {
-                        Directory.CreateDirectory(uploadsFolder);
+                        System.IO.File.Delete(oldFilePath);
                     }
+                }
 
-                    string filePath = Path.Combine(uploadsFolder, thumbnail.FileName);
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                var fileName = Path.GetFileNameWithoutExtension(thumbnail.FileName);
+                var fileExtension = Path.GetExtension(thumbnail.FileName);
+                var newFileName = fileName + fileExtension;
+                var filePath = Path.Combine(uploadPath, newFileName);
+
+                int counter = 1;
+                while (System.IO.File.Exists(filePath))
+                {
+                    newFileName = $"{fileName}_{counter}{fileExtension}";
+                    filePath = Path.Combine(uploadPath, newFileName);
+                    counter++;
+                }
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    thumbnail.CopyTo(stream);
+                }
+
+                product.Thumbnail = newFileName;
+            }
+
+            // Xử lý hình ảnh khác
+            if (image2 != null && image2.Length > 0)
+            {
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image/details");
+
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
+
+                if (!string.IsNullOrEmpty(image.Image2))
+                {
+                    var oldFilePath = Path.Combine(uploadPath, image.Image2);
+                    if (System.IO.File.Exists(oldFilePath))
                     {
-                        thumbnail.CopyTo(fileStream);
+                        System.IO.File.Delete(oldFilePath);
                     }
-
-                    product.Thumbnail = $"/image/{thumbnail.FileName}";
-                }
-                _context.SaveChanges();
-                return Redirect("/Admin/ManagerProduct");
-            }
-            catch (Exception ex)
-            {
-                return View();
-            }
-        }
-
-        [HttpPost]
-        public IActionResult DeleteProduct(int Id)
-        {
-            try
-            {
-                var product = _context.products.FirstOrDefault(p => p.Id == Id);
-                if (product == null)
-                {
-                    return Json(new { success = false, message = "Sản phẩm không tồn tại!" });
                 }
 
-                _context.products.Remove(product);  
-                _context.SaveChanges(); 
-                return Json(new { success = true, redirectUrl = Url.Action("ManagerProduct", "Admin") });
-            }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.Message });
-            }
-        }
+                var fileName = Path.GetFileNameWithoutExtension(image2.FileName);
+                var fileExtension = Path.GetExtension(image2.FileName);
+                var newFileName = fileName + fileExtension;
+                var filePath = Path.Combine(uploadPath, newFileName);
 
-        //Thêm danh mục
-        [HttpPost]
-        public IActionResult AddCategory(int id, string name, string thumbnail)
-        {
-            try
-            {
-                // Kiểm tra nếu danh mục đã tồn tại
-                var existingCategory = _context.categorys.FirstOrDefault(c => c.Id == id);
-                if (existingCategory != null)
+                int counter = 1;
+                while (System.IO.File.Exists(filePath))
                 {
-                    return Json(new { success = false, message = "Mã danh mục đã tồn tại!" });
+                    newFileName = $"{fileName}_{counter}{fileExtension}";
+                    filePath = Path.Combine(uploadPath, newFileName);
+                    counter++;
                 }
 
-                // Tạo đối tượng danh mục mới và thêm vào cơ sở dữ liệu
-                var newCategory = new Category
+                using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    Id = id,
-                    Name = name,
-                    Thumbnail = thumbnail // Giả sử bạn có trường Image trong bảng Category
-                };
-
-                _context.categorys.Add(newCategory);
-                _context.SaveChanges();
-
-                // Trả về phản hồi thành công
-                return Json(new { success = true, redirectUrl = Url.Action("ManagerCategory", "Admin") });
+                    image2.CopyTo(stream);
+                }
+                image.Image1 = newFileName;
+                image.Image2 = newFileName;
             }
-            catch (Exception ex)
-            {
-                // Ghi log lỗi và trả về thông báo lỗi chi tiết
-                return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.Message });
-            }
+
+            _context.SaveChanges();  // Lưu thay đổi vào CSDL
+            return RedirectToAction("ManagerProduct", "Admin");
         }
 
 
-        // Sửa danh mục (GET)
-        [HttpGet]
-        public IActionResult EditCategory(int id)
-        {
-        
-            var category = _context.categorys.FirstOrDefault(c => c.Id == id);
-            if (category == null)
-            {
-                TempData["Error"] = "Danh mục không tồn tại.";
-                return RedirectToAction("ManagerCategory");
-            }
-
-            return View(category);
-        }
-
-        // Cập nhật danh mục (POST)
-        [HttpPost]
-        public IActionResult EditCategory(int Id, string Name)
-        {
-            try
-            {
-                // Kiểm tra nếu Id và Name hợp lệ
-                if (string.IsNullOrEmpty(Name))
-                {
-                    return Json(new { success = false, message = "Tên danh mục không được để trống!" });
-                }
-
-                var category = _context.categorys.FirstOrDefault(c => c.Id == Id);
-                if (category == null)
-                {
-                    return Json(new { success = false, message = "Danh mục không tồn tại!" });
-                }
-
-                category.Name = Name;
-                _context.SaveChanges();
-
-                // Sau khi cập nhật thành công, chuyển hướng người dùng về trang ManagerCategory
-                return Json(new { success = true, redirectUrl = Url.Action("ManagerCategory", "Admin") });
-            }
-            catch (Exception ex)
-            {
-                // Ghi log lỗi và trả về thông báo lỗi chi tiết
-                return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.Message });
-            }
-        }
-        //xóa danh mục
-        [HttpPost]
-        public IActionResult DeleteCategory(int Id)
-        {
-            try
-            {
-                // Kiểm tra nếu Id và Name hợp lệ
-             
-                var category = _context.categorys.FirstOrDefault(c => c.Id == Id);
-                if (category == null)
-                {
-                    return Json(new { success = false, message = "Danh mục không tồn tại!" });
-                }
-
-                _context.categorys.Remove(category);  // Thực hiện xóa danh mục khỏi cơ sở dữ liệu
-                _context.SaveChanges();  // Lưu thay đổi vào cơ sở dữ liệu
 
 
-                // Sau khi cập nhật thành công, chuyển hướng người dùng về trang ManagerCategory
-                return Json(new { success = true, redirectUrl = Url.Action("ManagerCategory", "Admin") });
-            }
-            catch (Exception ex)
-            {
-                // Ghi log lỗi và trả về thông báo lỗi chi tiết
-                return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.Message });
-            }
-        }
+
+
+
+
+
 
 
 

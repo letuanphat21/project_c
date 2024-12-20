@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "E:\\doanentity2\\Doan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\admin\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\admin\\manageruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\manageruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\admin\\managerdiscount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managerdiscount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\admin\\menuleft.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\menuleft.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cart.cshtml",
-              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Cart.cshtml",
-              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Cart.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\Cart.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEoAAABQAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ManagerUser.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T00:19:45.127Z",
+              "WhenOpened": "2024-12-20T09:47:54.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductDetail.cshtml",
-              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\ProductDetail.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\ProductDetail.cshtml",
-              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\ProductDetail.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\ProductDetail.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAEUAAAB3AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Menuleft.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\Menuleft.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\Menuleft.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\Menuleft.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\Menuleft.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T00:17:48.164Z",
+              "WhenOpened": "2024-12-20T09:47:53.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerDiscount.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\ManagerDiscount.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerDiscount.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\ManagerDiscount.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerDiscount.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T09:47:47.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManagerProduct.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-20T09:47:23.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGcAAAAgAAAAAAAAAA==",
+              "Title": "EditProduct.cshtml",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\EditProduct.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\EditProduct.cshtml",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Admin\\EditProduct.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\EditProduct.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T00:14:47.069Z",
+              "WhenOpened": "2024-12-20T09:36:58.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Doan\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Doan\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAgwIMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T09:36:21.6Z",
               "EditorCaption": ""
             }
           ]
