@@ -6590,19 +6590,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Doan.csproj",
+      "projectUniqueName": "E:\\doanentity2\\Doan\\Doan\\Doan.csproj",
       "projectName": "Doan",
-      "projectPath": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Doan.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\doanc#entity\\project_c\\Doan\\Doan\\obj\\",
+      "projectPath": "E:\\doanentity2\\Doan\\Doan\\Doan.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "E:\\doanentity2\\Doan\\Doan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

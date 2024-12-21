@@ -17,179 +17,183 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Doan
 build_property.RootNamespace = Doan
-build_property.ProjectDir = D:\doanc#entity\project_c\Doan\Doan\
+build_property.ProjectDir = E:\doanentity2\Doan\Doan\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\doanc#entity\project_c\Doan\Doan
+build_property.MSBuildProjectDirectory = E:\doanentity2\Doan\Doan
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/AddProduct.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/CreateDiscount.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/CreateDiscount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlRGlzY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/EditCategory.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/EditCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/EditDiscount.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/EditDiscount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdERpc2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/EditProduct.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/EditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/Index.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/ManagerCategory.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/ManagerCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlckNhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/ManagerDiscount.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/ManagerDiscount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlckRpc2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/ManagerOrder.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/ManagerOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlck9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/ManagerProduct.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/ManagerProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlclByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/ManagerUser.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/ManagerUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlclVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/Menuleft.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/Menuleft.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVudWxlZnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/OrderDetail.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/OrderDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/_DiscountTablePartial.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/_DiscountTablePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX0Rpc2NvdW50VGFibGVQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Admin/_UserTable.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Admin/_OrderTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX09yZGVyVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/doanentity2/Doan/Doan/Views/Admin/_UserTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1VzZXJUYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/About.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Cart.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Changeinfor.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Changeinfor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGFuZ2VpbmZvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Changepass.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Changepass.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGFuZ2VwYXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Check.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Check.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/ConfirmOTP.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/ConfirmOTP.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maXJtT1RQLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/ConfirmOTPForgotpass.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/ConfirmOTPForgotpass.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maXJtT1RQRm9yZ290cGFzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Footer.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Forgotpass.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Forgotpass.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jnb3RwYXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/FormCheckOut.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/FormCheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtQ2hlY2tPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Header.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Index.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Login.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/OrderDetail.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/OrderDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmRlckRldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/PaymentMethod.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/PaymentMethod.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXltZW50TWV0aG9kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Privacy.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/ProductDetail.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Signup.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/SuccessChangPass.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/SuccessChangPass.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzQ2hhbmdQYXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/SuccessConfirmEmail.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/SuccessConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzQ29uZmlybUVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/Thank.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/Thank.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaGFuay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Home/ViewOrder.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Home/ViewOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3T3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Shared/Error.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/_ViewImports.cshtml]
+[E:/doanentity2/Doan/Doan/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/_ViewStart.cshtml]
+[E:/doanentity2/Doan/Doan/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/doanc\#entity/project_c/Doan/Doan/Views/Shared/_Layout.cshtml]
+[E:/doanentity2/Doan/Doan/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hu2hii6x6h
