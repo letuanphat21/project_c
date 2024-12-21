@@ -171,45 +171,6 @@ namespace Doan.Controllers
             ViewBag.Num = num;
             return View();
         }
-
-
-        //public IActionResult ManagerDiscount(string xpage)
-        //{
-
-        //    var userSession = HttpContext.Session.GetString("user");
-        //    if (string.IsNullOrEmpty(userSession))
-        //    {
-        //        // Chuyển hướng đến trang Login nếu Session rỗng hoặc null
-        //        return RedirectToAction("Login", "Home");
-        //    }
-        //    var user = JsonConvert.DeserializeObject<User>(userSession);
-        //    List<Discount> listu = _context.discounts.ToList();
-
-        //    int page, numperpage = 5;
-        //    int size = listu.Count;
-        //    int num = (size % numperpage == 0 ? (size / numperpage) : ((size / numperpage) + 1));// số trang
-
-        //    if (xpage == null)
-        //    {
-        //        page = 1;
-        //    }
-        //    else
-        //    {
-        //        page = int.Parse(xpage);
-        //    }
-
-
-        //    int start, end;
-        //    start = (page - 1) * numperpage;
-        //    end = Math.Min(page * numperpage, size);
-
-        //    List<Discount> list = MyUtils.getListBypageDiscount(listu, start, end);
-
-        //    ViewBag.Discount = list;
-        //    ViewBag.Page = page;
-        //    ViewBag.Num = num;
-        //    return View();
-        //}
         public IActionResult ManagerDiscount(string xpage, string search, string filter)
         {
             var userSession = HttpContext.Session.GetString("user");
@@ -266,8 +227,7 @@ namespace Doan.Controllers
             ViewBag.Filter = filter;
             return View();
         }
-
-        public IActionResult ManagerOrder(string xpage)
+       public IActionResult ManagerOrder(string xpage)
         {
 
             var userSession = HttpContext.Session.GetString("user");
@@ -304,6 +264,45 @@ namespace Doan.Controllers
             ViewBag.Num = num;
             return View();
         }
+
+        public List<Order> GetOrders()
+        {
+            return _context.orders.ToList();
+        }
+        public ActionResult SearchOrders(string search, string filter)
+        {
+            var orders=GetOrders();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                orders = orders.Where(u => u.FullName.Contains(search) || u.Address.Contains(search)).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(filter))
+            {
+                if (filter == "pending")
+                {
+                    orders = orders.Where(u => u.Status.Equals("pending", StringComparison.OrdinalIgnoreCase)).ToList();
+                }
+                else if (filter == "confirmed")
+                {
+                    orders = orders.Where(u => u.Status.Equals("confirmed", StringComparison.OrdinalIgnoreCase)).ToList();
+                }
+            }
+
+            return PartialView("_OrderTable", orders);
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
         [HttpPost]
