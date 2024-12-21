@@ -4,6 +4,7 @@ using Doan.Utils;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using Newtonsoft.Json;
 using System.Security.Cryptography;
 
@@ -172,21 +173,76 @@ namespace Doan.Controllers
         }
 
 
-        public IActionResult ManagerDiscount(string xpage)
-        {
+        //public IActionResult ManagerDiscount(string xpage)
+        //{
 
+        //    var userSession = HttpContext.Session.GetString("user");
+        //    if (string.IsNullOrEmpty(userSession))
+        //    {
+        //        // Chuyển hướng đến trang Login nếu Session rỗng hoặc null
+        //        return RedirectToAction("Login", "Home");
+        //    }
+        //    var user = JsonConvert.DeserializeObject<User>(userSession);
+        //    List<Discount> listu = _context.discounts.ToList();
+
+        //    int page, numperpage = 5;
+        //    int size = listu.Count;
+        //    int num = (size % numperpage == 0 ? (size / numperpage) : ((size / numperpage) + 1));// số trang
+
+        //    if (xpage == null)
+        //    {
+        //        page = 1;
+        //    }
+        //    else
+        //    {
+        //        page = int.Parse(xpage);
+        //    }
+
+
+        //    int start, end;
+        //    start = (page - 1) * numperpage;
+        //    end = Math.Min(page * numperpage, size);
+
+        //    List<Discount> list = MyUtils.getListBypageDiscount(listu, start, end);
+
+        //    ViewBag.Discount = list;
+        //    ViewBag.Page = page;
+        //    ViewBag.Num = num;
+        //    return View();
+        //}
+        public IActionResult ManagerDiscount(string xpage, string search, string filter)
+        {
             var userSession = HttpContext.Session.GetString("user");
             if (string.IsNullOrEmpty(userSession))
             {
-                // Chuyển hướng đến trang Login nếu Session rỗng hoặc null
                 return RedirectToAction("Login", "Home");
             }
-            var user = JsonConvert.DeserializeObject<User>(userSession);
-            List<Discount> listu = _context.discounts.ToList();
+
+            var discounts = _context.discounts.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                discounts = discounts.Where(d => d.Name.Contains(search));
+            }
+
+            if (!string.IsNullOrEmpty(filter))
+            {
+                var now = DateTime.Now;
+                if (filter == "active")
+                {
+                    discounts = discounts.Where(d => d.Start_Date <= now && d.End_Date >= now);
+                }
+                else if (filter == "expired")
+                {
+                    discounts = discounts.Where(d => d.End_Date < now);
+                }
+            }
+
+            var discountList = discounts.ToList();
 
             int page, numperpage = 5;
-            int size = listu.Count;
-            int num = (size % numperpage == 0 ? (size / numperpage) : ((size / numperpage) + 1));// số trang
+            int size = discountList.Count;
+            int num = (size % numperpage == 0 ? (size / numperpage) : ((size / numperpage) + 1)); // số trang
 
             if (xpage == null)
             {
@@ -197,16 +253,17 @@ namespace Doan.Controllers
                 page = int.Parse(xpage);
             }
 
-
             int start, end;
             start = (page - 1) * numperpage;
             end = Math.Min(page * numperpage, size);
 
-            List<Discount> list = MyUtils.getListBypageDiscount(listu, start, end);
+            List<Discount> list = discountList.Skip(start).Take(end - start).ToList();
 
-            ViewBag.Discount = list;
+            ViewBag.Discounts = list;
             ViewBag.Page = page;
             ViewBag.Num = num;
+            ViewBag.Search = search;
+            ViewBag.Filter = filter;
             return View();
         }
 
@@ -787,6 +844,300 @@ namespace Doan.Controllers
         }
 
 
+
+
+
+
+
+        //Tân thêm
+        [HttpPost]
+        public IActionResult AddUser(string username, string fullname, string email, string phoneNumber, string role, string address, string password, bool isGender, DateTime birthDay)
+        {
+            try
+            {
+                // Kiểm tra trùng lặp tên người dùng
+                var existingUserByUsername = _context.users.FirstOrDefault(u => u.User1 == username);
+                if (existingUserByUsername != null)
+                {
+                    return Json(new { success = false, message = "Tên người dùng đã tồn tại!" });
+                }
+
+                // Kiểm tra trùng lặp email
+                var existingUserByEmail = _context.users.FirstOrDefault(u => u.Email == email);
+                if (existingUserByEmail != null)
+                {
+                    return Json(new { success = false, message = "Email đã tồn tại!" });
+                }
+
+                // Sinh key ngẫu nhiên và mã hóa mật khẩu
+                string keyGenerate = MyUtils.keyGenerator();
+                string randomKey = keyGenerate;
+                string pass = MyUtils.ToMd5Hash(password, keyGenerate);
+
+                // Tạo người dùng mới
+                var newUser = new User
+                {
+                    User1 = username,
+                    Fullname = fullname,
+                    Email = email,
+                    PhoneNumber = phoneNumber,
+                    IsAdmin = role == "Admin",
+                    Address = address,
+                    Password = pass,
+                    IsGender = isGender,
+                    BirthDay = birthDay,
+                    RandomKey = randomKey,
+                    createdAt = DateTime.Now,
+                    updatedAt = DateTime.Now,
+                    IsConfirmEmail = true
+                };
+
+                // Lưu vào cơ sở dữ liệu
+                _context.users.Add(newUser);
+                _context.SaveChanges();
+
+                return Json(new { success = true, redirectUrl = Url.Action("ManagerUser", "Admin") });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while saving the entity changes.");
+                return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.InnerException?.Message });
+            }
+        }
+        //Tấn Thêm
+
+        [HttpPost]
+        public IActionResult DeleteUser(int id)
+        {
+            try
+            {
+                var user = _context.users.FirstOrDefault(u => u.Id == id);
+                if (user == null)
+                {
+                    return Json(new { success = false, message = "Người dùng không tồn tại!" });
+                }
+
+                _context.users.Remove(user);
+                _context.SaveChanges();
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Lỗi khi xóa tài khoản.");
+                return Json(new { success = false, message = "Có lỗi xảy ra!" });
+            }
+        }
+        // Tấn Them 
+        [HttpPost]
+        public IActionResult EditUser(int userId, string username,  string fullname, string email, string phoneNumber, bool IsAdmin, string address, bool isGender, DateTime birthDay,bool IsConfirm)
+        {
+            try
+            {
+                // Tìm user trong database
+                var user = _context.users.FirstOrDefault(u => u.Id == userId);
+                if (user == null)
+                {
+                    return Json(new { success = false, message = "Người dùng không tồn tại!" });
+                }
+
+
+
+                // Cập nhật thông tin người dùng
+                user.User1 = username;
+                user.Fullname = fullname;
+                user.Email = email;
+                user.PhoneNumber = phoneNumber;
+                user.IsAdmin = IsAdmin;
+                user.Address = address;
+                user.IsGender = isGender;
+                user.BirthDay = birthDay;
+                user.updatedAt = DateTime.Now;
+                user.IsConfirmEmail = IsConfirm;
+
+                _context.SaveChanges();
+
+                return Json(new { success = true, redirectUrl = Url.Action("ManagerUser", "Admin") });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while updating the user.");
+                return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.InnerException?.Message });
+            }
+        }
+
+        //Tấn Thêm 
+        [HttpGet]
+        public IActionResult GetUserById(int id)
+        {
+            var user = _context.users
+                .Where(u => u.Id == id)
+                .Select(u => new
+                {
+                    id = u.Id,
+                    username = u.User1,
+                    fullname = u.Fullname,
+                    password=u.Password,
+                    email = u.Email,
+                    phoneNumber = u.PhoneNumber,
+                    role = u.IsAdmin,
+                    address = u.Address,
+                    isGender = u.IsGender,
+                    birthDay = u.BirthDay,
+                    emailConfirm=u.IsConfirmEmail
+                })
+                .FirstOrDefault();
+
+            if (user == null)
+            {
+                return Json(new { success = false, message = "Người dùng không tồn tại!" });
+            }
+
+            return Json(new { success = true, data = user });
+        }
+
+
+        // tấn thêm 
+        [HttpGet]
+        public IActionResult CreateDiscount()
+        {
+            return View();
+        }
+
+
+        // tấn thêm 
+        [HttpPost]
+        public IActionResult CreateDiscount(Discount discount)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Tự động tăng mã giảm giá
+                    var lastDiscount = _context.discounts.OrderByDescending(d => d.Id).FirstOrDefault();
+                    discount.Id = (lastDiscount != null) ? lastDiscount.Id + 1 : 1;
+
+                    // Chỉ lấy ngày tháng năm cho ngày bắt đầu và ngày kết thúc
+                    discount.Start_Date = discount.Start_Date.Date;
+                    discount.End_Date = discount.End_Date.Date;
+
+                    _context.discounts.Add(discount);
+                    _context.SaveChanges();
+                    return RedirectToAction("ManagerDiscount");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "An error occurred while saving the entity changes.");
+                    return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.InnerException?.Message });
+                }
+            }
+            else
+            {
+                return View(discount);
+            }
+        }
+        // Tấn Thêm 
+
+        [HttpGet]
+        public IActionResult EditDiscount(int id)
+        {
+            var discount = _context.discounts.Find(id);
+            return View(discount);
+        }
+        // Tấn thêm
+
+        [HttpPost]
+        public IActionResult EditDiscount(Discount discount)
+        {
+            var existingDiscount = _context.discounts.Find(discount.Id);
+            if (existingDiscount != null)
+            {
+                existingDiscount.Name = discount.Name;
+                existingDiscount.Discount_Value = discount.Discount_Value;
+                existingDiscount.Start_Date = discount.Start_Date.Date;
+                existingDiscount.End_Date = discount.End_Date.Date;
+                _context.SaveChanges();
+            }
+            return RedirectToAction("ManagerDiscount");
+        }
+        // tấn Thêm 
+        [HttpPost]
+        public IActionResult DeleteDiscount(int id)
+        {
+            try
+            {
+                var discount = _context.discounts.Find(id);
+                if (discount == null)
+                {
+                    return Json(new { success = false, message = "Thẻ giảm giá không tồn tại!" });
+                }
+
+                _context.discounts.Remove(discount);
+                _context.SaveChanges();
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Có lỗi xảy ra! " + ex.Message });
+            }
+        }
+        // Tấn Thêm 
+
+        public List<User> GetUsers()
+        {
+            return _context.users.ToList();
+        }
+        public ActionResult SearchUsers(string search, string filter)
+        {
+            var users = GetUsers();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                users = users.Where(u => u.User1.Contains(search) || u.Fullname.Contains(search)).ToList();
+            }
+
+            if (!string.IsNullOrEmpty(filter))
+            {
+                if (filter == "admin")
+                {
+                    users = users.Where(u => u.IsAdmin).ToList();
+                }
+                else if (filter == "user")
+                {
+                    users = users.Where(u => !u.IsAdmin).ToList();
+                }
+            }
+
+            return PartialView("_UserTable", users);
+        }
+        // Tấn Thêm
+        public IActionResult SearchDiscounts(string search, string filter)
+        {
+            var discounts = _context.discounts.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                discounts = discounts.Where(d => d.Name.Contains(search));
+            }
+
+            if (!string.IsNullOrEmpty(filter))
+            {
+                var now = DateTime.Now;
+                if (filter == "active")
+                {
+                    discounts = discounts.Where(d => d.Start_Date <= now && d.End_Date >= now);
+                }
+                else if (filter == "expired")
+                {
+                    discounts = discounts.Where(d => d.End_Date < now);
+                }
+            }
+
+            var discountList = discounts.ToList();
+
+            return PartialView("_DiscountTablePartial", discountList);
+        }
 
 
 
