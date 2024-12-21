@@ -16,8 +16,8 @@
 
 
 -- Dumping database structure for webnhomc2
-CREATE DATABASE IF NOT EXISTS `webnhomc2` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `webnhomc2`;
+CREATE DATABASE IF NOT EXISTS `webnhomc3` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `webnhomc3`;
 
 -- Dumping structure for table webnhomc2.categorys
 CREATE TABLE IF NOT EXISTS `categorys` (

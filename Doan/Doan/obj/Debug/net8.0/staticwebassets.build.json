@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CH5Alp1m3U4iSABdiUMdpkIqXu3nUSceNiNb0Gal4mQ=",
+  "Hash": "xUg7C1hj4JR6YFTtw1X//h15OGcmkexHjOBJHy3c41c=",
   "Source": "Doan",
   "BasePath": "_content/Doan",
   "Mode": "Default",
@@ -853,25 +853,6 @@
       "OriginalItemSpec": "wwwroot\\image\\details\\sanpham9-2.png"
     },
     {
-      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\than.jpg",
-      "SourceId": "Doan",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
-      "BasePath": "_content/Doan",
-      "RelativePath": "image/details/than.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\details\\than.jpg"
-    },
-    {
       "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
       "SourceId": "Doan",
       "SourceType": "Discovered",
@@ -908,25 +889,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\phat-ngang.png"
-    },
-    {
-      "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\máy tính.jpg",
-      "SourceId": "Doan",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\",
-      "BasePath": "_content/Doan",
-      "RelativePath": "image/thumbnail/máy tính.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\thumbnail\\máy tính.jpg"
     },
     {
       "Identity": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham1.png",
