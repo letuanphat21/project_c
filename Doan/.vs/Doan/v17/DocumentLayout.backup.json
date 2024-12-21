@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\doanentity2\\Doan\\",
+  "WorkspaceRootPath": "D:\\doanc#entity\\project_c\\Doan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\doanc#entity\\project_c\\doan\\doan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\doanc#entity\\project_c\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\doanc#entity\\project_c\\doan\\doan\\views\\admin\\manageruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\manageruser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|d:\\doanc#entity\\project_c\\doan\\doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\confirmotpforgotpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\confirmotpforgotpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\successchangpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\successchangpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\doanentity2\\doan\\doan\\views\\home\\forgotpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\forgotpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\doanc#entity\\project_c\\Doan\\Doan\\appsettings.json",
+              "RelativeDocumentMoniker": "Doan\\appsettings.json",
+              "ToolTip": "D:\\doanc#entity\\project_c\\Doan\\Doan\\appsettings.json",
+              "RelativeToolTip": "Doan\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-21T02:49:26.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SuccessChangPass.cshtml",
-              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\SuccessChangPass.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\SuccessChangPass.cshtml",
-              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\SuccessChangPass.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\SuccessChangPass.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Title": "ManagerUser.cshtml",
+              "DocumentMoniker": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "ToolTip": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerUser.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGYAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T01:04:01.329Z",
+              "WhenOpened": "2024-12-21T02:46:00.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConfirmOTPForgotpass.cshtml",
-              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\ConfirmOTPForgotpass.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\ConfirmOTPForgotpass.cshtml",
-              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\ConfirmOTPForgotpass.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\ConfirmOTPForgotpass.cshtml",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwEMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T00:50:16.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Doan\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Doan\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAMUEAAAAAAAAAAAgwNYEAAAvAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Doan\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Doan\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAALIDAAAAAAAAAAAwwL4DAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T00:40:24.303Z",
+              "WhenOpened": "2024-12-21T02:40:16.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Forgotpass.cshtml",
-              "DocumentMoniker": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Forgotpass.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Forgotpass.cshtml",
-              "ToolTip": "E:\\doanentity2\\Doan\\Doan\\Views\\Home\\Forgotpass.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\Forgotpass.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwEgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T00:39:36.231Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Doan\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\doanc#entity\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Doan\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAUwO8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T02:40:16.337Z",
               "EditorCaption": ""
             }
           ]

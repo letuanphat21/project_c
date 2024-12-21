@@ -1,10 +1,8 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -17,41 +15,65 @@
     @Html.Partial("Menuleft")
     <div class="content">
         <h1 class="text-center">Quản lý thẻ giảm giá</h1>
+        <div class="d-flex justify-content-between mb-3">
+            <div>
+                <a href="@Url.Action("CreateDiscount", "Admin")" class="btn btn-primary">Thêm mới</a>
+            </div>
+            <div class="d-flex">
+                <input type="text" id="searchInput" class="form-control me-2" placeholder="Tìm kiếm..." value="@ViewBag.Search" />
+                <select id="filterSelect" class="form-control me-2">
+                    <option value="">Tất cả</option>
+                    <option value="active">Đang hoạt động</option>
+                    <option value="expired">Hết hạn</option>
+                </select>
+                <button class="btn btn-secondary" id="searchButton">Tìm kiếm</button>
+            </div>
+        </div>
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Thể thẻ giảm giá</th>
+                    <th>Tên thẻ giảm giá</th>
                     <th>Giá trị</th>
                     <th>Ngày bắt đầu</th>
                     <th>Ngày kết thúc</th>
                     <th>Hành động</th>
                 </tr>
             </thead>
-            <tbody>
-                @if (ViewBag.Discount != null)
+            <tbody id="discountTableBody">
+                @if (ViewBag.Discounts != null)
+
+
+
                 {
-                    foreach (var discount in ViewBag.Discount)
+                    foreach (var discount in ViewBag.Discounts)
                     {
                         <tr>
                             <td>@discount.Id</td>
                             <td>@discount.Name</td>
                             <td>@discount.Discount_Value %</td>
-                            <td>@discount.Start_Date.ToString("yyyy-MM-dd ")</td>
-                            <td>@discount.End_Date.ToString("yyyy-MM-dd ")</td>
-                           
-
+                            <td>@discount.Start_Date.ToString("yyyy-MM-dd")</td>
+                            <td>@discount.End_Date.ToString("yyyy-MM-dd")</td>
                             <td>
-                                <a href="" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                <a href="@Url.Action("EditDiscount", "Admin", new { id = discount.Id })" class="btn btn-warning btn-sm">Edit</a>
+                                <button class="btn btn-danger btn-sm delete-btn" data-id="@discount.Id" data-name="@discount.Name" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
                             </td>
                         </tr>
                     }
+
+
+
                 }
+
+
+
                 else
+
+
+
                 {
                     <tr>
-                        <td colspan="8" class="text-center">No users found.</td>
+                        <td colspan="6" class="text-center">No discounts found.</td>
                     </tr>
                 }
             </tbody>
@@ -65,15 +87,98 @@
                     @for (int i = 1; i <= ViewBag.Num; i++)
                     {
                         <li class="@(ViewBag.Page == i ? "active" : "")">
-                            <a asp-controller="Admin" asp-action="ManagerDiscount" asp-route-xpage="@i">@i</a>
+                            <a asp-controller="Admin" asp-action="ManagerDiscount" asp-route-xpage="@i" asp-route-search="@ViewBag.Search" asp-route-filter="@ViewBag.Filter">@i</a>
                         </li>
                     }
                 </ul>
             }
         </div>
-    </div> -->
 
+        <!-- Modal xác nhận xóa -->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel">Xóa thẻ giảm giá</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có chắc chắn muốn xóa thẻ giảm giá "<span id="discountName"></span>"?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="confirmDelete">Xóa</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var filterValue = '@ViewBag.Filter';
+            $('#filterSelect').val(filterValue);
+        });
 
+        $('.delete-btn').on('click', function () {
+            var id = $(this).data('id');
+            var name = $(this).data('name');
+
+            $('#discountName').text(name);
+
+            $('#confirmDelete').off('click').on('click', function () {
+                $.ajax({
+                    url: '/Admin/DeleteDiscount',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (response) {
+                        if (response.success) {
+                            alert('Thẻ giảm giá đã được xóa thành công!');
+                            window.location.href = '/Admin/ManagerDiscount';
+                        } else {
+                            alert('Xóa thẻ giảm giá thất bại: ' + response.message);
+                        }
+                    },
+                    error: function () {
+                        alert('Đã xảy ra lỗi trong quá trình xóa thẻ giảm giá.');
+                    }
+                });
+            });
+        });
+
+        $('#searchInput').on('keyup', function () {
+            var searchValue = $(this).val();
+            var filterValue = $('#filterSelect').val();
+            $.ajax({
+                url: '@Url.Action("SearchDiscounts", "Admin")',
+                type: 'GET',
+                data: { search: searchValue, filter: filterValue },
+                success: function (response) {
+                    $('#discountTableBody').html(response);
+                },
+                error: function () {
+                    alert('Đã xảy ra lỗi trong quá trình tìm kiếm.');
+                }
+            });
+        });
+
+        $('#filterSelect').on('change', function () {
+            var searchValue = $('#searchInput').val();
+            var filterValue = $(this).val();
+            $.ajax({
+                url: '@Url.Action("SearchDiscounts", "Admin")',
+                type: 'GET',
+                data: { search: searchValue, filter: filterValue },
+                success: function (response) {
+                    $('#discountTableBody').html(response);
+                },
+                error: function () {
+                    alert('Đã xảy ra lỗi trong quá trình lọc.');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -7,27 +7,39 @@ namespace Doan.Models
 
         [Key]
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "Tên người dùng là bắt buộc")]
+        [StringLength(50, ErrorMessage = "Tên người dùng không được dài quá 50 ký tự")]
         public string User1 { get; set; }
 
+        [Required(ErrorMessage = "Tên đầy đủ là bắt buộc")]
+        [StringLength(100, ErrorMessage = "Tên đầy đủ không được dài quá 100 ký tự")]
         public string Fullname { get; set; }
 
+        [Required(ErrorMessage = "Cần có mật khẩu")]
+        [StringLength(100, MinimumLength = 1, ErrorMessage = "Mật khẩu phải dài ít nhất 1 ký tự")]
         public string Password { get; set; }
 
+        [Required(ErrorMessage = "Giới tính là bắt buộc")]
         public bool IsGender { get; set; }
 
+        [Required(ErrorMessage = "Ngày sinh là bắt buộc")]
         public DateTime BirthDay { get; set; }
 
+        [Required(ErrorMessage = "Email là bắt buộc")]
+        [EmailAddress(ErrorMessage = "Địa chỉ email không hợp lệ")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Số điện thoại là bắt buộc")]
+        [Phone(ErrorMessage = "Số điện thoại không hợp lệ")]
         public string PhoneNumber { get; set; }
 
-        public string Address { get; set; }
+        [Required(ErrorMessage = "Địa chỉ là bắt buộc")]
+        public string Address { get; set; } = string.Empty;
 
-        public DateTime createdAt { get; set; }
-
-        public DateTime updatedAt { get; set; }
-
+        public DateTime createdAt { get; set; } = DateTime.Now;
+        public DateTime updatedAt { get; set; } = DateTime.Now;
         public bool IsAdmin { get; set; }
-
         public string RandomKey { get; set; }
 
         public bool IsConfirmEmail { get; set; }

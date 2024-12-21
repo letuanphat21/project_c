@@ -92,7 +92,7 @@ namespace Doan.Controllers
             }
             string pass = MyUtils.ToMd5Hash(password, user.RandomKey);
 
-            if (user.Password != pass)
+            if (user.Password != pass ||!user.IsConfirmEmail)
             {
                 ViewBag.Fail = "Sai mật khẩu hoặc tên đăng nhập hoặc chưa xác nhận email";
                 return View();
