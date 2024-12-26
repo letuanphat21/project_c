@@ -61,10 +61,12 @@ namespace Doan.Controllers
         {
             return View();
         }
-
         public IActionResult Login(string? returnUrl)
         {
-            ViewBag.ReturnUrl = returnUrl;
+            if (!string.IsNullOrEmpty(returnUrl))
+            {
+                HttpContext.Session.SetString("ReturnUrl", returnUrl);
+            }
             return View();
         }
 
@@ -99,11 +101,13 @@ namespace Doan.Controllers
             }
             // Lưu thông tin người dùng vào session dưới dạng JSON
             HttpContext.Session.SetString("user", JsonConvert.SerializeObject(user));
+            var sessionReturnUrl = HttpContext.Session.GetString("ReturnUrl");
+            HttpContext.Session.Remove("ReturnUrl");
 
-            // Nếu có returnUrl thì điều hướng lại trang đó
-            if (!string.IsNullOrEmpty(returnUrl))
+            // Nếu có ReturnUrl thì điều hướng lại trang đó
+            if (!string.IsNullOrEmpty(sessionReturnUrl) && Url.IsLocalUrl(sessionReturnUrl))
             {
-                return Redirect(returnUrl);
+                return Redirect(sessionReturnUrl);
             }
 
             if (user.IsAdmin)
@@ -603,7 +607,7 @@ namespace Doan.Controllers
             // Đảm bảo danh sách Items được khởi tạo
             if (cart.Items == null)
             {
-                cart.Items = new List<Item>();
+                cart.Items = new Dictionary<int, Item>();
             }
 
             return View(cart); // Truyền giỏ hàng vào View
@@ -614,37 +618,46 @@ namespace Doan.Controllers
 
         public IActionResult AddToCart1(string id, string quantity)
         {
+            // Lấy giỏ hàng từ session
             var sessionCart = HttpContext.Session.GetString("cart");
             Cart cart = string.IsNullOrEmpty(sessionCart)
                 ? new Cart()
                 : JsonConvert.DeserializeObject<Cart>(sessionCart);
 
-
-            int quantityValue;
-            try
-            {
-                quantityValue = int.Parse(quantity);
-            }
-            catch (Exception)
+            // Parse quantity, mặc định là 1 nếu không hợp lệ
+            int quantityValue = 1;
+            if (!int.TryParse(quantity, out quantityValue) || quantityValue <= 0)
             {
                 quantityValue = 1;
             }
 
-            int id1=int.Parse(id);
-            var product = _context.products.FirstOrDefault(p => p.Id == id1);
-            if (product != null)
+            // Parse product ID
+            if (!int.TryParse(id, out int productId))
             {
-                double price = product.Price;
-
-
-                var item = new Item(product, quantityValue, price);
-                cart.addItem(item);
+                // Xử lý khi ID sản phẩm không hợp lệ
+                return BadRequest("Invalid product ID");
             }
 
-            // Lưu giỏ hàng vào session
+            // Tìm sản phẩm trong cơ sở dữ liệu
+            var product = _context.products.FirstOrDefault(p => p.Id == productId);
+            if (product != null)
+            {
+                // Tạo Item mới
+                var item = new Item(product, quantityValue,product.Price);
+
+                // Thêm Item vào giỏ hàng
+                cart.AddItem(item);
+            }
+            else
+            {
+                // Xử lý khi không tìm thấy sản phẩm
+                return NotFound("Product not found");
+            }
+
+            // Lưu giỏ hàng vào session dưới dạng JSON
             HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(cart));
 
-            // Lưu kích thước giỏ hàng (số lượng sản phẩm)
+            // Lưu kích thước giỏ hàng (số lượng sản phẩm khác nhau)
             HttpContext.Session.SetInt32("size", cart.Items.Count);
 
             // Chuyển hướng về trang Home hoặc bất kỳ trang nào bạn muốn
@@ -664,9 +677,9 @@ namespace Doan.Controllers
             {
                 pid = int.Parse(id);
                 quantity = int.Parse(num);
-                if ((quantity == -1) && (cart.getQuantityById(pid) <= 1))
+                if ((quantity == -1) && (cart.GetQuantityById(pid) <= 1))
                 {
-                    cart.removeItem(pid);
+                    cart.RemoveItem(pid);
                 }
                 else
                 {
@@ -674,7 +687,7 @@ namespace Doan.Controllers
                     var product = _context.products.FirstOrDefault(p => p.Id == id1);
                     double price = product.Price;
                     Item t = new Item(product, quantity, price);
-                    cart.addItem(t);
+                    cart.AddItem(t);
 
                 }
             }
@@ -691,6 +704,7 @@ namespace Doan.Controllers
         }
 
 
+        [HttpPost]
         public IActionResult DeleteItem(string id)
         {
             var sessionCart = HttpContext.Session.GetString("cart");
@@ -706,12 +720,12 @@ namespace Doan.Controllers
             int pid = int.Parse(id);
 
 
-            cart.removeItem(pid);
+            cart.RemoveItem(pid);
             // Lưu giỏ hàng vào session
             HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(cart));
             // Lưu kích thước giỏ hàng (số lượng sản phẩm)
             HttpContext.Session.SetInt32("size", cart.Items.Count);
-            return View("Cart");
+            return RedirectToAction("Cart", "Home");
 
 
         }
@@ -750,7 +764,7 @@ namespace Doan.Controllers
             // Thêm sản phẩm vào giỏ hàng
             double price = product.Price;
             var item = new Item(product, quantityValue, price);
-            cart.addItem(item);
+            cart.AddItem(item);
 
             // Lưu giỏ hàng vào Session
             HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(cart));
@@ -763,19 +777,12 @@ namespace Doan.Controllers
 
             // Lấy thông tin hình ảnh liên quan đến sản phẩm
             Image im = _context.images.FirstOrDefault(i => i.Pid == id1);
-
             // Gửi dữ liệu đến View
             ViewBag.product = product;
             ViewBag.image = im;
             ViewBag.listp = list1;
-
             return View("ProductDetail");
-
         }
-
-       
-
-
         public IActionResult FormCheckOut()
         {
             var sessionUser = HttpContext.Session.GetString("user");
@@ -793,7 +800,7 @@ namespace Doan.Controllers
             Cart cart = JsonConvert.DeserializeObject<Cart>(cartSession);
 
 
-            if (cart.checkCartNoItems())
+            if (cart.IsCartEmpty())
             {
                 return View("Index");
             }
@@ -848,7 +855,7 @@ namespace Doan.Controllers
             Cart cart = JsonConvert.DeserializeObject<Cart>(cartSession);
 
             // Check if the cart is empty
-            if (cart.checkCartNoItems())
+            if (cart.IsCartEmpty())
             {
                 return View("Index");
             }
@@ -907,13 +914,13 @@ namespace Doan.Controllers
                 discount = _context.discounts.FirstOrDefault(d => d.Id == discount1);
                 if (discount != null)
                 {
-                    totalMoney = cart.getTotalMoney() * (1 - (discount.Discount_Value / 100.0));
+                    totalMoney = cart.GetTotalMoney() * (1 - (discount.Discount_Value / 100.0));
                 }
             }
 
             if (discount == null)
             {
-                totalMoney = cart.getTotalMoney();
+                totalMoney = cart.GetTotalMoney();
             }
 
             // Lấy danh sách mã giảm giá hợp lệ
@@ -955,14 +962,14 @@ namespace Doan.Controllers
 
                         if (discount != null)
                         {
-                            totalMoney = cart.getTotalMoney() * (1 - (discount.Discount_Value / 100.0));
+                            totalMoney = cart.GetTotalMoney() * (1 - (discount.Discount_Value / 100.0));
                             _context.discounts.Remove(discount);
                             _context.SaveChanges();
                         }
                     }
                     if (discount == null)
                     {
-                        totalMoney = cart.getTotalMoney();
+                        totalMoney = cart.GetTotalMoney();
                     }
                     order.TotalMoney = totalMoney;
                     order.OrderDate = DateTime.Now;
@@ -971,19 +978,21 @@ namespace Doan.Controllers
                     _context.SaveChanges();  // Thêm order vào database
 
                     // Thêm thông tin order detail
-                    foreach (var item in cart.Items)
+                    foreach (var item in cart.Items.Values)
                     {
-                        var orderDetail = new OrderDetail
+                        if (item.product != null)
                         {
-                            OrderId = order.Id,
-                            ProductId = item.product.Id,
-                            Price = item.Price,
-                            Quantity = item.Quantity,
-                            SubTotal=item.Price*item.Quantity
+                            var orderDetail = new OrderDetail
+                            {
+                                OrderId = order.Id,
+                                ProductId = item.product.Id,
+                                Price = item.Price,
+                                Quantity = item.Quantity,
+                                SubTotal = item.Price * item.Quantity
+                            };
 
-                        };
-
-                        _context.orderDetails.Add(orderDetail);
+                            _context.orderDetails.Add(orderDetail);
+                        }
                     }
 
                     _context.SaveChanges();  // Thêm các order detail

@@ -131,33 +131,33 @@
            <!-- Cột bên phải: Thông tin giỏ hàng -->
 <div class="col-md-5">
     <div class="payment-summary" style="margin-top: 134px">
-        <h5>Giỏ hàng</h5>
-        <!-- Hiển thị danh sách sản phẩm -->
-        @if (cart != null && cart.Items != null)
-        {
-            @foreach (var item in cart.Items)
-            {
-                <div class="product-item">
-                    <span>@item.product.Title</span>
-                    <span>(@item.Quantity x @item.product.Price $)</span>
-                   <span style="float: right;">@(@item.product.Price * @item.Quantity) $</span>
-                </div>
-            }
-        }
-        else
-        {
-            <p>Giỏ hàng rỗng.</p>
-        }
+                    <h5>Giỏ hàng</h5>
+                    <!-- Hiển thị danh sách sản phẩm -->
+                    @if (cart != null && cart.Items != null && cart.Items.Any())
+                    {
+                        @foreach (var item in cart.Items.Values)
+                        {
+                            <div class="product-item">
+                                <span>@item.product.Title</span>
+                                <span>(@item.Quantity x @item.product.Price) $</span>
+                                <span style="float: right;">@(@item.product.Price * item.Quantity).ToString("N2") $</span>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>Giỏ hàng rỗng.</p>
+                    }
 
         <div class="total" id="total">
                         @if (ViewBag.TotalMoneyUseDis != null && ViewBag.TotalMoneyUseDis != 0)
             {
-                <span>Tổng cộng: <span style="text-decoration: line-through; color: gray;">@cart.getTotalMoney():$</span></span>
+                <span>Tổng cộng: <span style="text-decoration: line-through; color: gray;">@cart.GetTotalMoney():$</span></span>
                             <span style="margin-left: 10px; color: red; font-weight: bold;">@ViewBag.TotalMoneyUseDis:$</span>
             }
             else
             {
-                <span>Tổng cộng: <span>@cart.getTotalMoney():$</span></span>
+                            <span>Tổng cộng: <span>@cart.GetTotalMoney():$</span></span>
             }
         </div>
 

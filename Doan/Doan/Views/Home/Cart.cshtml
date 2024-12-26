@@ -29,10 +29,8 @@
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           rel="stylesheet" id="bootstrap-css">
-
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
           rel="stylesheet">
     <link href="~/css/home.css" rel="stylesheet" type="text/css" />
@@ -56,7 +54,7 @@
              style="display: @(ViewBag.Fail != null && ViewBag.Fail != "" ? "block" : "none");">
             <p>@ViewBag.Fail</p>
         </div>
-        <div class="row">
+         <div class="row">
             <!-- Cart Items -->
             <div id="cartItems" class="col-md-8">
                 @if (cart == null || cart.Items == null || !cart.Items.Any())
@@ -67,7 +65,7 @@
                 }
                 else
                 {
-                    @foreach (var item in cart.Items)
+                    @foreach (var item in cart.Items.Values)
                     {
                         <div class="card mb-3">
                             <div class="row g-0">
@@ -81,21 +79,21 @@
                                         <p class="card-text text-muted">Total: $@(item.product.Price * item.Quantity)</p>
                                         <p class="card-text">
                                             <!-- Form giảm số lượng -->
-                                            <form asp-controller="Home" asp-action="UpdateQuantity" method="get" id="update" style="display: inline;">
+                                            <form asp-controller="Home" asp-action="UpdateQuantity" method="get" class="d-inline">
                                                 <input type="hidden" name="id" value="@item.product.Id">
                                                 <input type="hidden" name="num" value="-1">
                                                 <button type="submit" class="btn btn-outline-secondary btn-sm">-</button>
                                             </form>
                                             <span class="mx-2">@item.Quantity</span>
                                             <!-- Form tăng số lượng -->
-                                            <form asp-controller="Home" asp-action="UpdateQuantity" method="get" id="update" style="display: inline;">
+                                            <form asp-controller="Home" asp-action="UpdateQuantity" method="get" class="d-inline">
                                                 <input type="hidden" name="id" value="@item.product.Id">
                                                 <input type="hidden" name="num" value="1">
                                                 <button type="submit" class="btn btn-outline-secondary btn-sm">+</button>
                                             </form>
                                         </p>
                                         <!-- Form xóa sản phẩm -->
-                                        <form asp-controller="Home" asp-action="DeleteItem" method="get"  class="d-inline deleteitem">
+                                        <form asp-controller="Home" asp-action="DeleteItem" method="post" class="d-inline deleteitem">
                                             <input type="hidden" name="id" value="@item.product.Id">
                                             <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
                                         </form>
@@ -126,11 +124,11 @@
                         else
                         {
                             <p class="card-text">
-                                Subtotal: <strong>$@cart.getTotalMoney()</strong>
+                                Subtotal: <strong>$@cart.GetTotalMoney()</strong>
                             </p>
                             <hr>
                             <p class="card-text">
-                                Total: <strong>$@cart.getTotalMoney()</strong>
+                                Total: <strong>$@cart.GetTotalMoney()</strong>
                             </p>
 
                             @if (user != null)
@@ -152,48 +150,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-                       $(document).ready(function () {
-            $('#deleteitem').submit(function (e) {
-                e.preventDefault(); // Ngăn chặn form mặc định gửi dữ liệu
-
-                var form = $(this);
-
-                $.ajax({
-                    url: form.attr('action'),
-                    method: form.attr('method'),
-                    data: form.serialize(),
-                    success: function (response) {
-                        // Cập nhật nội dung phần Header sau khi xóa sản phẩm thành công
-                        $('#menuContainer').load(window.location.href + ' #menuContainer');
-                        $('container').load(window.location.href + ' container');
-
-                        const notyf = new Notyf();
-                        notyf.open({
-                            duration: 1000,
-                            position: {
-                                x: 'right',
-                                y: 'bottom',
-                            },
-                            type: 'success', // Loại thông báo thành công
-                            message: 'Xóa sản phẩm thành công', // Nội dung thông báo
-                        });
-                    },
-                    error: function (response) {
-                        // Xử lý lỗi (nếu có)
-                        alert('Có lỗi xảy ra khi xóa.');
-                    }
-                });
-            });
-        });
-
-
-
-    </script>
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
 
 </body>
 </html>
