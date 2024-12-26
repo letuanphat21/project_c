@@ -2,72 +2,67 @@
 {
     public class Cart
     {
-        public List<Item> Items { get; set; }
+        public Dictionary<int, Item> Items { get; set; }
 
         public Cart()
         {
-            Items = new List<Item>();
+            Items = new Dictionary<int, Item>();
         }
 
-        public Item getItemById(int id)
+        public Item GetItemById(int id)
         {
-            foreach (Item item in Items)
+            Items.TryGetValue(id, out Item item);
+            return item;
+        }
+
+        public int GetSize()
+        {
+            return Items.Count;
+        }
+
+
+        public int GetQuantityById(int id)
+        {
+            var item = GetItemById(id);
+            return item != null ? item.Quantity : 0;
+        }
+
+        // Thêm Item vào giỏ hàng
+        public void AddItem(Item t)
+        {
+            if (Items.ContainsKey(t.product.Id))
             {
-                if (item.product.Id == id)
-                {
-                    return item;
-                }
-            }
-            return null;
-        }
-
-        public int getQuantityById(int id)
-        {
-            return getItemById(id).Quantity;
-        }
-
-        public void addItem(Item t)
-        {
-            if (getItemById(t.product.Id) != null)
-            {
-                Item m = getItemById(t.product.Id);
-                //nếu có rồi thì chỉ cần set lại số lượng
-                m.Quantity = m.Quantity + t.Quantity;
+                Items[t.product.Id].Quantity += t.Quantity;
             }
             else
             {
-                Items.Add(t);
+                Items.Add(t.product.Id, t);
             }
         }
 
-        public void removeItem(int id)
+        // Xóa Item khỏi giỏ hàng
+        public void RemoveItem(int id)
         {
-            if (getItemById(id) != null)
+            if (Items.ContainsKey(id))
             {
-                Items.Remove(getItemById(id));
+                Items.Remove(id);
             }
-
-
+        }
+        // Tính tổng tiền
+        public double GetTotalMoney()
+        {
+            double total = 0;
+            foreach (var item in Items.Values)
+            {
+                total += item.Quantity * item.product.Price;
+            }
+            return total;
         }
 
-        public double getTotalMoney()
+        // Kiểm tra giỏ hàng có rỗng không
+        public bool IsCartEmpty()
         {
-            double t = 0;
-            foreach (Item item in Items)
-            {
-                t += (item.Quantity * item.Price);
-
-
-            }
-            return t;
-        }
-        public bool checkCartNoItems()
-        {
-            if (Items.Count == 0)
-            {
-                return true;
-            }
-            return false;
+            return Items.Count == 0;
         }
     }
 }

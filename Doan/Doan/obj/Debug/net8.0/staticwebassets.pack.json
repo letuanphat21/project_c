@@ -1,575 +1,575 @@
 {
   "Files": [
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Doan.bundle.scp.css",
       "PackagePath": "staticwebassets\\Doan.bundle.scp.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\about.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\about.css",
       "PackagePath": "staticwebassets\\css\\about.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\admin.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\birthday.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\birthday.css",
       "PackagePath": "staticwebassets\\css\\birthday.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\home.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\login.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\manageruser.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\manageruser.css",
       "PackagePath": "staticwebassets\\css\\manageruser.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\site.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\css\\snow.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\css\\snow.css",
       "PackagePath": "staticwebassets\\css\\snow.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\favicon.ico",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\categorys\\button-bongtai.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-bongtai.png",
       "PackagePath": "staticwebassets\\image\\categorys\\button-bongtai.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\categorys\\button-daychuyen.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-daychuyen.png",
       "PackagePath": "staticwebassets\\image\\categorys\\button-daychuyen.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\categorys\\button-lac.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-lac.png",
       "PackagePath": "staticwebassets\\image\\categorys\\button-lac.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\categorys\\button-nhan.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\button-nhan.png",
       "PackagePath": "staticwebassets\\image\\categorys\\button-nhan.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\categorys\\th.jpg",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\categorys\\th.jpg",
       "PackagePath": "staticwebassets\\image\\categorys\\th.jpg"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham1-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham1-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham1-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham10-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham10-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham10-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham11-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham11-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham11-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham12-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham12-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham12-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham13-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham13-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham13-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham14-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham14-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham14-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham15-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham15-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham15-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham17-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham17-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham17-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham18-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham18-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham18-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham19-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham19-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham19-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham2-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham2-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham2-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham20-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham20-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham20-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham21-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham21-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham21-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham22-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham22-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham22-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham23-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham23-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham23-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham24-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham24-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham24-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham25-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham25-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham25-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham26-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham26-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham26-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham27-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham27-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham27-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham28-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham28-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham28-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham29-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham29-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham29-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham3-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham3-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham3-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham4-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham4-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham4-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham5-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham5-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham5-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham6-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham6-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham6-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham7-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham7-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham7-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham8-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham8-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham8-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\details\\sanpham9-2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\details\\sanpham9-2.png",
       "PackagePath": "staticwebassets\\image\\details\\sanpham9-2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhannu-1.jpg",
       "PackagePath": "staticwebassets\\image\\nhannu-1.jpg"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\nhanvang.png",
       "PackagePath": "staticwebassets\\image\\nhanvang.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\phat-ngang.png",
       "PackagePath": "staticwebassets\\image\\phat-ngang.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham1.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham1.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham1.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham10.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham10.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham10.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham11.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham11.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham11.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham12.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham12.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham12.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham13.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham13.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham13.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham14.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham14.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham14.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham15.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham15.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham15.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham16.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham16.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham16.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham17.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham17.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham17.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham18.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham18.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham18.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham19.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham19.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham19.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham2.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham2.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham2.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham20.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham20.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham20.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham21.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham21.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham21.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham22.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham22.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham22.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham23.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham23.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham23.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham24.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham24.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham24.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham25.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham25.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham25.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham26.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham26.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham26.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham27.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham27.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham27.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham28.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham28.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham28.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham29.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham29.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham29.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham3.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham3.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham3.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham4.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham4.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham4.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham5.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham5.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham5.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham6.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham6.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham6.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham7.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham7.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham7.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham8.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham8.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham8.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham9.png",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\image\\thumbnail\\sanpham9.png",
       "PackagePath": "staticwebassets\\image\\thumbnail\\sanpham9.png"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\images\\details\\than.jpg",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\details\\than.jpg",
       "PackagePath": "staticwebassets\\images\\details\\than.jpg"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\images\\details\\than_1.jpg",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\details\\than_1.jpg",
       "PackagePath": "staticwebassets\\images\\details\\than_1.jpg"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\images\\thumbnail\\máy tính.jpg",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\thumbnail\\máy tính.jpg",
       "PackagePath": "staticwebassets\\images\\thumbnail\\máy tính.jpg"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\images\\thumbnail\\máy tính_1.jpg",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\images\\thumbnail\\máy tính_1.jpg",
       "PackagePath": "staticwebassets\\images\\thumbnail\\máy tính_1.jpg"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\js\\header.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\header.js",
       "PackagePath": "staticwebassets\\js\\header.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\js\\home.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\home.js",
       "PackagePath": "staticwebassets\\js\\home.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\js\\login.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\paginate.js",
       "PackagePath": "staticwebassets\\js\\paginate.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\paginate.min.js",
       "PackagePath": "staticwebassets\\js\\paginate.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\js\\site.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\js\\snow.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\js\\snow.js",
       "PackagePath": "staticwebassets\\js\\snow.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\doanentity2\\Doan\\Doan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
