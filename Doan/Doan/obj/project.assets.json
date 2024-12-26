@@ -6595,11 +6595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\doanentity2\\Doan\\Doan\\Doan.csproj",
+      "projectUniqueName": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Doan.csproj",
       "projectName": "Doan",
-      "projectPath": "E:\\doanentity2\\Doan\\Doan\\Doan.csproj",
+      "projectPath": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Doan.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "E:\\doanentity2\\Doan\\Doan\\obj\\",
+      "outputPath": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
