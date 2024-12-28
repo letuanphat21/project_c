@@ -2,7 +2,6 @@
 using Doan.Models;
 using Doan.Utils;
 using Microsoft.AspNetCore.Mvc;
-using NETCore.MailKit.Core;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -61,6 +60,55 @@ namespace Doan.Controllers
         {
             return View();
         }
+
+        public IActionResult Policy()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Contact(string FullName, string Email, string Subject, string Content)
+        {
+            ViewBag.Fail = "";
+            ViewBag.Success = "";
+            string email = "ltphat240103@gmail.com";
+            string emailBody = $@"
+        <h2>Vấn đề khách hàng: {Subject}</h2>
+        <p><strong>Người gửi:</strong> {FullName}</p>
+        <p><strong>Email:</strong> {Email}</p>
+        <hr>
+        <h3>Nội dung:</h3>
+        <p>{Content}</p>
+                    ";
+            try
+            {
+                bool isSent = await Doan.Utils.Email.SendEmailAsync(email, "Vấn đề khách hàng", emailBody);
+                if (isSent)
+                {
+                    ViewBag.Success = "Email đã được gửi thành công!";
+                }
+                else
+                {
+                    ViewBag.Fail = "Gửi email thất bại.";
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Fail = "Đã xảy ra lỗi: " + ex.Message;
+            }
+            return View();
+        }
+
+
+
+
+
+
         public IActionResult Login(string? returnUrl)
         {
             if (!string.IsNullOrEmpty(returnUrl))

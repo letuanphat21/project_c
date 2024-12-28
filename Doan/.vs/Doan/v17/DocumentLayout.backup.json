@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\policy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\policy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\changeinfor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\changeinfor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\changepass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\changepass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\forgotpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\forgotpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|e:\\hocgit\\git\\source\\cuoikic\\project_c\\doan\\doan\\views\\home\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +46,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Signup.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Signup.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Signup.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Signup.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Signup.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:23:07.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ViewOrder.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\ViewOrder.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\ViewOrder.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\ViewOrder.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\ViewOrder.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:21:03.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Forgotpass.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Forgotpass.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Forgotpass.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Forgotpass.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Forgotpass.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:20:44.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Changepass.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Changepass.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Changepass.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Changepass.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Changepass.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:20:29.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Changeinfor.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Changeinfor.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Changeinfor.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Changeinfor.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Changeinfor.cshtml",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAHYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:20:15.761Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACEAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:19:59.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Policy.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Policy.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Policy.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Policy.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Policy.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:19:00.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Header.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Header.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\Header.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\Header.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\Header.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:18:26.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Doan\\Views\\Home\\About.cshtml",
+              "ToolTip": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Doan\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T01:17:21.006Z",
+              "EditorCaption": ""
             }
           ]
         }

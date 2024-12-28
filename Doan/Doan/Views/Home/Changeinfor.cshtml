@@ -39,6 +39,12 @@
     <div id="menuContainer">
         @Html.Partial("Header")
     </div>
+     <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cập nhập thông tin</li>
+        </ol>
+    </nav>
     <!-- Widget chúc mừng sinh nhật -->
     <div id="birthdayWidget" class="alert alert-success text-center" style="display: @(birthdayToday ? "block" : "none"); position: fixed; top: 10%; left: 50%; transform: translate(-50%, -10%); z-index: 1000; width: 50%;">
         <h2>🎉 Chúc mừng sinh nhật, @user?.Fullname! 🎂</h2>
