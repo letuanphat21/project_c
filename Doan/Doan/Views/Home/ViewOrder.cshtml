@@ -40,9 +40,14 @@
     <div id="menuContainer">
         @Html.Partial("Header")
     </div>
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Danh sách hóa đơn</li>
+        </ol>
+    </nav>
     <div class="container my-4">
-        <h1 class="text-center mb-4">Danh sách Hóa Đơn</h1>
+        <h1 class="text-center mb-4">Danh sách hóa đơn</h1>
         <div class="d-flex justify-content-between mb-3">
             <div class="alert alert-danger flex-fill me-2" id="errorMessage"
                  style="display: @(ViewBag.Fail != null && ViewBag.Fail != "" ? "block" : "none");">

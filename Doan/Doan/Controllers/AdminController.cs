@@ -379,6 +379,7 @@ namespace Doan.Controllers
             _ = Task.Run(async () =>
             {
                 await Email.SendEmailAsync(order.Email, "Thông báo về đơn hàng", getNoiDung());
+                
             });
 
             return Ok(new { message = "Đơn hàng đã được xác nhận thành công" });

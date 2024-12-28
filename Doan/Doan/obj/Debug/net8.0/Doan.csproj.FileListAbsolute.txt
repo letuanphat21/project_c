@@ -707,10 +707,6 @@ E:\doanc#entity\Doan\Doan\bin\Debug\net8.0\MailKit.dll
 E:\doanc#entity\Doan\Doan\bin\Debug\net8.0\MimeKit.dll
 E:\doanc#entity\Doan\Doan\bin\Debug\net8.0\NETCore.MailKit.dll
 E:\doanc#entity\Doan\Doan\bin\Debug\net8.0\BouncyCastle.Crypto.dll
-E:\hocgit\git\source\cuoikic\project_c\Doan\Doan\bin\Debug\net8.0\MailKit.dll
-E:\hocgit\git\source\cuoikic\project_c\Doan\Doan\bin\Debug\net8.0\MimeKit.dll
-E:\hocgit\git\source\cuoikic\project_c\Doan\Doan\bin\Debug\net8.0\NETCore.MailKit.dll
-E:\hocgit\git\source\cuoikic\project_c\Doan\Doan\bin\Debug\net8.0\BouncyCastle.Crypto.dll
 E:\doanentity2\Doan\Doan\bin\Debug\net8.0\appsettings.Development.json
 E:\doanentity2\Doan\Doan\bin\Debug\net8.0\appsettings.json
 E:\doanentity2\Doan\Doan\bin\Debug\net8.0\Doan.staticwebassets.runtime.json

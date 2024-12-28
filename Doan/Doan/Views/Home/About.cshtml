@@ -29,7 +29,13 @@
         @Html.Partial("Header")
     </div>
 
-   
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Giới Thiệu</li>
+        </ol>
+    </nav>
+
     <h1 style="text-align: center;" class="mt-3 mb -3">
         Giới Thiệu Về
         Công Ty Trang Sức Bạc
