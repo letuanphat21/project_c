@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fqlr31wyw/c=",
+  "dgSpecHash": "FNQEt5YZBN4=",
   "success": true,
-  "projectFilePath": "E:\\doanentity2\\Doan\\Doan\\Doan.csproj",
+  "projectFilePath": "E:\\hocgit\\git\\source\\cuoikic\\project_c\\Doan\\Doan\\Doan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

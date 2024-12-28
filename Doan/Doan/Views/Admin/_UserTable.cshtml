@@ -16,7 +16,7 @@
         <td>@(user.IsAdmin ? "Admin" : "User")</td>
         <td>@user.createdAt.ToString("yyyy-MM-dd HH:mm:ss")</td>
         <td>
-            <button type="button" class="btn btn-warning btn-sm" onclick="editUser(@user.Id)">Edit</button>
+            <button type="button" class="btn btn-warning btn-sm" onclick="editUser(@user.Id)">Sửa</button>
             <button type="button" class="btn btn-danger btn-sm" onclick="deleteUser(@user.Id, '@user.Fullname')">Xóa</button>
         </td>
     </tr>

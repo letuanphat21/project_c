@@ -55,8 +55,8 @@
                             <td>@discount.Start_Date.ToString("yyyy-MM-dd")</td>
                             <td>@discount.End_Date.ToString("yyyy-MM-dd")</td>
                             <td>
-                                <a href="@Url.Action("EditDiscount", "Admin", new { id = discount.Id })" class="btn btn-warning btn-sm">Edit</a>
-                                <button class="btn btn-danger btn-sm delete-btn" data-id="@discount.Id" data-name="@discount.Name" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
+                                <a href="@Url.Action("EditDiscount", "Admin", new { id = discount.Id })" class="btn btn-warning btn-sm">Sửa</a>
+                                <button class="btn btn-danger btn-sm delete-btn" data-id="@discount.Id" data-name="@discount.Name" data-bs-toggle="modal" data-bs-target="#deleteModal">Xóa</button>
                             </td>
                         </tr>
                     }

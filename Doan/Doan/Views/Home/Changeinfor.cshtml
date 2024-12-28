@@ -49,7 +49,7 @@
     </div>
 
     <div class="container mt-5 mb-5">
-        <h2 class="text-center">Update Information</h2>
+        <h2 class="text-center">Cập nhập thông tin</h2>
         <div class="d-flex justify-content-between mb-3">
             <div class="alert alert-danger flex-fill me-2" id="errorMessage"
                  style="display: @(ViewBag.Fail != null && ViewBag.Fail != "" ? "block" : "none");">
@@ -63,28 +63,28 @@
         <form asp-controller="Home" asp-action="Changeinfor" method="post" class="mt-4">
             <!-- Fullname -->
             <div class="mb-3">
-                <label for="fullname" class="form-label">Full Name</label>
+                <label for="fullname" class="form-label">Họ và tên</label>
                 <input type="text" class="form-control" value="@user.Fullname" id="fullname" name="fullname" placeholder="Enter your full name" required>
             </div>
             <!-- Gender -->
             <div class="mb-3">
-                <label class="form-label">Gender</label>
+                <label class="form-label">Giới Tính</label>
                 <div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="gender" id="male" value="male"
                         @(user.IsGender == true ? "checked" : "") required>
-                        <label class="form-check-label" for="male">Male</label>
+                        <label class="form-check-label" for="male">Nam</label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="gender" id="female" value="female"
                         @(user.IsGender == false ? "checked" : "")>
-                        <label class="form-check-label" for="female">Female</label>
+                        <label class="form-check-label" for="female">Nữ</label>
                     </div>
                 </div>
             </div>
             <!-- Birthday -->
             <div class="mb-3">
-                <label for="birthday" class="form-label">Birthday</label>
+                <label for="birthday" class="form-label">Ngày Sinh</label>
                 <input type="datetime-local" class="form-control"
                        value="@(user.BirthDay != null ? user.BirthDay.ToString("yyyy-MM-ddTHH:mm") : "")"
                        id="birthday" name="birthday" required>
@@ -96,16 +96,16 @@
             </div>
             <!-- Phone Number -->
             <div class="mb-3">
-                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <label for="phoneNumber" class="form-label">Số điện thoại</label>
                 <input type="tel" class="form-control" id="phoneNumber" value="@user.PhoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
             </div>
             <!-- Address -->
             <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
+                <label for="address" class="form-label">Địa Chỉ</label>
                 <input type="text" class="form-control" id="address" name="address" value="@user.Address" placeholder="Enter your address" required>
             </div>
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary w-100">Update Information</button>
+            <button type="submit" class="btn btn-primary w-100">Xác nhận</button>
         </form>
     </div>
 
