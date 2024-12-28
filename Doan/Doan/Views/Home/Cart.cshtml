@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
           rel="stylesheet">
-    <link href="~/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/about.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="menuContainer">
@@ -49,6 +49,7 @@
     </nav>
 
     <div  class="container mt-5 mb-3">
+        
         <h1 class="text-center mb-4">Giỏ hàng</h1>
         <div class="alert alert-danger flex-fill me-2" id="errorMessage"
              style="display: @(ViewBag.Fail != null && ViewBag.Fail != "" ? "block" : "none");">
@@ -75,8 +76,8 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title">@item.product.Title</h5>
-                                        <p class="card-text text-muted">Price (per item): $@item.product.Price</p>
-                                        <p class="card-text text-muted">Total: $@(item.product.Price * item.Quantity)</p>
+                                        <p class="card-text text-muted">Giá (per item): $@item.product.Price</p>
+                                        <p class="card-text text-muted">Tổng cộng: $@(item.product.Price * item.Quantity)</p>
                                         <p class="card-text">
                                             <!-- Form giảm số lượng -->
                                             <form asp-controller="Home" asp-action="UpdateQuantity" method="get" class="d-inline">
@@ -109,7 +110,7 @@
             <div id="cartSummary" class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Cart Summary</h5>
+                        <h5 class="card-title">Tóm tắt giỏ hàng</h5>
                         @if (cart == null || cart.Items == null || !cart.Items.Any())
                         {
                             <p class="card-text">
@@ -124,11 +125,11 @@
                         else
                         {
                             <p class="card-text">
-                                Subtotal: <strong>$@cart.GetTotalMoney()</strong>
+                                Tổng cộng: <strong>$@cart.GetTotalMoney()</strong>
                             </p>
                             <hr>
                             <p class="card-text">
-                                Total: <strong>$@cart.GetTotalMoney()</strong>
+                                Tổng cộng: <strong>$@cart.GetTotalMoney()</strong>
                             </p>
 
                             @if (user != null)

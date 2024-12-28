@@ -36,13 +36,13 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Image</th>
-                    <th>ProductName</th>
-                    <th>Brand</th>
-                    <th>Price</th>
-                    <th>InventoryNumber</th>
-                    <th>CreateAt</th>
-                    <th>NumOfPur</th>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Thương hiệu</th>
+                    <th>Giá</th>
+                    <th>Số lượng tồn kho</th>
+                    <th>Ngày tạo</th>
+                    <th>Số lượng mua</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -64,8 +64,8 @@
                             <td>@product.NumOfPur</td>
                            
                             <td>
-                                <a asp-controller="Admin" asp-action="EditProduct" asp-route-id="@product.Id" class="btn-edit btn btn-warning btn-sm">Edit</a>
-                                <button class="btn btn-danger btn-sm delete-btn" data-id="@product.Id" data-bs-toggle="modal" data-bs-target="#deleteModal" data-title="@product.Title">Delete</button>
+                                <a asp-controller="Admin" asp-action="EditProduct" asp-route-id="@product.Id" class="btn-edit btn btn-warning btn-sm">Sửa</a>
+                                <button class="btn btn-danger btn-sm delete-btn" data-id="@product.Id" data-bs-toggle="modal" data-bs-target="#deleteModal" data-title="@product.Title">Xóa</button>
                                 
                             </td>
                         </tr>

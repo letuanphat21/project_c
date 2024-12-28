@@ -348,7 +348,7 @@ namespace Doan.Controllers
             }
 
             // Tìm đơn hàng theo ID
-            var order = _context.orders.FirstOrDefault(o => o.Id == orderId);
+            var order = await _context.orders.FirstOrDefaultAsync(o => o.Id == orderId);
             if (order == null)
             {
                 return NotFound(new { message = "Không tìm thấy đơn hàng" });
@@ -356,7 +356,24 @@ namespace Doan.Controllers
 
             // Xử lý xác nhận đơn hàng
             order.Status = "Confirmed";
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
+
+            var orderDetails = await _context.orderDetails
+                               .Where(od => od.OrderId == orderId)
+                               .ToListAsync();
+
+            foreach (OrderDetail od in orderDetails)
+            {
+                var product = await _context.products.FirstOrDefaultAsync(p => p.Id == od.ProductId);
+                if (product == null)
+                {
+                    // Xử lý khi sản phẩm không tìm thấy, có thể bỏ qua hoặc trả về lỗi
+                    continue;
+                }
+                product.InventoryNumber -= od.Quantity;
+                product.NumOfPur += od.Quantity; // Cân nhắc tăng bằng số lượng đã mua
+            }
+            await _context.SaveChangesAsync();
 
             // Gửi email không đồng bộ
             _ = Task.Run(async () =>

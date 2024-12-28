@@ -826,7 +826,7 @@ namespace Doan.Controllers
         }
 
         [HttpGet]
-        public IActionResult PaymentMethod(string method)
+        public IActionResult PaymentMethod1(string method)
         {
             string method_last = "";
             if (method.Equals("1"))
