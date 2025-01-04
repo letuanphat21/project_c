@@ -4,7 +4,10 @@
 
     // Nếu Session có dữ liệu, chuyển JSON về đối tượng
     User user = userSession != null ? Newtonsoft.Json.JsonConvert.DeserializeObject<User>(userSession) : null;
-
+  
+    var categoriesSession = Context.Session.GetString("categories");
+    List<Category> categories = categoriesSession != null
+        ? System.Text.Json.JsonSerializer.Deserialize<List<Category>>(categoriesSession) : new List<Category>();
 }
 
 
@@ -21,15 +24,43 @@
 
             <!-- Dropdown Menu -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle px-3 link-dark" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Features
+                <a class="nav-link dropdown-toggle px-3 link-dark"
+                   href="#"
+                   id="categoriesDropdown"
+                   role="button"
+                   data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    Thể loại
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
-                    <li><a class="dropdown-item" href="#">Feature 1</a></li>
-                    <li><a class="dropdown-item" href="#">Feature 2</a></li>
-                    <li><a class="dropdown-item" href="#">Feature 3</a></li>
+                <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                    <!-- Danh mục "Tất cả" -->
+                    <li>
+                        <a class="dropdown-header text-decoration-none text-dark fw-bold fs-6"
+                           asp-controller="Home" asp-action="ProductList" asp-route-categoryId="0">
+                            Tất cả
+                        </a>
+                    </li>
+                    <!-- Lặp qua các danh mục -->
+                    @if (categories.Any())
+                    {
+                        foreach (var c in categories)
+                        {
+                            <li>
+                                <a class="dropdown-item"
+                                   asp-controller="Home" asp-action="ProductList" asp-route-categoryId="@c.Id">
+                                    @c.Name
+                                </a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li><span class="dropdown-item">Không có danh mục</span></li>
+                    }
                 </ul>
             </li>
+
+
             <li><a asp-controller="Home" asp-action="Policy" class="nav-link px-3 link-dark">Chính sách</a></li>
             <li><a asp-controller="Home" asp-action="About" class="nav-link px-3 link-dark">Giới Thiệu</a></li>
             <li><a asp-controller="Home" asp-action="Contact" class="nav-link px-3 link-dark">Liên Hệ</a></li>
@@ -78,7 +109,8 @@
             else
             {
                 <a asp-controller="Home" asp-action="Login">
-                    <button type="button" class="btn btn-primary d-inline" style="width: 100px">Đăng Nhập</button>
+                    @* style="width: 100px" *@
+                    <button type="button" class="btn btn-primary d-inline">Đăng Nhập</button>
                 </a>
             }
 

@@ -2,6 +2,7 @@
 using Doan.Models;
 using Doan.Utils;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -1356,13 +1357,183 @@ namespace Doan.Controllers
             return RedirectToAction("ConfirmOTPForgotpass");
         }
 
+        private const int PRODUCTS_PER_PAGE = 8;
+        private const double MAX_PRICE = double.MaxValue;
+
+        [HttpGet]
+        public ActionResult ProductList(string[]? categoryId, string[]? priceId, string? sortBy, int? index)
+        {
+            string[] priceRangeLabels = { "Dưới 1 triệu", "Từ 1 đến 2 triệu", "Từ 2 đến 5 triệu", "Từ 5 đến 10 triệu", "Trên 10 triệu" };
+            bool[] priceRangeChecked = new bool[priceRangeLabels.Length + 1];
+
+            var categoriesJson = HttpContext.Session.GetString("Categories");
+            List<Category> categories;
+
+            if (categoriesJson == null)
+            {
+                // Nếu chưa có, lấy danh sách từ cơ sở dữ liệu và lưu vào session
+                categories = _context.categorys.ToList();
+                HttpContext.Session.SetString("categories", JsonConvert.SerializeObject(categories)); // Lưu vào session
+            }
+            else
+            {
+                // Nếu có, lấy danh sách từ session
+                categories = JsonConvert.DeserializeObject<List<Category>>(categoriesJson);
+            }
+
+            bool[] categoryChecked = new bool[categories.Count + 1];
 
 
+            var products = new List<Product>();
+            string param = Request.QueryString.ToString() ?? string.Empty;
+
+            // Filter categories
+            if (categoryId != null)
+            {
+                int[] categoryIds = Array.ConvertAll(categoryId, int.Parse);
+
+                foreach (var category in categoryId)
+                {
+                    param = UpdateParam(param, "categoryId", category);
+                }
+
+                products = _context.products.Where(p => categoryIds.Contains(p.Cid)).ToList();
+
+                foreach (var id in categoryIds)
+                {
+                    categoryChecked[id] = true;
+                    if (id == 0)
+                    {
+                        products = _context.products.ToList();
+                    }
+                }
+            }
 
 
+            // Filter price
+            if (priceId != null && priceId.Length > 0)
+            {
+                double[][] priceRanges = {
+                new double[] { 0, MAX_PRICE },
+                new double[] { 0, 1000000 },
+                new double[] { 1000000, 2000000 },
+                new double[] { 2000000, 5000000 },
+                new double[] { 5000000, 10000000 },
+                new double[] { 10000000, MAX_PRICE }
+            };
+
+                foreach (var price in priceId)
+                {
+                    int id = int.Parse(price);
+                    param = UpdateParam(param, "priceId", price);
+
+                    if (id == 0)
+                    {
+                        products = _context.products.Where(p => p.Price >= priceRanges[0][0] && p.Price <= priceRanges[0][1]).ToList();
+                        Array.Clear(priceRangeChecked, 0, priceRangeChecked.Length);
+                        priceRangeChecked[0] = true;
+                        break;
+                    }
+                    else if (id >= 1 && id < priceRanges.Length)
+                    {
+                        var tempProducts = _context.products.Where(p => p.Price >= priceRanges[id][0] && p.Price <= priceRanges[id][1]).ToList();
+                        products.AddRange(tempProducts);
+                        priceRangeChecked[id] = true;
+                    }
+                }
+            }
+
+            if (priceId == null && categoryId == null)
+            {
+                products = _context.products.ToList();
+            }
+
+            if (priceId == null)
+            {
+                priceRangeChecked[0] = true;
+            }
+
+            if (categoryId == null)
+            {
+                categoryChecked[0] = true;
+            }
+
+            // Sorting
+            sortBy = sortBy ?? "newest";
+            param = UpdateParam(param, "sortBy", sortBy);
+            List<Product> sortedProducts = SortProducts(products, sortBy);
+
+            // Pagination
+            int pageIndex = index ?? 1;
+            param = UpdateParam(param, "index", pageIndex.ToString());
+            int totalProducts = products.Count;
+            int totalPage = (int) Math.Ceiling((double)totalProducts / PRODUCTS_PER_PAGE);
+            var displayProducts = sortedProducts.Skip((pageIndex - 1) * PRODUCTS_PER_PAGE).Take(PRODUCTS_PER_PAGE).ToList();
+
+            // Assign data
+            ViewBag.Categories = categories;
+            ViewBag.CategoryChecked = categoryChecked;
+            ViewBag.PriceRangeLabels = priceRangeLabels;
+            ViewBag.PriceRangeChecked = priceRangeChecked;
+            ViewBag.Products = displayProducts;
+            ViewBag.SortBy = sortBy;
+            ViewBag.TotalPage = totalPage;
+            ViewBag.PageIndex = pageIndex;
+            ViewBag.TotalProducts = totalProducts;
+            ViewBag.Param = param;
+
+            return View("Category");
+        }
+
+        // Update parameter function
+        private string UpdateParam(string param, string key, string value)
+        {
+            var paramList = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(param);
+            if (paramList.ContainsKey(key))
+            {
+                if (!paramList[key].Contains(value))
+                {
+                    paramList[key] = paramList[key] + "," + value;
+                }
+            }
+            else
+            {
+                paramList.Add(key, value);
+            }
+            return paramList.ToString();
+        }
 
 
+        // Sorting function
+        private List<Product> SortProducts(List<Product> products, string sortBy)
+        {
+            switch (sortBy)
+            {
+                case "price_asc":
+                    products = products.OrderBy(p => p.Price).ToList();
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(p => p.Price).ToList();
+                    break;
+                case "newest":
+                    products = products.OrderByDescending(p => p.Id).ToList();
+                    break;
+                case "name_asc":
+                    products = products.OrderBy(p => p.Title).ToList();
+                    break;
+                case "name_desc":
+                    products = products.OrderByDescending(p => p.Title).ToList();
+                    break;
+                default:
+                    break;
+            }
+            return products;
+        }
 
+        public IActionResult AccessDenied()
+        {
+            return View("~/Views/Shared/Forbidden.cshtml");
+        }
 
 
 

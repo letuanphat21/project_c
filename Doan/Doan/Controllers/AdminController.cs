@@ -1,4 +1,5 @@
 ﻿using Doan.Data;
+using Doan.Filters;
 using Doan.Models;
 using Doan.Utils;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,8 @@ using System.Security.Cryptography;
 
 namespace Doan.Controllers
 {
+    [AdminAuthorize]
+
     public class AdminController : Controller
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
