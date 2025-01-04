@@ -1,6 +1,7 @@
 ﻿using Doan.Data;
 using Doan.Utils;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,9 +26,17 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true; // Cookie cần thiết để hoạt động
 });
 
-
 // Thêm các dịch vụ cần thiết
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie("Cookies", options =>
+    {
+        options.LoginPath = "/Home/Login"; // Đường dẫn trang đăng nhập
+        options.AccessDeniedPath = "/Home/AccessDenied"; // Đường dẫn nếu không có quyền
+    });
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -42,10 +51,14 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
 // Kích hoạt Session middleware
 app.UseSession();
+
+app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
+app.UseMiddleware<CategoryMiddleware>();
+
 
 app.MapControllerRoute(
     name: "default",
