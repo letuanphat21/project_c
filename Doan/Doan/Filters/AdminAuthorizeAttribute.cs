@@ -21,7 +21,7 @@ namespace Doan.Filters
             {
                 context.Result = new ForbidResult();
             }
-            Console.WriteLine("AdminAuthorizeAttribute executed.");
+            
             base.OnActionExecuting(context);
         }
     }

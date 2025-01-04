@@ -1,4 +1,7 @@
-﻿@{
+﻿@using System.Text.RegularExpressions
+@using System.Web;
+
+@{
     Layout = null;
     var categories = ViewBag.Categories as List<Doan.Models.Category>;
     var categoryChecked = ViewBag.CategoryChecked as bool[];
@@ -10,6 +13,20 @@
     var sortBy = ViewBag.SortBy;
     var totalProducts = ViewBag.TotalProducts;
     var param = ViewBag.Param;
+
+    var indexParam = Regex.Replace(param, @"(\&|\?)index=[^&]*", "");
+
+    // indexParam = HttpUtility.UrlDecode(indexParam);
+
+    string GetPageUrl(int pageIndex)
+    {
+        var newQueryString = string.IsNullOrEmpty(indexParam) ?
+            $"index={pageIndex}" :
+            $"{indexParam}&index={pageIndex}";
+
+        // Trả về URL hoàn chỉnh
+        return Url.Action("ProductList", "Home", new { __query = newQueryString });
+    }
 }
 
 <!DOCTYPE html>
@@ -188,7 +205,7 @@
                         @if (pageIndex > 1)
                         {
                             <li class="page-item">
-                                <a class="page-link" href="@Url.Action("ProductList", "Home", new { index = pageIndex - 1, sortBy = sortBy})" )>
+                                <a class="page-link" href="@Url.Action("ProductList", "Home", new { index = pageIndex - 1, param})" )>
                                     <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
@@ -196,7 +213,7 @@
                         @for (int i = 1; i <= totalPage; i++)
                         {
                             <li class="page-item @(i == pageIndex ? " active" :"")">
-                                <a class="page-link" href="@Url.Action("ProductList", "Home", new { index = i, sortBy = sortBy})" )>
+                                <a class="page-link" href="@GetPageUrl(i)">
                                     @i
                                 </a>
                             </li>
@@ -204,7 +221,7 @@
                         @if (pageIndex < totalPage)
                         {
                             <li class="page-item">
-                                <a class="page-link" href="@Url.Action("ProductList", "Home", new { index = pageIndex + 1, sortBy = sortBy})" )>
+                                <a class="page-link" href="@Url.Action("ProductList", "Home", new { index = pageIndex + 1, param})" )>
                                     <span aria-hidden="true">&raquo;</span>
                                 </a>
                             </li>

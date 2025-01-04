@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\git\\project_c\\Doan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\filters\\categorymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\filters\\categorymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\home\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\filters\\adminauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\filters\\adminauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\data\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,24 +31,8 @@
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\shared\\forbidden.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\shared\\forbidden.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\wwwroot\\css\\forbidden.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\wwwroot\\css\\forbidden.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,58 +55,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoryMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Filters\\CategoryMiddleware.cs",
-              "RelativeDocumentMoniker": "Doan\\Filters\\CategoryMiddleware.cs",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Filters\\CategoryMiddleware.cs",
-              "RelativeToolTip": "Doan\\Filters\\CategoryMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T20:56:01.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Forbidden.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Shared\\Forbidden.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Shared\\Forbidden.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Shared\\Forbidden.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Shared\\Forbidden.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-03T20:08:03.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminAuthorizeAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Filters\\AdminAuthorizeAttribute.cs",
-              "RelativeDocumentMoniker": "Doan\\Filters\\AdminAuthorizeAttribute.cs",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Filters\\AdminAuthorizeAttribute.cs",
-              "RelativeToolTip": "Doan\\Filters\\AdminAuthorizeAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T20:04:28.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Category.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\Category.cshtml",
               "RelativeDocumentMoniker": "Doan\\Views\\Home\\Category.cshtml",
               "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\Category.cshtml",
               "RelativeToolTip": "Doan\\Views\\Home\\Category.cshtml",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAABsAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-31T12:33:43.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Header.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\Header.cshtml",
               "RelativeDocumentMoniker": "Doan\\Views\\Home\\Header.cshtml",
@@ -130,50 +75,24 @@
               "RelativeToolTip": "Doan\\Views\\Home\\Header.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAUwCgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-31T12:03:43.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T12:03:43.69Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Program.cs",
-              "RelativeDocumentMoniker": "Doan\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Program.cs",
-              "RelativeToolTip": "Doan\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T13:02:08.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "forbidden.css",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\wwwroot\\css\\forbidden.css",
-              "RelativeDocumentMoniker": "Doan\\wwwroot\\css\\forbidden.css",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\wwwroot\\css\\forbidden.css",
-              "RelativeToolTip": "Doan\\wwwroot\\css\\forbidden.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-03T20:33:17.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Doan\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Doan\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAKoFAAAAAAAAAAAiwPYFAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T05:04:40.068Z"
+              "WhenOpened": "2024-12-31T05:04:40.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Doan\\Controllers\\AdminController.cs",
@@ -181,7 +100,8 @@
               "RelativeToolTip": "Doan\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T02:53:34.196Z"
+              "WhenOpened": "2025-01-03T02:53:34.196Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -193,12 +113,24 @@
               "RelativeToolTip": "Doan\\Data\\ConnectDB.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T11:41:16.522Z",
+              "WhenOpened": "2024-12-31T11:41:16.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Program.cs",
+              "RelativeDocumentMoniker": "Doan\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Program.cs",
+              "RelativeToolTip": "Doan\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCMAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T13:02:08.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\appsettings.json",
               "RelativeDocumentMoniker": "Doan\\appsettings.json",
@@ -218,8 +150,7 @@
               "RelativeToolTip": "Doan\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-03T21:03:33.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T21:03:33.123Z"
             }
           ]
         }
