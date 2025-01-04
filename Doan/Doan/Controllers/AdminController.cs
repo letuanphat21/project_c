@@ -2,12 +2,9 @@
 using Doan.Filters;
 using Doan.Models;
 using Doan.Utils;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using Newtonsoft.Json;
-using System.Security.Cryptography;
 
 namespace Doan.Controllers
 {
@@ -18,7 +15,7 @@ namespace Doan.Controllers
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ILogger<AdminController> _logger;
         private readonly ConnectDB _context;  // Khai báo _context
-        
+
         public AdminController(ILogger<AdminController> logger, ConnectDB context, IWebHostEnvironment webHostEnvironment)
         {
             _logger = logger;
@@ -230,7 +227,7 @@ namespace Doan.Controllers
             ViewBag.Filter = filter;
             return View();
         }
-       public IActionResult ManagerOrder(string xpage)
+        public IActionResult ManagerOrder(string xpage)
         {
 
             var userSession = HttpContext.Session.GetString("user");
@@ -274,7 +271,7 @@ namespace Doan.Controllers
         }
         public ActionResult SearchOrders(string search, string filter)
         {
-            var orders=GetOrders();
+            var orders = GetOrders();
 
             if (!string.IsNullOrEmpty(search))
             {
@@ -382,7 +379,7 @@ namespace Doan.Controllers
             _ = Task.Run(async () =>
             {
                 await Email.SendEmailAsync(order.Email, "Thông báo về đơn hàng", getNoiDung());
-                
+
             });
 
             return Ok(new { message = "Đơn hàng đã được xác nhận thành công" });
@@ -505,7 +502,7 @@ namespace Doan.Controllers
 
         public IActionResult EditCategory(string id)
         {
-            int idc= int.Parse(id);
+            int idc = int.Parse(id);
             var category = _context.categorys.Find(idc);  // Lấy danh mục theo id
             if (category == null)
             {
@@ -625,7 +622,7 @@ namespace Doan.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult AddProduct(IFormFile Thumbnail,IFormFile? image2, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, string Category)
+        public IActionResult AddProduct(IFormFile Thumbnail, IFormFile? image2, string title, string brand, double price, int discount, int warranty, int inventoryNumber, string description, string Category)
         {
             ViewBag.Fail = "";
             ViewBag.Success = "";
@@ -723,9 +720,9 @@ namespace Doan.Controllers
 
                 var newImage = new Image
                 {
-                    Pid =product.Id,
-                    Image1=newFileName,
-                    Image2=image2Path
+                    Pid = product.Id,
+                    Image1 = newFileName,
+                    Image2 = image2Path
                 };
                 _context.images.Add(newImage);
                 _context.SaveChanges();
@@ -738,7 +735,7 @@ namespace Doan.Controllers
             else
             {
                 ViewBag.Fail = "thêm sản phẩm thất bại";
-                TempData["Fail"]= ViewBag.Fail;
+                TempData["Fail"] = ViewBag.Fail;
                 return RedirectToAction("ManagerProduct");
             }
         }
@@ -950,7 +947,7 @@ namespace Doan.Controllers
         }
         // Tấn Them 
         [HttpPost]
-        public IActionResult EditUser(int userId, string username,  string fullname, string email, string phoneNumber, bool IsAdmin, string address, bool isGender, DateTime birthDay,bool IsConfirm)
+        public IActionResult EditUser(int userId, string username, string fullname, string email, string phoneNumber, bool IsAdmin, string address, bool isGender, DateTime birthDay, bool IsConfirm)
         {
             try
             {
@@ -997,14 +994,14 @@ namespace Doan.Controllers
                     id = u.Id,
                     username = u.User1,
                     fullname = u.Fullname,
-                    password=u.Password,
+                    password = u.Password,
                     email = u.Email,
                     phoneNumber = u.PhoneNumber,
                     role = u.IsAdmin,
                     address = u.Address,
                     isGender = u.IsGender,
                     birthDay = u.BirthDay,
-                    emailConfirm=u.IsConfirmEmail
+                    emailConfirm = u.IsConfirmEmail
                 })
                 .FirstOrDefault();
 

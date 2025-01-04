@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\git\\project_c\\Doan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\admin\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\admin\\managerorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\admin\\managerorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\home\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\home\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\views\\home\\category.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\views\\home\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,12 +23,8 @@
       "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\data\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|c:\\users\\admin\\git\\project_c\\doan\\doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8A57B5-DE27-4C27-A967-F8ACDC5FD482}|Doan\\Doan.csproj|solutionrelative:doan\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -75,108 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ManagerProduct.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerProduct.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAD4vzwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-04T03:01:39.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderDetail.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Admin\\OrderDetail.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\OrderDetail.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Admin\\OrderDetail.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Admin\\OrderDetail.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAcwIEAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-04T03:01:25.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManagerOrder.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerOrder.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Admin\\ManagerOrder.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Admin\\ManagerOrder.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Admin\\ManagerOrder.cshtml",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAcwJkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-04T03:01:06.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderDetail.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\OrderDetail.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\OrderDetail.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\OrderDetail.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\OrderDetail.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-04T03:00:43.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewOrder.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\ViewOrder.cshtml",
-              "RelativeDocumentMoniker": "Doan\\Views\\Home\\ViewOrder.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\ViewOrder.cshtml",
-              "RelativeToolTip": "Doan\\Views\\Home\\ViewOrder.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFAAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-04T03:00:24.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Category.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\Category.cshtml",
               "RelativeDocumentMoniker": "Doan\\Views\\Home\\Category.cshtml",
               "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\Category.cshtml",
               "RelativeToolTip": "Doan\\Views\\Home\\Category.cshtml",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAcwLgAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwCUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-31T12:33:43.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Header.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\Header.cshtml",
               "RelativeDocumentMoniker": "Doan\\Views\\Home\\Header.cshtml",
               "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Views\\Home\\Header.cshtml",
               "RelativeToolTip": "Doan\\Views\\Home\\Header.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAUwCgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvygAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-31T12:03:43.69Z"
+              "WhenOpened": "2024-12-31T12:03:43.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Doan\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Doan\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAcwLUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAL0FAAAAAAAAAADwv8IFAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T05:04:40.068Z"
+              "WhenOpened": "2024-12-31T05:04:40.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Doan\\Controllers\\AdminController.cs",
@@ -188,51 +97,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "ConnectDB.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Data\\ConnectDB.cs",
               "RelativeDocumentMoniker": "Doan\\Data\\ConnectDB.cs",
               "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Data\\ConnectDB.cs",
               "RelativeToolTip": "Doan\\Data\\ConnectDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-31T11:41:16.522Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Program.cs",
               "RelativeDocumentMoniker": "Doan\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Program.cs",
               "RelativeToolTip": "Doan\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCMAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-31T13:02:08.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\appsettings.json",
-              "RelativeDocumentMoniker": "Doan\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\appsettings.json",
-              "RelativeToolTip": "Doan\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-31T07:55:20.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Doan\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Admin\\git\\project_c\\Doan\\Doan\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Doan\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-03T21:03:33.123Z"
             }
           ]
         }

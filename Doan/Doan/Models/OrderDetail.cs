@@ -47,7 +47,7 @@ namespace Doan.Models
             SubTotal = subTotal;
         }
 
-        
+
     }
 
 

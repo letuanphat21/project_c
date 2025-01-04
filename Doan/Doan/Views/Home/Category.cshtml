@@ -14,18 +14,33 @@
     var totalProducts = ViewBag.TotalProducts;
     var param = ViewBag.Param;
 
-    var indexParam = Regex.Replace(param, @"(\&|\?)index=[^&]*", "");
-
-    // indexParam = HttpUtility.UrlDecode(indexParam);
-
-    string GetPageUrl(int pageIndex)
+    // Giải mã QueryString
+    var queryCollection = HttpUtility.ParseQueryString(HttpUtility.UrlDecode(param));
+    
+    foreach (string key in queryCollection.AllKeys)
     {
-        var newQueryString = string.IsNullOrEmpty(indexParam) ?
-            $"index={pageIndex}" :
-            $"{indexParam}&index={pageIndex}";
+        var values = queryCollection.GetValues(key);
+        if (values != null)
+        {
+            Console.WriteLine($"{key}: {string.Join(", ", values)}");
+        }
+    }
 
-        // Trả về URL hoàn chỉnh
-        return Url.Action("ProductList", "Home", new { __query = newQueryString });
+    string GetIndexUrl(int pageIndex)
+    {
+        queryCollection.Remove("index");
+        queryCollection["index"] = pageIndex.ToString();
+
+        return "?" + queryCollection.ToString();
+    }
+
+    string GetSortUrl(string sortBy)
+    {
+        queryCollection.Remove("sortBy");
+
+        queryCollection["sortBy"] = sortBy;
+
+        return "?" + queryCollection.ToString();
     }
 }
 
@@ -88,6 +103,7 @@
                         </h1>
                     </div>
                     <div class="category-filter">
+                        <!-- Category filters -->
                         <h2>Theo Danh Mục</h2>
                         <form method="get" action="@Url.Action("ProductList", "Home")" id="categoryForm">
                             <div class="form-check">
@@ -122,6 +138,7 @@
                     </div>
                     <hr>
                     <div class="price-filter">
+                        <!-- Price filters -->
                         <h2>Khoảng giá</h2>
                         <form method="get" action="@Url.Action("ProductList", "Home")" id="priceRangeForm">
                             <div class="form-check">
@@ -157,16 +174,58 @@
                 </div>
             </div>
             <div class="product-list">
-                <!-- Sort Options -->
+                <!-- Sort options -->
                 <div class="product-sort d-flex align-items-center mb-3">
                     <span class="product-sort--label me-2">Sắp xếp theo</span>
-                    <select class="form-select w-auto" onchange="location.href=this.value">
-                        <option value="?sortBy=newest">Mới nhất</option>
-                        <option value="?sortBy=price_asc">Giá thấp đến cao</option>
-                        <option value="?sortBy=price_desc">Giá cao đến thấp</option>
-                    </select>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle"
+                                type="button"
+                                id="sortDropdown"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            @switch (sortBy)
+                            {
+                                case "newest":
+                                    @:Sản phẩm mới nhất
+                                    break;
+                                case "price_asc":
+                                    @:Giá thấp đến cao
+                                    break;
+                                case "price_desc":
+                                    @:Giá cao đến thấp
+                                    break;
+                                case "name_asc":
+                                    @:Tên từ A - Z
+                                    break;
+                                case "name_desc":
+                                    @:Tên từ Z - A
+                                    break;
+                                default:
+                                    @:Sắp xếp
+                                    break;
+                            }
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end pe-5" aria-labelledby="sortDropdown">
+                            <li>
+                                <a class="dropdown-item @(sortBy == "newest" ? "active" : "")" href="@GetSortUrl("newest")">Sản phẩm mới nhất</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item @(sortBy == "price_asc" ? "active" : "")" href="@GetSortUrl("price_asc")">Giá thấp đến cao</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item @(sortBy == "price_desc" ? "active" : "")" href="@GetSortUrl("price_desc")">Giá cao đến thấp</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item @(sortBy == "name_asc" ? "active" : "")" href="@GetSortUrl("name_asc")">Tên từ A - Z</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item @(sortBy == "name_desc" ? "active" : "")" href="@GetSortUrl("name_desc")">Tên từ Z - A</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- Product list -->
                 <div class="row">
                     <h1 class="mb-3 fs-3">Tìm thấy (@totalProducts sản phẩm)</h1>
                     @if (products != null && products.Count > 0)
@@ -200,12 +259,14 @@
                         </div>
                     }
                 </div>
+
+                <!-- Pagination -->
                 <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center">
                         @if (pageIndex > 1)
                         {
                             <li class="page-item">
-                                <a class="page-link" href="@Url.Action("ProductList", "Home", new { index = pageIndex - 1, param})" )>
+                                <a class="page-link" href="@GetIndexUrl(pageIndex - 1)">
                                     <span aria-hidden="true">&laquo;</span>
                                 </a>
                             </li>
@@ -213,7 +274,7 @@
                         @for (int i = 1; i <= totalPage; i++)
                         {
                             <li class="page-item @(i == pageIndex ? " active" :"")">
-                                <a class="page-link" href="@GetPageUrl(i)">
+                                <a class="page-link" href="@GetIndexUrl(i)">
                                     @i
                                 </a>
                             </li>
@@ -221,7 +282,7 @@
                         @if (pageIndex < totalPage)
                         {
                             <li class="page-item">
-                                <a class="page-link" href="@Url.Action("ProductList", "Home", new { index = pageIndex + 1, param})" )>
+                                <a class="page-link" href="@GetIndexUrl(pageIndex + 1)">
                                     <span aria-hidden="true">&raquo;</span>
                                 </a>
                             </li>
@@ -237,7 +298,6 @@
     @Html.Partial("Footer")
 
     <script type="text/javascript" src="~/js/home.js"></script>
-    <script type="text/javascript" src="~/js/category.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script type="text/javascript">

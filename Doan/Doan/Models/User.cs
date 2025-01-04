@@ -68,7 +68,7 @@ namespace Doan.Models
             IsAdmin = isAdmin;
         }
 
-        public User(string user1, string fullname, string password, bool isGender, DateTime birthDay, string email, string phoneNumber, string address, DateTime createdAt, DateTime updatedAt, bool isAdmin, string randomKey,bool isConfirmEmail)
+        public User(string user1, string fullname, string password, bool isGender, DateTime birthDay, string email, string phoneNumber, string address, DateTime createdAt, DateTime updatedAt, bool isAdmin, string randomKey, bool isConfirmEmail)
         {
             User1 = user1;
             Fullname = fullname;
@@ -85,6 +85,6 @@ namespace Doan.Models
             IsConfirmEmail = isConfirmEmail;
         }
 
-       
+
     }
 }

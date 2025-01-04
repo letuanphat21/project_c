@@ -2,15 +2,9 @@
 using Doan.Models;
 using Doan.Utils;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Doan.Controllers
 {
@@ -106,10 +100,6 @@ namespace Doan.Controllers
         }
 
 
-
-
-
-
         public IActionResult Login(string? returnUrl)
         {
             if (!string.IsNullOrEmpty(returnUrl))
@@ -143,7 +133,7 @@ namespace Doan.Controllers
             }
             string pass = MyUtils.ToMd5Hash(password, user.RandomKey);
 
-            if (user.Password != pass ||!user.IsConfirmEmail)
+            if (user.Password != pass || !user.IsConfirmEmail)
             {
                 ViewBag.Fail = "Sai mật khẩu hoặc tên đăng nhập hoặc chưa xác nhận email";
                 return View();
@@ -169,12 +159,6 @@ namespace Doan.Controllers
                 return RedirectToAction("Index", "Home");
 
             }
-
-
-
-
-
-
 
 
         }
@@ -292,8 +276,8 @@ namespace Doan.Controllers
                 string randomKey = keyGenerate;
                 string pass = MyUtils.ToMd5Hash(password, keyGenerate);
                 bool gioiTinh = gender == "male";
-                User us = new User(username, fullName, pass,gioiTinh,birthDay1,email,phoneNumber,address,DateTime.Now,DateTime.Now,false,randomKey,false);
-               
+                User us = new User(username, fullName, pass, gioiTinh, birthDay1, email, phoneNumber, address, DateTime.Now, DateTime.Now, false, randomKey, false);
+
                 _context.users.Add(us);
                 _context.SaveChanges();
                 // Generate OTP
@@ -305,7 +289,7 @@ namespace Doan.Controllers
                 HttpContext.Session.SetString("OTPExpiryTime", DateTime.Now.AddMinutes(5).ToString());
 
                 // Send OTP to user's email
-                Email.SendEmailAsync(email,"Mã xác nhận tài khoản của bạn","<h1>Mã xác nhận của bạn là :"+otp+"<h1>");
+                Email.SendEmailAsync(email, "Mã xác nhận tài khoản của bạn", "<h1>Mã xác nhận của bạn là :" + otp + "<h1>");
 
                 // Redirect to ConfirmOTP page
                 return RedirectToAction("ConfirmOTP", "Home");
@@ -318,7 +302,7 @@ namespace Doan.Controllers
         public IActionResult ConfirmOTP()
         {
             return View();
-           
+
         }
 
 
@@ -414,7 +398,7 @@ namespace Doan.Controllers
 
         public IActionResult Changeinfor()
         {
-            return  View();
+            return View();
         }
 
         [HttpPost]
@@ -497,7 +481,6 @@ namespace Doan.Controllers
         }
 
 
-
         public IActionResult Changepass()
         {
             return View();
@@ -538,7 +521,7 @@ namespace Doan.Controllers
             {
                 // Cập nhật mật khẩu mới cho người dùng
                 existingUser.Password = new_pass;
-                existingUser.updatedAt=DateTime.Now;
+                existingUser.updatedAt = DateTime.Now;
 
                 // Lưu thay đổi vào cơ sở dữ liệu
                 _context.SaveChanges();
@@ -562,7 +545,7 @@ namespace Doan.Controllers
         public IActionResult SelectCate(string cid)
         {
             int cateId = int.Parse(cid);
-            
+
             List<Product> list = _context.products
                                         .Where(p => p.Cid == cateId) // Lọc theo CategoryId
                                         .ToList();
@@ -581,17 +564,15 @@ namespace Doan.Controllers
             ViewData["Categories"] = listc;
             ViewData["TopFourProducts"] = listFour;
 
-           
+
             return View("Index");
         }
-
-
 
 
         public IActionResult SearchByName(string txt)
         {
             List<Product> list = _context.products
-                                .Where(p => p.Title.Contains(txt))  
+                                .Where(p => p.Title.Contains(txt))
                                 .ToList();
             List<Category> listc = _context.categorys.Take(6).ToList();
 
@@ -611,14 +592,13 @@ namespace Doan.Controllers
         public IActionResult ProductDetail(string cid, string id)
         {
 
-            
+
             if (string.IsNullOrEmpty(cid) || string.IsNullOrEmpty(id) || !int.TryParse(cid, out int cateId) || !int.TryParse(id, out int id1) || cateId <= 0 || id1 <= 0)
             {
                 // Chuyển hướng về trang Index
                 return RedirectToAction("Index", "Home");
             }
 
-           
 
 
             // Lấy danh sách sản phẩm cùng danh mục (CategoryId = cid)
@@ -640,8 +620,6 @@ namespace Doan.Controllers
             ViewBag.listp = list1;
 
             return View("ProductDetail");
-
-
         }
 
         public IActionResult Cart()
@@ -661,8 +639,6 @@ namespace Doan.Controllers
 
             return View(cart); // Truyền giỏ hàng vào View
         }
-
-
 
 
         public IActionResult AddToCart1(string id, string quantity)
@@ -692,7 +668,7 @@ namespace Doan.Controllers
             if (product != null)
             {
                 // Tạo Item mới
-                var item = new Item(product, quantityValue,product.Price);
+                var item = new Item(product, quantityValue, product.Price);
 
                 // Thêm Item vào giỏ hàng
                 cart.AddItem(item);
@@ -775,11 +751,9 @@ namespace Doan.Controllers
             // Lưu kích thước giỏ hàng (số lượng sản phẩm)
             HttpContext.Session.SetInt32("size", cart.Items.Count);
             return RedirectToAction("Cart", "Home");
-
-
         }
 
-        public IActionResult AddToCart2(string id, string quantity,string cid)
+        public IActionResult AddToCart2(string id, string quantity, string cid)
         {
             // Kiểm tra và khởi tạo giỏ hàng từ Session
             var sessionCart = HttpContext.Session.GetString("cart");
@@ -836,7 +810,7 @@ namespace Doan.Controllers
         {
             var sessionUser = HttpContext.Session.GetString("user");
             User user = string.IsNullOrEmpty(sessionUser)
-                ? new User() 
+                ? new User()
                 : JsonConvert.DeserializeObject<User>(sessionUser);
 
             return View();
@@ -855,14 +829,13 @@ namespace Doan.Controllers
             }
 
 
-
             var sessionUser = HttpContext.Session.GetString("user");
             User user = string.IsNullOrEmpty(sessionUser)
                 ? new User()
                 : JsonConvert.DeserializeObject<User>(sessionUser);
 
 
-            Order order = new Order(user.Id, fullname,email,phonenumber,address,note, DateTime.MinValue, "pending",0,null);
+            Order order = new Order(user.Id, fullname, email, phonenumber, address, note, DateTime.MinValue, "pending", 0, null);
             HttpContext.Session.SetString("order", JsonConvert.SerializeObject(order));
 
             return View("PaymentMethod");
@@ -925,7 +898,7 @@ namespace Doan.Controllers
             // Update the session with the updated order
             HttpContext.Session.SetString("order", JsonConvert.SerializeObject(order));
 
-            
+
             return View("Check");
         }
 
@@ -959,7 +932,7 @@ namespace Doan.Controllers
 
             if (!string.IsNullOrEmpty(discountCode))
             {
-                int discount1 =int.Parse(discountCode);
+                int discount1 = int.Parse(discountCode);
                 discount = _context.discounts.FirstOrDefault(d => d.Id == discount1);
                 if (discount != null)
                 {
@@ -1007,7 +980,7 @@ namespace Doan.Controllers
                     {
                         int discountId = int.Parse(disID);
                         discount = _context.discounts.FirstOrDefault(d => d.Id == discountId);
-                       
+
 
                         if (discount != null)
                         {
@@ -1065,10 +1038,8 @@ namespace Doan.Controllers
 
         public IActionResult Thank()
         {
-            return View(); 
+            return View();
         }
-        
-
 
         public IActionResult ViewOrder(string xpage)
         {
@@ -1079,7 +1050,7 @@ namespace Doan.Controllers
 
             if (user != null && user.Id > 0)
             {
-               
+
                 List<Order> orders = _context.orders.Where(o => o.UserId == user.Id).ToList();
                 int page, numperpage = 5;
                 int size = orders.Count;
@@ -1099,22 +1070,18 @@ namespace Doan.Controllers
                 start = (page - 1) * numperpage;
                 end = Math.Min(page * numperpage, size);
 
-                List<Order> list1 =MyUtils.getListBypageOrder(orders, start, end);
+                List<Order> list1 = MyUtils.getListBypageOrder(orders, start, end);
 
                 ViewBag.Listo = list1;
                 ViewBag.num = num;
                 ViewBag.page = page;
 
                 return View();
-
-
-            }else
+            }
+            else
             {
                 return View("Login");
             }
-
-
-
         }
 
 
@@ -1129,17 +1096,14 @@ namespace Doan.Controllers
             .Where(o => o.Id == id)
             .FirstOrDefault();
 
-
-
-
             var orderDetails = _context.orderDetails
              .Where(od => od.OrderId == id)
              .Select(od => new
-           {
-         od.Id,
-          od.Quantity,
-           od.Price,
-              ProductTitle = od.Product.Title 
+             {
+                 od.Id,
+                 od.Quantity,
+                 od.Price,
+                 ProductTitle = od.Product.Title
              })
                .ToList();
 
@@ -1148,7 +1112,6 @@ namespace Doan.Controllers
             ViewBag.orderDetails = orderDetails;
             return View();
         }
-
 
         public IActionResult DeleteOrder(string oid)
         {
@@ -1193,9 +1156,6 @@ namespace Doan.Controllers
 
             return RedirectToAction("ViewOrder");
         }
-
-
-
 
 
         public IActionResult Forgotpass()
@@ -1280,8 +1240,6 @@ namespace Doan.Controllers
                 return RedirectToAction("ConfirmOTPFotgotpass");
             }
 
-            
-
 
             // So sánh mã OTP
             if (otp == storedOtp)
@@ -1293,7 +1251,7 @@ namespace Doan.Controllers
                 string pass = MyUtils.ToMd5Hash(newPass, keyGenerate);
                 if (user != null)
                 {
-                   user.Password = pass;
+                    user.Password = pass;
                     user.RandomKey = randomKey;
                     try
                     {
@@ -1361,84 +1319,96 @@ namespace Doan.Controllers
         private const double MAX_PRICE = double.MaxValue;
 
         [HttpGet]
-        public ActionResult ProductList(string[]? categoryId, string[]? priceId, string? sortBy, int? index)
+        public ActionResult ProductList(List<string>? categoryId, List<string>? priceId, string? sortBy, int? index)
         {
             string[] priceRangeLabels = { "Dưới 1 triệu", "Từ 1 đến 2 triệu", "Từ 2 đến 5 triệu", "Từ 5 đến 10 triệu", "Trên 10 triệu" };
             bool[] priceRangeChecked = new bool[priceRangeLabels.Length + 1];
 
-            var categoriesJson = HttpContext.Session.GetString("Categories");
-            List<Category> categories;
+            // Lấy danh mục từ session hoặc cơ sở dữ liệu
+            var categoriesJson = HttpContext.Session.GetString("categories");
+            List<Category> categories = categoriesJson == null
+                ? _context.categorys.ToList()
+                : JsonConvert.DeserializeObject<List<Category>>(categoriesJson);
 
             if (categoriesJson == null)
             {
-                // Nếu chưa có, lấy danh sách từ cơ sở dữ liệu và lưu vào session
-                categories = _context.categorys.ToList();
-                HttpContext.Session.SetString("categories", JsonConvert.SerializeObject(categories)); // Lưu vào session
-            }
-            else
-            {
-                // Nếu có, lấy danh sách từ session
-                categories = JsonConvert.DeserializeObject<List<Category>>(categoriesJson);
+                HttpContext.Session.SetString("categories", JsonConvert.SerializeObject(categories));
             }
 
             bool[] categoryChecked = new bool[categories.Count + 1];
-
-
             var products = new List<Product>();
             string param = Request.QueryString.ToString() ?? string.Empty;
-            Console.WriteLine(param);
-            // Filter categories
-            if (categoryId != null)
-            {
-                int[] categoryIds = Array.ConvertAll(categoryId, int.Parse);
 
-                foreach (var category in categoryId)
-                {
-                    param = UpdateParam(param, "categoryId", category);
-                }
+            // Lọc danh mục
+            if (categoryId != null && categoryId.Any())
+            {
+                var categoryIds = categoryId
+                    .Where(c => !string.IsNullOrEmpty(c) && int.TryParse(c, out _))
+                    .Distinct()
+                    .Select(int.Parse)
+                    .ToList();
+
+                param = categoryIds.Aggregate(param, (current, id) => UpdateParam(current, "categoryId", id.ToString()));
 
                 products = _context.products.Where(p => categoryIds.Contains(p.Cid)).ToList();
 
-                foreach (var id in categoryIds)
+                foreach (int id in categoryIds)
                 {
-                    categoryChecked[id] = true;
                     if (id == 0)
                     {
                         products = _context.products.ToList();
+                        Array.Clear(categoryChecked, 0, categoryChecked.Length);
+                        categoryChecked[0] = true;
+                        break;
+                    }
+                    else
+                    {
+                        categoryChecked[0] = false;
+                        for (int i = 1; i < categoryChecked.Length; i++)
+                        {
+                            categoryChecked[i] = IsChecked(categories[i - 1].Id, categoryIds);
+                        }
                     }
                 }
             }
-            Console.WriteLine(param);
 
-            // Filter price
-            if (priceId != null && priceId.Length > 0)
+            // Lọc giá
+            if (priceId != null && priceId.Any())
             {
-                double[][] priceRanges = {
-                new double[] { 0, MAX_PRICE },
-                new double[] { 0, 1000000 },
-                new double[] { 1000000, 2000000 },
-                new double[] { 2000000, 5000000 },
-                new double[] { 5000000, 10000000 },
-                new double[] { 10000000, MAX_PRICE }
-            };
-
-                foreach (var price in priceId)
+                double[][] priceRanges =
                 {
-                    int id = int.Parse(price);
-                    param = UpdateParam(param, "priceId", price);
+                    new double[] { 0, MAX_PRICE },
+                    new double[] { 0, 1000000 },
+                    new double[] { 1000000, 2000000 },
+                    new double[] { 2000000, 5000000 },
+                    new double[] { 5000000, 10000000 },
+                    new double[] { 10000000, MAX_PRICE }
+                };
 
-                    if (id == 0)
+                var distinctPriceIds = priceId
+                    .Where(p => int.TryParse(p, out _)) 
+                    .Distinct()
+                    .ToList();
+
+                foreach (var price in distinctPriceIds)
+                {
+                    if (int.TryParse(price, out int id)) 
                     {
-                        products = _context.products.Where(p => p.Price >= priceRanges[0][0] && p.Price <= priceRanges[0][1]).ToList();
-                        Array.Clear(priceRangeChecked, 0, priceRangeChecked.Length);
-                        priceRangeChecked[0] = true;
-                        break;
-                    }
-                    else if (id >= 1 && id < priceRanges.Length)
-                    {
-                        var tempProducts = _context.products.Where(p => p.Price >= priceRanges[id][0] && p.Price <= priceRanges[id][1]).ToList();
-                        products.AddRange(tempProducts);
-                        priceRangeChecked[id] = true;
+                        param = UpdateParam(param, "priceId", price);
+
+                        if (id == 0)
+                        {
+                            products = _context.products.Where(p => p.Price >= priceRanges[0][0] && p.Price <= priceRanges[0][1]).ToList();
+                            Array.Clear(priceRangeChecked, 0, priceRangeChecked.Length);
+                            priceRangeChecked[0] = true;
+                            break;
+                        }
+                        else if (id >= 1 && id < priceRanges.Length)
+                        {
+                            var tempProducts = _context.products.Where(p => p.Price >= priceRanges[id][0] && p.Price <= priceRanges[id][1]).ToList();
+                            products.AddRange(tempProducts);
+                            priceRangeChecked[id] = true;
+                        }
                     }
                 }
             }
@@ -1458,19 +1428,19 @@ namespace Doan.Controllers
                 categoryChecked[0] = true;
             }
 
-            // Sorting
+            // Sắp xếp
             sortBy = sortBy ?? "newest";
             param = UpdateParam(param, "sortBy", sortBy);
             List<Product> sortedProducts = SortProducts(products, sortBy);
-            Console.WriteLine(param);
-            // Pagination
+
+            // Phân trang
             int pageIndex = index ?? 1;
             param = UpdateParam(param, "index", pageIndex.ToString());
             int totalProducts = products.Count;
-            int totalPage = (int) Math.Ceiling((double)totalProducts / PRODUCTS_PER_PAGE);
+            int totalPage = (int)Math.Ceiling((double)totalProducts / PRODUCTS_PER_PAGE);
             var displayProducts = sortedProducts.Skip((pageIndex - 1) * PRODUCTS_PER_PAGE).Take(PRODUCTS_PER_PAGE).ToList();
-            Console.WriteLine(param);
-            // Assign data
+
+            // Truyền dữ liệu vào View
             ViewBag.Categories = categories;
             ViewBag.CategoryChecked = categoryChecked;
             ViewBag.PriceRangeLabels = priceRangeLabels;
@@ -1485,49 +1455,56 @@ namespace Doan.Controllers
             return View("Category");
         }
 
-        // Update parameter function
+        // Kiểm tra id đã nằm trong danh sách id chưa
+        private bool IsChecked(int lastCheckId, List<int> ids)
+        {
+            return ids != null && ids.Contains(lastCheckId);
+        }
+
+
+        // Hàm cập nhật param
         private string UpdateParam(string param, string key, string value)
         {
             if (string.IsNullOrEmpty(param))
             {
-                param = "";
+                return $"{key}={value}";
             }
 
             var keyPairs = param.Split('&', StringSplitOptions.RemoveEmptyEntries);
             var updatedParams = new List<string>();
-            var keyValues = new List<string>();
+            var keyValues = new Dictionary<string, List<string>>();
 
-            bool exist = false;
             foreach (var pair in keyPairs)
             {
                 var parts = pair.Split('=');
-                if (parts.Length == 2 && parts[0] == key)
+                if (parts.Length == 2)
                 {
-                    exist = true;
-                    keyValues.Add(parts[1]);
-                }
-                else
-                {
-                    updatedParams.Add(pair);
+                    if (!keyValues.ContainsKey(parts[0]))
+                    {
+                        keyValues[parts[0]] = new List<string>();
+                    }
+                    keyValues[parts[0]].Add(parts[1]);
                 }
             }
 
-            if (!exist)
+            // Đảm bảo giá trị không bị trùng lặp
+            if (!keyValues.ContainsKey(key))
             {
-                updatedParams.Add($"{key}={value}");
+                keyValues[key] = new List<string>();
             }
-            else
+
+            if (!keyValues[key].Contains(value))
             {
-                if (!keyValues.Contains(value))
-                {
-                    keyValues.Add(value);
-                }
+                keyValues[key].Add(value);
+            }
 
-                updatedParams.RemoveAll(p => p.StartsWith($"{key}="));
-
-                foreach (var newValue in keyValues)
+            // Xóa các tham số trùng
+            updatedParams.Clear();
+            foreach (var kv in keyValues)
+            {
+                foreach (var val in kv.Value.Distinct())  // Loại bỏ các giá trị trùng lặp
                 {
-                    updatedParams.Add($"{key}={newValue}");
+                    updatedParams.Add($"{kv.Key}={val}");
                 }
             }
 
@@ -1536,7 +1513,7 @@ namespace Doan.Controllers
 
 
 
-        // Sorting function
+        // Hàm sắp xếp
         private List<Product> SortProducts(List<Product> products, string sortBy)
         {
             switch (sortBy)
@@ -1566,8 +1543,6 @@ namespace Doan.Controllers
         {
             return View("~/Views/Shared/Forbidden.cshtml");
         }
-
-
 
     }
 }

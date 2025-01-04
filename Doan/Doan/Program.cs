@@ -1,7 +1,5 @@
 ﻿using Doan.Data;
-using Doan.Utils;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
