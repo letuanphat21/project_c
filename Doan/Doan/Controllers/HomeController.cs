@@ -1386,7 +1386,7 @@ namespace Doan.Controllers
 
             var products = new List<Product>();
             string param = Request.QueryString.ToString() ?? string.Empty;
-
+            Console.WriteLine(param);
             // Filter categories
             if (categoryId != null)
             {
@@ -1408,7 +1408,7 @@ namespace Doan.Controllers
                     }
                 }
             }
-
+            Console.WriteLine(param);
 
             // Filter price
             if (priceId != null && priceId.Length > 0)
@@ -1462,14 +1462,14 @@ namespace Doan.Controllers
             sortBy = sortBy ?? "newest";
             param = UpdateParam(param, "sortBy", sortBy);
             List<Product> sortedProducts = SortProducts(products, sortBy);
-
+            Console.WriteLine(param);
             // Pagination
             int pageIndex = index ?? 1;
             param = UpdateParam(param, "index", pageIndex.ToString());
             int totalProducts = products.Count;
             int totalPage = (int) Math.Ceiling((double)totalProducts / PRODUCTS_PER_PAGE);
             var displayProducts = sortedProducts.Skip((pageIndex - 1) * PRODUCTS_PER_PAGE).Take(PRODUCTS_PER_PAGE).ToList();
-
+            Console.WriteLine(param);
             // Assign data
             ViewBag.Categories = categories;
             ViewBag.CategoryChecked = categoryChecked;
@@ -1488,20 +1488,52 @@ namespace Doan.Controllers
         // Update parameter function
         private string UpdateParam(string param, string key, string value)
         {
-            var paramList = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(param);
-            if (paramList.ContainsKey(key))
+            if (string.IsNullOrEmpty(param))
             {
-                if (!paramList[key].Contains(value))
+                param = "";
+            }
+
+            var keyPairs = param.Split('&', StringSplitOptions.RemoveEmptyEntries);
+            var updatedParams = new List<string>();
+            var keyValues = new List<string>();
+
+            bool exist = false;
+            foreach (var pair in keyPairs)
+            {
+                var parts = pair.Split('=');
+                if (parts.Length == 2 && parts[0] == key)
                 {
-                    paramList[key] = paramList[key] + "," + value;
+                    exist = true;
+                    keyValues.Add(parts[1]);
                 }
+                else
+                {
+                    updatedParams.Add(pair);
+                }
+            }
+
+            if (!exist)
+            {
+                updatedParams.Add($"{key}={value}");
             }
             else
             {
-                paramList.Add(key, value);
+                if (!keyValues.Contains(value))
+                {
+                    keyValues.Add(value);
+                }
+
+                updatedParams.RemoveAll(p => p.StartsWith($"{key}="));
+
+                foreach (var newValue in keyValues)
+                {
+                    updatedParams.Add($"{key}={newValue}");
+                }
             }
-            return paramList.ToString();
+
+            return string.Join("&", updatedParams);
         }
+
 
 
         // Sorting function
