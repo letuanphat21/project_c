@@ -38,7 +38,7 @@
                 <p class="card-text">
                     Ngày Mua: @ViewBag.order.OrderDate.ToString("dd/MM/yyyy")
                 </p>
-                <p class="card-text">Tổng Tiền: @ViewBag.order.TotalMoney$</p>
+                <p class="card-text">Tổng Tiền: @ViewBag.order.TotalMoney VNĐ</p>
                 <p class="card-text">
                     Trạng Thái:
                     @{
@@ -78,7 +78,7 @@
                         <tr>
                             <td>@orderDetails.ProductTitle</td>
                             <td>@orderDetails.Quantity</td>
-                            <td>@orderDetails.Price$</td>
+                            <td>@orderDetails.Price VNĐ</td>
                             <td>@(orderDetails.Quantity * orderDetails.Price)$</td>
                         </tr>
                     }

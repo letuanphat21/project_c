@@ -67,7 +67,7 @@
                                     <a asp-controller="Home" asp-action="ProductDetail" asp-route-cid="@p.Cid" asp-route-id="@p.Id">
                                         <h5 class="card-title">@p.Title</h5>
                                     </a>
-                                    <p class="card-text">@p.Price$</p>
+                                    <p class="card-text">@p.Price VNĐ</p>
                                     <form asp-controller="Home" asp-action="AddToCart1" method="post" class="d-inline">
                                         <input type="hidden" name="id" value="@p.Id" />
                                         <input type="hidden" name="quantity" value="1" />
@@ -129,7 +129,7 @@
                                     <a asp-controller="Home" asp-action="ProductDetail" asp-route-cid="@p.Cid" asp-route-id="@p.Id" class="text-decoration-none">
                                         <h5 class="card-title">@p.Title</h5>
                                     </a>
-                                    <p class="card-text">@p.Price$</p>
+                                    <p class="card-text">@p.Price VNĐ</p>
                                     <form asp-controller="Home" asp-action="AddToCart1" method="post" class="d-inline">
                                         <input type="hidden" name="id" value="@p.Id" />
                                         <input type="hidden" name="quantity" value="1" />

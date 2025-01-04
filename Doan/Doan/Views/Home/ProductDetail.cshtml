@@ -87,7 +87,7 @@
             <!-- Phần Thông Tin Sản Phẩm -->
             <div class="col-md-6">
                 <h2 class="product-title">@ViewBag.product.Title</h2>
-                <p class="product-price">Giá: @ViewBag.product.Price $</p>
+                <p class="product-price">Giá: @ViewBag.product.Price VNĐ</p>
                 <form asp-controller="Home" asp-action="AddToCart2" method="post" id="buy">
                     <div class="product-quantity">
                         <label for="quantity">Số lượng:</label>
@@ -132,7 +132,7 @@
                                 <a class="text-decoration-none" asp-controller="Home" asp-action="ProductDetail" asp-route-cid="@product.Cid" asp-route-id="@product.Id">
                                     <h5 class="card-title">@product.Title</h5>
                                 </a >
-                                <p class="card-text">@product.Price$</p>
+                                <p class="card-text">@product.Price VNĐ</p>
                                     <form asp-controller="Home" asp-action="AddToCart2" method="post" id="buy2">
                                         <input type="hidden" name="quantity" value="1">
                                         <input type="hidden" name="id" value="@product.Id">

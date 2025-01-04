@@ -78,7 +78,7 @@
                         <tr>
                             <td>@order.Id</td>
                             <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
-                            <td>@order.TotalMoney</td>
+                            <td>@order.TotalMoney VNĐ</td>
                             <td>@order.Status</td>
                             <td>
                                 <a asp-controller="Home" asp-action="OrderDetail" asp-route-oid="@order.Id" class="btn btn-info btn-sm">Xem chi tiết</a>

@@ -76,8 +76,8 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title">@item.product.Title</h5>
-                                        <p class="card-text text-muted">Giá (per item): $@item.product.Price</p>
-                                        <p class="card-text text-muted">Tổng cộng: $@(item.product.Price * item.Quantity)</p>
+                                        <p class="card-text text-muted">Giá (per item): @item.product.Price VNĐ</p>
+                                        <p class="card-text text-muted">Tổng cộng: @(item.product.Price * item.Quantity) VNĐ</p>
                                         <p class="card-text">
                                             <!-- Form giảm số lượng -->
                                             <form asp-controller="Home" asp-action="UpdateQuantity" method="get" class="d-inline">
@@ -114,22 +114,22 @@
                         @if (cart == null || cart.Items == null || !cart.Items.Any())
                         {
                             <p class="card-text">
-                                Subtotal: <strong>$0</strong>
+                                Subtotal: <strong>0 VNĐ</strong>
                             </p>
                             <hr>
                             <p class="card-text">
-                                Total: <strong>$0</strong>
+                                Total: <strong>0 VNĐ</strong>
                             </p>
                             <a href="@Url.Action("Index", "Home")" class="btn btn-primary w-100 mb-3" role="button">Quay lại mua sắm</a>
                         }
                         else
                         {
                             <p class="card-text">
-                                Tổng cộng: <strong>$@cart.GetTotalMoney()</strong>
+                                Tổng cộng: <strong>@cart.GetTotalMoney() VNĐ</strong>
                             </p>
                             <hr>
                             <p class="card-text">
-                                Tổng cộng: <strong>$@cart.GetTotalMoney()</strong>
+                                Tổng cộng: <strong>@cart.GetTotalMoney() VNĐ</strong>
                             </p>
 
                             @if (user != null)
